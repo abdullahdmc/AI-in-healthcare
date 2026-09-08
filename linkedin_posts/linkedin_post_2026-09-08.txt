@@ -1,0 +1,19 @@
+AI in healthcare research — a few things from today's reading
+
+A few studies worth noting from today's screening. A benchmark comparison found that general-purpose LLMs (GPT-5.2, Gemini 3.1 Pro, Claude Opus 4.6) performed better than specialized clinical AI tools, including UpToDate's own AI, on real physician queries. Separately, a comparison of four LLMs against 20 landmark NEJM trials found ChatGPT matched the published conclusions in every case tested.
+
+Not every result favored LLMs working alone, though. A study on perioperative anticoagulation management found LLM performance modest on its own, with meaningful improvement only after pairing the model with structured clinical decision support.
+
+On the diagnostic side, purpose-built ML/DL models continue to perform well in narrower, well-defined tasks: a deep learning model reached 96% positive predictive value diagnosing seven ocular surface diseases, an MRI-based classifier matched radiologist-level accuracy for Alzheimer's diagnosis, and a sepsis outcome model reached an AUC of 0.983.
+
+Taken together, it's a reasonable snapshot of where things stand: LLMs are increasingly competitive on reasoning and communication-heavy tasks, while dedicated ML/DL models still lead on narrow, high-stakes diagnostic prediction.
+
+#AIinHealthcare #MachineLearning #LLM #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. General-purpose LLMs outperform specialized clinical AI tools — https://pubmed.ncbi.nlm.nih.gov/42286322/
+2. Benchmarking LLM agreement with NEJM trial conclusions — https://pubmed.ncbi.nlm.nih.gov/41922554/
+3. LLM + clinical decision support in anticoagulation management — https://pubmed.ncbi.nlm.nih.gov/42070385/
+4. Deep learning diagnostic model for ocular surface diseases — https://pubmed.ncbi.nlm.nih.gov/41748055/
+5. MRI-based Alzheimer's classifier vs. radiologists — https://pubmed.ncbi.nlm.nih.gov/42211832/
+6. Explainable ML for sepsis outcome prediction — https://arxiv.org/abs/2604.04698
