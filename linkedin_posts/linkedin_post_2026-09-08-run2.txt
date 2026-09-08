@@ -1,0 +1,19 @@
+AI in healthcare: today's research roundup
+
+On the LLM side, several new studies focus on patient-facing safety. A red-teaming study of four chatbots (Claude, Gemini, GPT-4o, Llama3-70B) on 222 patient-posed medical questions found unsafe response rates of 5-13% and problematic response rates of 21.6-43.2%, varying by model. A separate comparison of four clinical AI agents (Arkangel AI, OpenEvidence, ChatGPT, Medisearch) against expert-rated vignettes found overall satisfaction ranging from 71.1% to 93%, with the widest variation on bias and patient-safety criteria. In a narrower triage task, five LLM chatbots correctly identified nonurgent upper-extremity conditions with 97% positive predictive value and 89% negative predictive value. A separate arXiv paper found that converting structured and free-text EHR data into a single text sequence for LLM fine-tuning matched or beat task-specific multimodal baselines on mortality, graft-failure, and triage prediction.
+
+On the ML/DL side, several prognostic and risk-prediction models reported strong discrimination. A random forest model predicted dataset-defined myocardial infarction risk with 97.0% accuracy and an AUC of 0.97. A UK Biobank study of over 500,000 participants built a machine learning model (DFC-Clin) for incident diabetic foot complications. A multimodal deep learning model combining brain MRI and clinical data predicted CNS inflammation prognosis with AUCs from 0.80 to 1.00 depending on cause, and improved clinicians' own prognostic accuracy when used as a decision aid. Other new models covered fall-related injury risk in hospitalized patients (AUC ~0.81) and malignant intestinal obstruction risk (AUC 0.84).
+
+Across both areas, the recurring theme is that reported accuracy varies substantially by model, task, and validation approach, underscoring the need for careful, context-specific evaluation before clinical use.
+
+#AIinHealthcare #MachineLearning #LLM #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Large language models provide unsafe answers to patient-posed medical questions — https://pubmed.ncbi.nlm.nih.gov/41688533/
+2. Arkangel AI, OpenEvidence, ChatGPT, Medisearch: Are They Objectively up to Medical Standards? — https://pubmed.ncbi.nlm.nih.gov/42181555/
+3. Can Large Language Models Identify When an Upper Extremity Problem Needs Nonurgent Attention? — https://pubmed.ncbi.nlm.nih.gov/42665284/
+4. Large Language Models as Unified Multimodal Learners for Clinical Prediction — https://arxiv.org/abs/2607.15380
+5. Machine learning-based prediction of dataset-defined myocardial infarction risk — https://pubmed.ncbi.nlm.nih.gov/42395330/
+6. Development and Validation of a Novel Risk Prediction Model for Incident Diabetic Foot Complications — https://pubmed.ncbi.nlm.nih.gov/42253099/
+7. Multimodal deep learning model for prediction of prognosis in central nervous system inflammation — https://pubmed.ncbi.nlm.nih.gov/40385378/
+8. A multidimensional risk prediction framework for malignant intestinal obstruction — https://pubmed.ncbi.nlm.nih.gov/42286035/
