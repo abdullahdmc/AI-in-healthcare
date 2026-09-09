@@ -1,0 +1,19 @@
+AI in healthcare research — a few things from today's reading
+
+Several papers this cycle focus on how far patient-facing LLM chatbots have actually gotten. A GPT-4o chatbot answering parents' questions in the PICU produced 1,225 responses that were 99.3% accurate, with parents rating it highly (Net Promoter Score +57) after just 10-minute sessions. A separate multilingual evaluation of a similar GPT-4o-based primary care chatbot tested it across English, Mandarin, Spanish, and Hindi to check whether performance holds up outside its native language. On the more cautious side, a review argues LLMs are not yet safe for autonomous clinical triage with no clinician in the loop, and a prompt-sensitivity study found that even minor phrasing changes could shift the clinical advice given by both general-purpose and medical-specific models.
+
+On the prediction side, several new risk models reported strong discrimination on well-defined tasks. A deep learning model for alcohol use disorder in adolescents reached an AUC of 0.85 on independent validation. A Transformer-based model jointly predicting malignancy in thyroid and breast nodules reached AUCs of 0.932 and 0.917, respectively. A multimodal deep learning model combining histopathology, genomics, and clinical data for prostate cancer prognosis reached a C-index of 0.774, outperforming standard NCCN risk stratification. A hybrid framework paired a CNN-based cardiovascular risk model with a retrieval-augmented LLM to turn predicted MACE risk into personalized, guideline-based recommendations — an example of the two approaches being combined rather than compared.
+
+Taken together, today's batch reinforces a familiar pattern: LLM chatbots are being tested carefully for real patient-facing use, evaluators remain cautious about full autonomy, and narrow ML/DL risk models keep posting strong AUCs on specific clinical prediction tasks — sometimes now paired with an LLM layer for communicating results.
+
+#AIinHealthcare #MachineLearning #LLM #DigitalHealth #ClinicalAI #RiskPrediction
+
+Sources:
+1. LLM chatbot for parental understanding in the PICU (99.3% accuracy) — https://pubmed.ncbi.nlm.nih.gov/41860987/
+2. Multilingual evaluation of a GPT-4o primary care chatbot — https://pubmed.ncbi.nlm.nih.gov/42245029/
+3. Why LLMs are not yet safe for autonomous clinical decision support — https://arxiv.org/abs/2607.28677
+4. LLM sensitivity to prompt variations in healthcare — https://arxiv.org/abs/2606.07237
+5. Deep learning model for alcohol use disorder risk (AUC 0.85) — https://pubmed.ncbi.nlm.nih.gov/41748155/
+6. Deep learning model for thyroid/breast nodule malignancy (AUC 0.932/0.917) — https://pubmed.ncbi.nlm.nih.gov/41672617/
+7. Multimodal deep learning prognostic model for prostate cancer (C-index 0.774) — https://pubmed.ncbi.nlm.nih.gov/41456225/
+8. Hybrid deep learning + LLM framework for MACE risk and recommendations — https://pubmed.ncbi.nlm.nih.gov/42662215/
