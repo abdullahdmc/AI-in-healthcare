@@ -1,0 +1,20 @@
+AI in healthcare research — a few things from today's reading
+
+Today's LLM papers cluster around emergency and urgent-care triage. A seven-month comparative study found an LLM-based ED triage architecture outperforming NLP and joint-embedding models and current nurse triage (F1 0.900, AUC-ROC 0.879), though the authors flagged severe overfitting and called for external validation before deployment. In trauma, GPT-5.2, Gemini 3.0 Flash, and Claude 4.5 Opus showed strong overall discrimination on 150 vignettes but undertriaged geriatric and blunt-trauma cases disproportionately, and 11.2% of repeated prompts shifted triage category under minor wording changes. A cardiology-specific model, TriageMaster-70B, processed acute coronary syndrome triage 39% faster than cardiologist review across over 16,000 retrospective cases, while a broader meta-analysis of LLMs for ED triage found only moderate accuracy and limited sensitivity for the highest-acuity cases — a reminder that speed and headline accuracy don't always mean the models are ready to act alone.
+
+On the prediction side, readmission and mortality modeling was the theme. An XGBoost model predicted 12-month heart failure readmission with AUC 0.861 in a 14,131-patient multicenter ED trial, and a separate SHAP-interpreted Boruta-XGBoost model reached AUC 0.873 for readmission or death in elderly heart failure patients during the vulnerable post-discharge phase. A multimodal deep learning model combining CT imaging, biomarkers, and clinical data improved 5-year mortality risk stratification in high-risk stage II colorectal cancer, and a separate multimodal model for non-small cell lung cancer reached a C-index of 0.71 for 5-year prognosis while also identifying novel biomarkers. Not every model held up equally well: a pediatric ICU readmission model saw AUC drop from 0.70-0.73 internally to as low as 0.60 on external validation, and an Australian cardiac-surgery registry model showed only limited predictive power, underscoring how much generalizability still varies by task and dataset.
+
+Across both threads, today's papers show narrow, well-specified models continuing to post strong discrimination, while triage- and deployment-facing LLM systems are being stress-tested harder for consistency, not just accuracy.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #EmergencyMedicine #RiskPrediction
+
+Sources:
+1. LLM-based ED triage architecture vs. NLP/JEPA models (F1 0.900) — https://pubmed.ncbi.nlm.nih.gov/41805589/
+2. Prompt fragility and undertriage risk in frontier LLMs for trauma triage — https://pubmed.ncbi.nlm.nih.gov/42214316/
+3. TriageMaster-70B for acute coronary syndrome triage — https://pubmed.ncbi.nlm.nih.gov/42310091/
+4. Meta-analysis of LLM diagnostic accuracy for ED triage — https://pubmed.ncbi.nlm.nih.gov/42298434/
+5. XGBoost model for 12-month heart failure readmission (AUC 0.861) — https://pubmed.ncbi.nlm.nih.gov/42330738/
+6. SHAP-interpreted model for elderly heart failure readmission/death (AUC 0.873) — https://pubmed.ncbi.nlm.nih.gov/42293329/
+7. Multimodal deep learning model for colorectal cancer 5-year mortality — https://pubmed.ncbi.nlm.nih.gov/42069945/
+8. Multimodal deep learning for NSCLC survival and biomarker discovery (C-index 0.71) — https://pubmed.ncbi.nlm.nih.gov/41703583/
+9. Pediatric ICU readmission model, internal vs. external validation — https://pubmed.ncbi.nlm.nih.gov/42238388/
