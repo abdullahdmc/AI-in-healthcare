@@ -1,0 +1,19 @@
+AI in healthcare research — a few things from today's reading
+
+Today's LLM papers focused on diagnostic benchmarking across specialties. A new agentic model, DxDirector-7B, drove full diagnostic workflows across 160 cases in 9 departments and outperformed larger general-purpose and medical LLMs despite its smaller size. A head-to-head comparison of DeepSeek-V3, GPT-4o, GPT-4o mini, and Claude 3.5 Sonnet on 50 real-world cases found DeepSeek-V3 and GPT-4o tied for the highest diagnostic accuracy (82%), with Claude trailing at 76%; a separate five-model comparison across 405 internal medicine cases similarly found Claude the weakest performer, while all models struggled with differential diagnosis and respiratory disease management. In pediatrics, newer LLMs outperformed both earlier models and 78 human clinicians on rare-disease recognition across 50 real clinical cases. On the deployment side, an LLM-augmented sepsis prediction system (COMPOSER-LLM) improved clinical acceptance of alerts across 2,500 ED encounters (72.1% sensitivity, 0.0087 false alarms per patient-hour).
+
+On the ML side, mortality and risk prediction remained the dominant use case. A multivariable model for acute aortic syndrome reached internal/external AUCs of 0.85–0.90 and 0.73–0.85 across 929 patients and three hospitals, while an XGBoost model for ARDS achieved AUCs of 0.69–0.75 for 28- and 90-day mortality. For dizziness triage, four ML models trained on 6,637 ED patients matched or exceeded existing risk scores (AUC up to 0.97) while projecting 53–85% reductions in CT utilization. Elsewhere, models targeted breast cancer risk in BI-RADS 4 lesions, diabetic kidney disease, medication harm, and pulmonary embolism mortality, continuing the pattern of narrow, disease-specific models reporting strong discrimination on retrospective data.
+
+Taken together, today's studies reinforce a now-familiar split: LLMs are being pushed hardest on general diagnostic reasoning and clinical communication, while purpose-built ML models keep posting strong numbers on well-defined mortality and risk-prediction tasks.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DiagnosticAI #RiskPrediction
+
+Sources:
+1. DxDirector-7B agentic LLM for full-process clinical diagnosis — https://pubmed.ncbi.nlm.nih.gov/42026083/
+2. DeepSeek vs ChatGPT vs Claude diagnostic benchmarking (ICD-10-CM framework) — https://pubmed.ncbi.nlm.nih.gov/42168963/
+3. Five-LLM comparative study for internal medicine decision-making — https://pubmed.ncbi.nlm.nih.gov/41907359/
+4. LLMs vs. 78 pediatric clinicians on rare and common diagnoses — https://pubmed.ncbi.nlm.nih.gov/42358891/
+5. COMPOSER-LLM sepsis prediction and alert acceptance — https://pubmed.ncbi.nlm.nih.gov/42552440/
+6. ML models for dizziness triage and imaging reduction in the ED (AUC 0.97) — https://pubmed.ncbi.nlm.nih.gov/42383526/
+7. ML mortality prediction for acute aortic syndrome (AUC 0.85-0.90) — https://pubmed.ncbi.nlm.nih.gov/41624614/
+8. XGBoost mortality prediction in ARDS — https://pubmed.ncbi.nlm.nih.gov/42394040/
