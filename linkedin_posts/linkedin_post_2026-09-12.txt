@@ -1,0 +1,19 @@
+AI in healthcare research — a few things from today's reading
+
+Today's LLM papers largely centered on diagnostic benchmarking against imaging and specialty scenarios. On 800 fundus photographs across eight retinal conditions, ChatGPT-4o reached 75% diagnostic accuracy versus 14-18% for Claude, Gemini, and Grok. In otolaryngology, four models scored 92-99% across 100 real cases (ChatGPT-5 highest at 99%), while on 218 anogenital skin lesion images Gemini led with 76.2% accuracy for STI classification. An agentic GPT-5.0 system reached 91.0% accuracy on acid-base disorder cases in a critical care simulation, ahead of GPT-4o (78.0%), Gemini (74.5%), and human specialists (83.0%). A new benchmark, PhysAssistBench, found that leading LLMs handle single turns of physician-patient-EHR interaction well but reliability collapses across full multi-turn sessions built from 1,296 MIMIC-IV-derived scenarios.
+
+On the ML/DL side, imaging-based risk models continued to post strong discrimination: a multimodal deep learning algorithm combining retinal fundus photos and OCT reached AUCs of 0.91-0.995 for coronary heart disease risk across 505 patients, and a YOLOv11/ResNet-18 cholangioscopy system hit 91.2% precision for malignant biliary stricture detection across 174 patients. Survival modeling remained active in oncology, with a six-model comparison in 337 gastroenteropancreatic neuroendocrine tumor patients favoring Extra Trees and DeepSurv, and a 10-gene machine learning signature distinguishing early hepatocellular carcinoma with AUC >0.9 while also predicting differential response to sorafenib versus TACE. Elsewhere, narrower risk models targeted ICU mortality, enteral feeding intolerance in sepsis, interstitial lung disease prognosis, and disorders-of-consciousness outcomes.
+
+The pattern holds: LLM studies are still mostly measuring how far general-purpose models can go on diagnostic and interactive tasks they weren't purpose-built for, while disease-specific ML/DL models keep reporting strong, narrower performance on prognosis and risk stratification.
+
+#AIinHealthcare #MachineLearning #LLM #DiagnosticAI #ClinicalAI #OncologyAI
+
+Sources:
+1. Multimodal LLMs for retinal disease diagnosis from fundus photos (75% vs 14-18% accuracy) — https://pubmed.ncbi.nlm.nih.gov/42640646/
+2. Four-LLM comparison for otolaryngology diagnosis/treatment decisions — https://pubmed.ncbi.nlm.nih.gov/42026294/
+3. Agentic GPT-5.0 vs standard LLMs and human experts in critical care — https://pubmed.ncbi.nlm.nih.gov/42104391/
+4. PhysAssistBench: LLM reliability across multi-turn physician-patient-EHR sessions — https://arxiv.org/abs/2606.18613
+5. Multimodal deep learning (fundus + OCT) for coronary heart disease risk (AUC up to 0.995) — https://pubmed.ncbi.nlm.nih.gov/42432531/
+6. Deep learning CADe/CADx system for malignant biliary stricture on cholangioscopy — https://pubmed.ncbi.nlm.nih.gov/42588629/
+7. Six-model survival comparison for gastroenteropancreatic neuroendocrine tumors — https://pubmed.ncbi.nlm.nih.gov/42661703/
+8. 10-gene ML signature for HCC diagnosis, prognosis, and treatment response — https://pubmed.ncbi.nlm.nih.gov/41787910/
