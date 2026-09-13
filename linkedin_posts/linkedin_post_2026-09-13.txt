@@ -1,0 +1,19 @@
+AI in healthcare research — a few things from today's reading
+
+Today's LLM findings clustered around clinical decision support and diagnostic reasoning. ChatGPT-4o with retrieval-augmented generation outperformed 290 practicing neurologists on guideline adherence for MS and NMOSD management (80.5% vs. lower rates), and a small open-source model, Qwen2.5-14B with RAG, approached GPT-4-turbo's performance on 98 breast cancer guideline questions. GPT-4o showed moderate appropriateness for routine cataract lens selection but struggled on complex cases, while three LLMs (GPT-4o, Grok-3, DeepSeek) showed mixed but promising results interpreting dental caries guidelines. On the research side, RaDaR, a 32B-parameter open-source reasoning model trained on real and synthetic rare-disease cases, beat the much larger 671B DeepSeek-R1 and flagged the correct rare-disease diagnosis a median 1.87 months before clinical suspicion in a retrospective cohort.
+
+ML/DL diagnostic and prognostic models kept posting strong, narrow performance. A LightGBM model distinguishing Kawasaki disease from febrile mimics in 4,469 children hit an AUC of 0.979 (93.4% accuracy). An explainable model combining inflammatory markers and traditional risk factors diagnosed coronary artery disease in 4,656 angiography patients (AUC 0.815), and a deep learning mammography risk model outperformed breast density at stratifying future breast cancer risk across 123,091 screening exams. In oncology prognosis, a multimodal transformer fusing pathology, ultrasound, and clinical data reached a C-index of 0.840 for recurrence risk in 768 HR+/HER2- breast cancer patients, while deep learning-derived MRI subtypes improved 5-year recurrence-free survival prediction in rectal cancer (AUC 0.799 to 0.834).
+
+Across both areas, general-purpose LLMs are increasingly being benchmarked directly against clinicians on guideline-based decisions, while disease-specific ML/DL models continue to deliver high-discrimination results on narrower diagnostic and prognostic tasks.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalDecisionSupport #DiagnosticAI #OncologyAI
+
+Sources:
+1. ChatGPT-4o with RAG vs. 290 neurologists on MS/NMOSD guideline adherence — https://pubmed.ncbi.nlm.nih.gov/41993106/
+2. Small open-source LLMs with RAG vs. GPT-4 for breast cancer clinical decision support — https://pubmed.ncbi.nlm.nih.gov/42361285/
+3. RaDaR: 32B reasoning LLM for rare disease diagnosis, randomized physician-assistance trial — https://arxiv.org/abs/2606.24510
+4. LightGBM diagnostic model for Kawasaki disease (AUC 0.979, n=4,469) — https://pubmed.ncbi.nlm.nih.gov/42266873/
+5. Explainable ML model for coronary artery disease diagnosis in non-AMI patients — https://pubmed.ncbi.nlm.nih.gov/42236130/
+6. Deep learning breast cancer risk model vs. breast density for supplemental screening — https://pubmed.ncbi.nlm.nih.gov/42081242/
+7. Multimodal deep learning recurrence risk model for HR+/HER2- breast cancer (C-index 0.840) — https://pubmed.ncbi.nlm.nih.gov/41919095/
+8. Deep learning MRI radiomics subtypes and recurrence risk in rectal cancer — https://pubmed.ncbi.nlm.nih.gov/42350713/
