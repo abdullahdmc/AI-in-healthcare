@@ -1,0 +1,19 @@
+AI in healthcare research — a few things from today's reading
+
+Today's LLM findings centered on diagnostic accuracy benchmarking across specialties, with mixed results. GPT-5 approached clinician-level sensitivity for STEMI diagnosis from 12-lead ECGs but was undermined by a very high false-positive rate, while GPT-4 with Vision reached 76% accuracy on neuroradiology board-style cases, well above prior GPT-4V radiology benchmarks (43%). ChatGPT-4o's ophthalmic diagnostic accuracy dropped from 80.1% with full clinical context to 54.7% on images alone, and four LLMs compared on 100 real otolaryngology cases scored 92-99% on diagnosis but far lower on treatment recommendations. A red-teaming study of 222 patient-posed medical questions found unsafe response rates of 5-13% across four major chatbots, while a smaller feasibility study found a GPT-4o-based PICU chatbot for parents was 99.3% accurate across 1,225 generated sentences.
+
+ML/DL risk-prediction models again delivered strong, narrow discrimination on well-defined clinical questions. A stacked ensemble using just 10 physical-exam parameters predicted coronary heart disease risk with AUC 0.977 internally and 0.929 on external validation, and an XGBoost model predicted postherpetic neuralgia risk with AUC 0.826-0.840 across training and external cohorts. A next-generation model built on 382,589 patients and 3.9 million EHR encounters reached AUC 0.869 for 6- and 12-month acute myocardial infarction risk, and a UK Biobank study of over 500,000 participants produced an improved risk model for incident diabetic foot complications. In oncology, a deep learning model trained on routine pathology slides from 591 pancreatic cancer patients predicted postoperative recurrence using only histology images, with external validation on 302 additional patients.
+
+The pattern from recent weeks continues: general-purpose LLMs perform unevenly on diagnostic tasks and struggle more with treatment decisions and safety than with pattern recognition, while purpose-built ML/DL models keep achieving high discrimination on specific, well-scoped prediction problems.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalDecisionSupport #DiagnosticAI #RiskPrediction
+
+Sources:
+1. GPT-5 and GPT-4o accuracy diagnosing STEMI from 12-lead ECGs — https://pubmed.ncbi.nlm.nih.gov/41797077/
+2. GPT-4 with Vision diagnostic accuracy on neuroradiology board-style cases — https://pubmed.ncbi.nlm.nih.gov/42078574/
+3. Four LLMs compared on real-world otolaryngology diagnosis and treatment — https://pubmed.ncbi.nlm.nih.gov/42026294/
+4. Large language models and unsafe answers to patient-posed medical questions — https://pubmed.ncbi.nlm.nih.gov/41688533/
+5. Coronary heart disease risk prediction from simple physical-exam parameters (AUC 0.977/0.929) — https://pubmed.ncbi.nlm.nih.gov/42147060/
+6. Next-generation acute myocardial infarction risk model, multi-centre cohort (AUC 0.869) — https://pubmed.ncbi.nlm.nih.gov/42317965/
+7. UK Biobank risk model for incident diabetic foot complications — https://pubmed.ncbi.nlm.nih.gov/42253099/
+8. Machine learning on routine histology slides predicts pancreatic cancer recurrence — https://pubmed.ncbi.nlm.nih.gov/41507565/
