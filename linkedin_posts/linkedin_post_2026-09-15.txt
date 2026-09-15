@@ -1,0 +1,21 @@
+AI in healthcare research — a few things from today's reading
+
+Today's LLM findings leaned toward decision support and documentation rather than raw diagnosis. A retrospective cohort of 10,344 emergency department encounters found ambient AI scribes cut on-shift documentation time by 72.6 seconds per encounter, roughly 24 minutes over an 8-hour, 20-encounter shift, while a separate non-inferiority study found GPT-4o matched hematology residents on documentation quality (88.9 vs 89.6) while reducing time from 14.9 minutes to 40.1 seconds. On the decision-support side, results were mixed: ChatGPT-5 showed only fair concordance with gynecologic oncology tumor boards (kappa 0.258-0.334) and was fully consistent across repeated queries in just 37.2% of cases, and ChatGPT-4o in a urological tumour board matched final recommendations only 79.2% of the time, below the study's benchmark. A pilot study on previously misdiagnosed dermatology cases found Gemini 3 led multimodal diagnostic accuracy at 60.0%, ahead of ChatGPT-5.2 (56.7%) and Claude 4.5 Sonnet (33.3%), and a large-scale analysis of 620,699 public ChatGPT conversations found mental-health-related content prevalence swung 23-fold (0.21% to 4.90%) depending on definition alone.
+
+ML/DL models continued to post strong, narrow discrimination on well-defined prediction tasks. An XGBoost model distinguishing malignant from benign pleural effusion reached AUC 0.988, and an explainable XGBoost model for cerebral small vessel disease achieved 88.0% accuracy with a companion nomogram. A gradient-boosting framework for in-hospital mortality in acute ischemic stroke hit external AUC 0.871 using high-granularity bedside data, and a similar interpretable GBM model for sepsis-induced myocardial injury mortality reached AUC 0.751 with a deployed web calculator. A 401-patient multicenter JASA study built a modernized prognostic score for spinal metastases using LASSO regression, addressing the fact that older scoring systems predate current oncologic therapies.
+
+Across both threads, LLMs are increasingly being tested where they're meant to assist — documentation and second-opinion support — rather than replace clinical judgment, while purpose-built ML models keep delivering high discrimination on tightly scoped, single-outcome prediction problems.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalDecisionSupport #DiagnosticAI #DigitalHealth
+
+Sources:
+1. Ambient AI scribes reduce ED documentation burden (10,344 encounters) — https://pubmed.ncbi.nlm.nih.gov/42391625/
+2. GPT-4o vs residents on medical history documentation quality and speed — https://pubmed.ncbi.nlm.nih.gov/40438356/
+3. ChatGPT-5 concordance with gynecologic oncology tumor boards — https://pubmed.ncbi.nlm.nih.gov/42355621/
+4. ChatGPT-4o as decision support in a urological tumour board (prospective) — https://pubmed.ncbi.nlm.nih.gov/42611131/
+5. Multimodal LLMs on previously misdiagnosed dermatology cases — https://pubmed.ncbi.nlm.nih.gov/42340682/
+6. Prevalence of mental health discussions in public ChatGPT conversations (JAMA Network Open) — https://pubmed.ncbi.nlm.nih.gov/42635990/
+7. XGBoost model for diagnosing malignant pleural effusion (AUC 0.988) — https://pubmed.ncbi.nlm.nih.gov/42676367/
+8. Interpretable ML framework for in-hospital mortality in acute ischemic stroke — https://pubmed.ncbi.nlm.nih.gov/42648602/
+9. Gradient boosting model for mortality in sepsis-induced myocardial injury — https://pubmed.ncbi.nlm.nih.gov/42459190/
+10. JASA multicenter machine learning-based prognostic scoring for spinal metastases — https://pubmed.ncbi.nlm.nih.gov/41532870/
