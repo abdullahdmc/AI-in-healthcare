@@ -1,0 +1,21 @@
+AI in healthcare research — a few things from today's reading
+
+Today's LLM findings were largely about benchmarking against clinical reality rather than case-by-case wins. A study of 20 landmark NEJM trials found ChatGPT's conclusions matched published findings 100% of the time, ahead of Gemini (84%), Grok3 (72%), and Claude (68%) — though the authors caution this may partly reflect prior training exposure to well-known trials. Separately, a Nature Medicine evaluation found frontier general-purpose LLMs (GPT-5.2, Gemini 3.1 Pro, Claude Opus 4.6) outperformed two specialized clinical AI tools across three benchmarks, with the clinical tools performing only on par with Google's AI Overview. On diagnosis, ChatGPT-4o reached 65.5% leading-diagnosis accuracy on complex polyneuropathy cases (comparable to non-specialist neurologists at 63.0%, below specialists at 74.0%), while ChatGPT 5.1 hit 97.1% sensitivity and 79.3% specificity classifying colorectal lesions from optical descriptions, and three chatbots (ChatGPT o4-mini, Gemini 2.5 Flash, DeepSeek-R1) showed 90-96% diagnostic agreement on age-related macular degeneration.
+
+On the ML/DL side, several interpretable models posted strong discrimination on well-scoped prediction tasks. A gradient boosting model for Crohn's disease diagnosis reached AUROC 0.954 internally and 0.944 on external validation, and an XGBoost model for early acute myocardial infarction risk hit 93.2% accuracy across 108 clinical features. A random forest model combining ultrasound and clinical data for diabetic peripheral neuropathy achieved AUC 0.852, while an interpretable model for MASLD detection using only routine non-invasive labs reached AUC 0.873. On the prognostic side, a logistic regression model identified eight independent predictors of 30-day mortality in severe cirrhosis (each unit rise in INR: +42.3% mortality risk), and a lung cancer EGFR-TKI study built both a mortality classifier (AUC ~0.82) and a survival-time model (concordance index ~0.66) from multi-institution EHR data.
+
+Across both threads, today's papers skew toward rigorous benchmarking — LLMs measured against real trial outcomes and specialist judgment, ML models validated externally with calibration checks — rather than isolated proof-of-concept results.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalDecisionSupport #DiagnosticAI #DigitalHealth
+
+Sources:
+1. ChatGPT vs. Gemini/Grok3/Claude concordance with 20 landmark NEJM trial conclusions — https://pubmed.ncbi.nlm.nih.gov/41922554/
+2. Frontier LLMs outperform specialized clinical AI tools on medical benchmarks (Nature Medicine) — https://pubmed.ncbi.nlm.nih.gov/42286322/
+3. ChatGPT-4o vs. neurologists on complex polyneuropathy diagnosis — https://pubmed.ncbi.nlm.nih.gov/42243282/
+4. ChatGPT 5.1 optical characterization of colorectal lesions — https://pubmed.ncbi.nlm.nih.gov/42504357/
+5. Three AI chatbots on age-related macular degeneration diagnosis — https://pubmed.ncbi.nlm.nih.gov/42270292/
+6. Gradient boosting machine model + web tool for Crohn's disease diagnosis — https://pubmed.ncbi.nlm.nih.gov/42068965/
+7. Interpretable XGBoost model for early acute myocardial infarction risk — https://pubmed.ncbi.nlm.nih.gov/42172727/
+8. Multimodal ML model (ultrasound + clinical) for diabetic peripheral neuropathy — https://pubmed.ncbi.nlm.nih.gov/41860757/
+9. Interpretable ML model for early detection of MASLD — https://pubmed.ncbi.nlm.nih.gov/42454348/
+10. ML mortality and survival-time models for lung cancer patients on EGFR-TKIs — https://pubmed.ncbi.nlm.nih.gov/42174863/
