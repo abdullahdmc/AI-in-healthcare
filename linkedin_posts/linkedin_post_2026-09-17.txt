@@ -1,0 +1,21 @@
+AI in healthcare research — a few things from today's reading
+
+Today's LLM papers focused mainly on diagnostic accuracy in imaging and specialist domains, plus documentation support. On orofacial pain, a comparison of four chatbots (ChatGPT 5.5, Claude Opus 4.1, Gemini 3 Flash, Grok 4) across 30 ICOP-based scenarios found Grok 4 scoring highest overall, though the other three did not differ significantly, and subclassification accuracy trailed primary diagnosis accuracy across the board. In neurosurgery, ChatGPT-4 led a five-model comparison on 148 clinical vignettes with 74% diagnostic accuracy, ahead of AtlasGPT (63%), ChatGPT-3.5 (53%), Copilot (48%), and Gemini (36%). Two brain tumor studies showed a similar pattern: GPT-4o reached 76% final-diagnosis and 83% differential-diagnosis accuracy when given structured findings instead of images alone, and LLM assistance lifted human readers' top-three differential accuracy (radiologists 80.7% to 90.2%, trainees 62.5% to 81.1%). On the workflow side, an LLM-based inpatient documentation tool scored 4.68/5 across quality domains from clinicians at three hospitals, and a simulated LLM-CDS platform improved tumor-board summary efficiency for 26 oncologists working synthetic breast cancer cases.
+
+On the ML/DL side, several prognostic and diagnostic models targeted specific cancers and acute conditions. An XGBoost model for hepatocellular carcinoma showed robust cross-center generalizability for predicting early recurrence after hepatectomy, while random forest-based ensembles were identified as the strongest approach for uncovering breast cancer prognostic factors, and a SEER-database model added population-level risk stratification for liver cancer. In acute care, an interpretable CatBoost model built on 85,886 pediatric pneumonia cases flagged chloride and glucose as novel biomarkers for simultaneous severe-pneumonia diagnosis and progression prediction, and a deep learning ensemble reached AUC 0.9388 (87.29% accuracy) classifying mpox from skin lesion images. A separate comparison of five lightweight deep learning architectures (CNN, LSTM, MLP, CNN-MLP, ConvLSTM) benchmarked ECG-based cardiovascular disease classification for accuracy against computational cost, and a new online tool targets one-year mortality risk in 601 maintenance hemodialysis patients.
+
+Across both threads, today's work leaned toward models built for deployment — web tools, calibrated risk scores, and documentation aids — rather than isolated benchmark exercises.
+
+#AIinHealthcare #MachineLearning #LLM #DiagnosticAI #DigitalHealth #ClinicalAI
+
+Sources:
+1. Four LLMs compared on ICOP-based orofacial pain diagnosis — https://pubmed.ncbi.nlm.nih.gov/42439775/
+2. ChatGPT-4 leads five-model comparison on neurosurgery vignettes — https://pubmed.ncbi.nlm.nih.gov/41650460/
+3. GPT-4o feasibility study for brain tumor diagnosis — https://pubmed.ncbi.nlm.nih.gov/41549106/
+4. LLM assistance improves radiologist/trainee brain tumor diagnostic accuracy — https://pubmed.ncbi.nlm.nih.gov/41753360/
+5. LLM-based inpatient documentation summarization quality assessment — https://pubmed.ncbi.nlm.nih.gov/42133622/
+6. Simulated LLM clinical decision support platform in oncology — https://pubmed.ncbi.nlm.nih.gov/41604603/
+7. XGBoost explainable model for HCC recurrence after hepatectomy — https://pubmed.ncbi.nlm.nih.gov/42383233/
+8. Interpretable CatBoost model for pediatric severe pneumonia risk — https://pubmed.ncbi.nlm.nih.gov/41317958/
+9. Deep learning ensemble for mpox image classification (AUC 0.94) — https://pubmed.ncbi.nlm.nih.gov/42430461/
+10. Deep learning architecture comparison for ECG-based cardiovascular diagnosis — https://pubmed.ncbi.nlm.nih.gov/41794983/
