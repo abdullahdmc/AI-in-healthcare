@@ -1,0 +1,20 @@
+AI in healthcare research — a few things from today's reading
+
+Today's LLM papers centered on diagnostic reasoning and patient communication across specialties. A multi-LLM cardiology system (Llama 3.1 8B with retrieval-augmented generation) reached 0.796 accuracy and 0.807 F1 on cardiac diagnostic reasoning tasks, while an EHR-based mortality model combining LLM-extracted risk information with a Bi-GRU cross-attention layer outperformed ML, deep learning, and LLM-only baselines on three public ICU datasets. In musculoskeletal care, an LLM given patient-described symptoms disagreed with the treating specialist's diagnosis in 45% of 140 new outpatients, with most disagreement traced to genuine diagnostic ambiguity rather than patient factors. GPT-5 showed complete concordance with verbatim German guideline text in oral oncology, and a paired GPT-3.5-to-GPT-5.2 comparison across 216 neurology questions found a significant, though uneven, improvement across subspecialties. On decision support, GPT-5 outperformed Gemini on 60 bariatric surgery vignettes (87.3% vs 72.4% accuracy), and a community-codesigned primary care chatbot raised objective health awareness scores in a 2,113-participant randomized trial in China (2.95 vs 2.34, p<0.001).
+
+On the ML/DL side, several diagnostic and prognostic models targeted specific cancers and acute conditions with strong discrimination. A random forest model reached AUC 0.940 for identifying malignant pleural effusion from routine pleural fluid markers, and another random forest model hit 96.6% sensitivity and 90.5% specificity differentiating pelvic chondrosarcoma non-invasively. An interpretable model for invasive pulmonary aspergillosis in severe fever with thrombocytopenia syndrome patients reached AUC 0.871, while a random forest/neural network osteosarcoma model achieved AUCs of 0.826 and 0.766 in training and validation. A deep learning framework for lung cancer CT classification reported 91% accuracy, beating LSTM, FNN, and RNN baselines, and a jointly-trained deep learning network for thyroid disorder and PCOS risk reached AUROCs of 0.98 and 0.97 respectively.
+
+Across both threads, today's studies leaned toward comparative benchmarking — testing newer model generations, multiple LLMs head-to-head, or ML algorithms against each other — rather than single-model deployments.
+
+#AIinHealthcare #MachineLearning #LLM #DiagnosticAI #DigitalHealth #ClinicalAI
+
+Sources:
+1. Cardiology-Chat multi-LLM system for cardiac diagnostic reasoning — https://pubmed.ncbi.nlm.nih.gov/41970942/
+2. HiRMD: LLM-based mortality prediction from EHRs — https://pubmed.ncbi.nlm.nih.gov/42224317/
+3. LLM diagnostic concordance with musculoskeletal specialists — https://pubmed.ncbi.nlm.nih.gov/42299823/
+4. GPT-5 vs Gemini decision support for bariatric surgery — https://pubmed.ncbi.nlm.nih.gov/42284583/
+5. Community-codesigned LLM chatbot for primary care (RCT) — https://pubmed.ncbi.nlm.nih.gov/41659358/
+6. Random forest model for malignant pleural effusion diagnosis (AUC 0.940) — https://pubmed.ncbi.nlm.nih.gov/42306669/
+7. Random forest model for pelvic chondrosarcoma diagnosis — https://pubmed.ncbi.nlm.nih.gov/42147252/
+8. Deep learning CT-based lung cancer prediction (91% accuracy) — https://pubmed.ncbi.nlm.nih.gov/41449566/
+9. Gated multi-task deep learning network for thyroid/PCOS risk — https://pubmed.ncbi.nlm.nih.gov/42428003/
