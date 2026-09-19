@@ -1,0 +1,19 @@
+AI in healthcare research — a few things from today's reading
+
+Today's LLM papers focused mostly on chatbots supporting care delivery and communication. A GPT-4.0 mini-based chatbot (PreA) co-designed with clinical stakeholders reduced physician consultation time by 28.7% for primary-to-specialist care transitions in a randomized trial of 2,069 patients. A fully offline multimodal system, MedChat, paired an LLM with a diffusion-driven avatar for structured patient anamnesis while keeping patient data isolated from model inference, running at under 3 seconds average latency. Comparing five chatbots (ChatGPT, Gemini, Copilot, DeepSeek, Grok-3) against medical information scientists on 45 clinical PICO questions found no significant difference between models, with only 20.9% of the 225 total answers reaching full alignment with expert evidence summaries. On the evaluation side, a systematic review catalogued persistent limitations in LLM-generated healthcare content, and a differential-privacy fine-tuning framework (MedDP) mapped the trade-off between model utility and patient-data privacy leakage on medical QA benchmarks.
+
+On the ML/DL side, several imaging and lab-based models reported strong discrimination for diagnosis and risk stratification. A ResNet-50 model for stroke risk in carotid plaque reached an AUC of 0.982, a 9.7-point improvement over the best traditional ML model, while a diffusion-weighted-imaging-only deep learning model detected acute ischemic infarcts with 90.8% accuracy and AUC 0.93 in under a second per scan. For pancreatic cancer, deep learning models matched or beat a six-reader average (AUC 0.99 on contrast CT) and showed much higher sensitivity for small tumors (98% vs. 82.6% on CECT). A multimodal ultrasound-plus-clinical-data model improved breast lesion classification to AUC 0.852 from 0.757 with imaging alone, and a hybrid ResNet-attention-recurrent network classified Alzheimer's stages with 94.5% accuracy. Lab-based models included a random forest for early sepsis-induced coagulopathy (AUCs 0.76-0.79) and a gradient boosting model for diabetic microvascular complication risk.
+
+Today's mix skewed toward imaging-based deep learning for diagnosis alongside LLM chatbots aimed at reducing clinician workload rather than replacing clinical judgment.
+
+#AIinHealthcare #MachineLearning #LLM #DiagnosticAI #DigitalHealth #ClinicalAI
+
+Sources:
+1. PreA LLM chatbot RCT for care transitions (28.7% shorter consultations) — https://pubmed.ncbi.nlm.nih.gov/41555035/
+2. MedChat offline multimodal AI for clinical anamnesis — https://pubmed.ncbi.nlm.nih.gov/42080058/
+3. Five generative AI chatbots vs. medical information scientists — https://pubmed.ncbi.nlm.nih.gov/41040708/
+4. MedDP differentially-private LLM framework for sensitive healthcare — https://pubmed.ncbi.nlm.nih.gov/42262952/
+5. ResNet-50 deep learning stroke risk model for carotid plaque (AUC 0.982) — https://pubmed.ncbi.nlm.nih.gov/42094969/
+6. DWI-only deep learning model for acute ischemic infarct detection — https://pubmed.ncbi.nlm.nih.gov/42138578/
+7. Deep learning detection of pancreatic cancer on CT — https://pubmed.ncbi.nlm.nih.gov/42301012/
+8. Multimodal ultrasound deep learning model for breast lesion classification — https://pubmed.ncbi.nlm.nih.gov/42122082/
