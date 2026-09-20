@@ -1,0 +1,19 @@
+AI in healthcare research — a few things from today's reading
+
+Today's LLM papers centered on documentation and diagnostic support rather than new model releases. A blinded comparison of 99 emergency department encounters found LLM-generated one-liner summaries preferred over physician-authored ones 50.5% of the time versus 38.4% for physicians. A similar prompt-engineered LLM assistant for hepatology referral triage cut clinician review time by about 60% while keeping hallucination rates low. On the diagnostic side, ChatGPT-4o and GPT-5 reached 77.1% and 57.6% partial concordance respectively against true diagnoses in 33 pediatric tumor pathology cases, and a four-version ChatGPT comparison on 50 complex oral and maxillofacial cases was benchmarked directly against experienced dentists. A separate study of general-use AI chatbots classifying impacted mandibular third molars found none reached acceptable agreement with expert consensus, a useful reminder that diagnostic imitation and diagnostic reliability are not the same thing.
+
+On the ML/DL side, imaging models again showed strong discrimination across a range of conditions. A deep learning-enabled single breath-hold abbreviated MRI protocol for hepatocellular carcinoma matched conventional full MRI (sensitivity 77.9-88.7% vs. 84.4-92.5%) while cutting scan time by more than 15 minutes and removing the need for contrast. A CNN-based diagnostic model for laryngoscopy images, trained and externally validated across five countries, reached AUC 0.85-0.90 and outperformed both general practitioners and ChatGPT-4o. A CNN using dynamic cervical radiographs predicted spinal cord compression (AUC 0.888) as a lower-cost alternative to MRI, and a multi-signal model combining CT deep learning, radiomics, and blood immune profiling raised lung cancer diagnosis AUC from 0.69-0.73 (individual signals) to 0.81 combined. On the risk-prediction front, a random forest model beat standard clinical scores for ulcerative colitis readmission, and a SHAP-interpretable analysis of 12,041 type 2 diabetes patients showed readmission risk factors shift over time — age matters most at 30 days, inflammatory markers and length of stay at 60 days, chronic complications by 365 days.
+
+Today's findings lean toward incremental validation work: LLMs proving useful for documentation and triage support, and imaging/ML models continuing to post strong but not universally reliable diagnostic accuracy.
+
+#AIinHealthcare #MachineLearning #LLM #DiagnosticAI #ClinicalAI #DigitalHealth
+
+Sources:
+1. LLM-generated ED clinical summaries, blinded comparison — https://pubmed.ncbi.nlm.nih.gov/42424264/
+2. LLM assistant for hepatology referral summarization (60% faster triage) — https://pubmed.ncbi.nlm.nih.gov/41504326/
+3. ChatGPT-4o vs GPT-5 diagnostic concordance in pediatric tumor pathology — https://pubmed.ncbi.nlm.nih.gov/41467543/
+4. Chatbots vs experts classifying impacted mandibular third molars — https://pubmed.ncbi.nlm.nih.gov/40996614/
+5. DL abbreviated single breath-hold MRI protocol for hepatocellular carcinoma — https://pubmed.ncbi.nlm.nih.gov/42159476/
+6. Multicenter AI diagnostic model for laryngoscopy images — https://pubmed.ncbi.nlm.nih.gov/41696998/
+7. CT deep learning + radiomics + blood immune profiling for lung cancer diagnosis (AUC 0.81) — https://pubmed.ncbi.nlm.nih.gov/41719793/
+8. SHAP-interpretable ML model for time-varying type 2 diabetes readmission risk — https://pubmed.ncbi.nlm.nih.gov/42440445/
