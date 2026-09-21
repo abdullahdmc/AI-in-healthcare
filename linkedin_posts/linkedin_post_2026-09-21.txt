@@ -1,0 +1,19 @@
+AI in healthcare research — a few things from today's reading
+
+Today's LLM papers leaned toward diagnostic reasoning and clinical documentation rather than new model benchmarks. A reasoning-tuned open-source LLM (RaDaR, 32B parameters) built for rare disease diagnosis outperformed the much larger 671B DeepSeek-R1 across public benchmarks, and in a retrospective cohort it flagged the correct final diagnosis before clinicians documented their own suspicion in 61.1% of cases — a potential 1.87-month head start. On the diagnostic-support side, ChatGPT-4o matched or beat expert oral medicine specialists at Top-1 differential accuracy for 80 salivary gland cases (86.7% vs 50.0%), while a purpose-built diagnostic LLM (ClinDiag-GPT), trained on 4,421 real cases, outperformed GPT-4o and Claude-3-Haiku on procedural diagnostic accuracy — with human-AI collaboration beating either working alone. A more cautious note came from a 15-model, 468-case benchmark testing iterative evidence-seeking rather than static Q&A: diagnostic accuracy dropped 12.75% once models had to ask their own follow-up questions, suggesting today's LLM benchmarks may overstate real-world clinical decision support performance.
+
+On the ML/DL side, imaging and risk models continued to post strong discrimination. A CT bone-window deep learning model for spinal tuberculosis reached AUC 0.92 internally and 0.87-0.94 across three external test sites. A meta-analysis of five studies (12,545 radiographs) found deep learning models detect peri-implant bone loss at 88% sensitivity, 91% specificity, and AUC 0.95. In critical care, an XGBoost model for COPD readmission and mortality (AUC 0.77) clearly outperformed the standard CODEX score (AUC 0.59), while a multi-hospital-pooled XGBoost model for ICU readmission/mortality showed only modest generalizability (weighted AUROC ~71%) when tested externally — a reminder that locally-trained risk models don't always travel well.
+
+Together, today's findings point to LLMs edging toward genuine diagnostic utility in narrow domains, alongside a growing recognition that evaluation methodology — interactive vs. static, external vs. internal validation — matters as much as raw accuracy.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DiagnosticAI #DigitalHealth
+
+Sources:
+1. RaDaR reasoning LLM for rare disease diagnosis, randomized trial — https://arxiv.org/abs/2606.24510
+2. ChatGPT-4o vs oral medicine specialists on salivary gland disease diagnosis — https://pubmed.ncbi.nlm.nih.gov/41466068/
+3. ClinDiag-GPT grounded diagnostic LLM vs GPT-4o/Claude-3-Haiku — https://pubmed.ncbi.nlm.nih.gov/41881991/
+4. Multi-turn evidence-seeking reduces LLM diagnostic accuracy 12.75% — https://arxiv.org/abs/2605.22047
+5. Deep learning CT model for spinal tuberculosis diagnosis (multi-center) — https://pubmed.ncbi.nlm.nih.gov/41459642/
+6. Deep learning meta-analysis for peri-implant marginal bone loss detection — https://pubmed.ncbi.nlm.nih.gov/41562630/
+7. XGBoost model for COPD readmission/mortality vs CODEX score — https://pubmed.ncbi.nlm.nih.gov/40777144/
+8. Multi-hospital ICU readmission/mortality model generalizability study — https://pubmed.ncbi.nlm.nih.gov/41180106/
