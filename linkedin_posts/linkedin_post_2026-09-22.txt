@@ -1,0 +1,19 @@
+AI in healthcare research — a few things from today's reading
+
+Today's LLM findings were largely about where language models help and where they don't yet match clinicians. GPT-4, validated against specialist consensus diagnoses for 101 patients with systemic autoimmune disease, reached 97.03% overall diagnostic accuracy — climbing from 82.18% on history alone once immunological results were added, and hitting 100% for lupus, Sjögren's syndrome, and three other conditions. In a head-to-head against real-world Medscape respondents on 1,426 case-challenge questions, GPT-4o and o1 scored 88.4% and 94.3% versus 85.0% for the human respondents. But context still matters: ChatGPT-4o's radiology accuracy swung from 19.9% on images alone to 80.9% once clinical data and answer options were added, and a 64-clinician evaluation found GPT-4 clearly ahead of GPT-3.5 on spinal neurosurgery and physical therapy scenarios. On the patient-facing side, a randomized trial of 1,297 parents found a brief GPT-4o chatbot boosted HPV vaccination intent as much as standard public health materials in the short term, but the effect faded by 45 days while the materials' effect held.
+
+On the ML/DL side, today's papers clustered around ICU and cancer mortality prediction. Random forest and XGBoost models are now routinely matching or beating classic scores: random forest hit AUROC 0.8423 for general ICU mortality (vs 0.736 for SOFA), and a coronary artery disease model reached AUC 0.914 on external validation for 28-day mortality across nearly 16,000 patients. Random survival forest also outperformed Cox regression and XGBoost for both colorectal cancer disease-free survival (5-year AUC 0.799) and pulmonary large cell carcinoma overall survival (5-year AUC 0.863). Not every added-complexity model paid off, though — a machine learning mortality model for over a million pediatric surgery encounters performed no better than a simple existing regression score, a useful counterpoint to the pattern.
+
+Together, today's studies reinforce a familiar theme: LLMs are creeping toward reliable diagnostic support in well-scoped clinical contexts, while ML risk models keep demonstrating strong discrimination in ICU and oncology settings — though not automatically better than simpler existing tools.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. GPT-4 validated for systemic autoimmune disease diagnosis (97.03% accuracy) — https://pubmed.ncbi.nlm.nih.gov/41429305/
+2. GPT-4o and o1 vs Medscape respondents on clinical case challenges — https://pubmed.ncbi.nlm.nih.gov/41578521/
+3. ChatGPT-4o radiology accuracy by input type (image vs clinical data vs options) — https://pubmed.ncbi.nlm.nih.gov/40977631/
+4. LLM chatbot vs public health materials for HPV vaccination intent, RCT — https://pubmed.ncbi.nlm.nih.gov/42258213/
+5. Random forest ICU mortality model vs SOFA/APACHE II — https://pubmed.ncbi.nlm.nih.gov/42147703/
+6. Random forest model for coronary artery disease ICU mortality, multicenter — https://pubmed.ncbi.nlm.nih.gov/41982544/
+7. Random survival forest vs Cox/XGBoost for colorectal cancer survival — https://pubmed.ncbi.nlm.nih.gov/42178520/
+8. Machine learning mortality model for pediatric noncardiac surgery vs regression score — https://pubmed.ncbi.nlm.nih.gov/42648281/
