@@ -1,0 +1,21 @@
+AI in Healthcare: Research Roundup — September 23, 2026
+
+On the LLM side, several studies this week focused on diagnostic reasoning. GPT-4 evaluated against cardiologists at a Sub-Saharan Africa hospital identified the correct diagnosis with certainty in 64% of 50 cases, rising to 82% when counted among the top three hypotheses. A separate study tracking six successive GPT models on sleep medicine cases found diagnostic accuracy climbing from 74.4% (GPT-3.5 Turbo) to 93.6% (GPT-o3), with board-exam knowledge scores rising from 56.9% to 93.0% for GPT-5, though gains appear to be plateauing.
+
+On safety and deployment, a risk-stratified evaluation of Claude Sonnet 4.0 across 200 consultation scenarios reported 78.3% diagnostic accuracy and 88.7% clinical safety, with acute-care scenarios flagged as needing more oversight than routine care. Applied tools also moved forward: a LangChain/GPT-3.5 chatbot cut pediatric EHR search time by 40.6% and raised retrieval accuracy (F1) from 0.71 to 0.89, while CLIN-LLM, a BioBERT-based diagnosis-and-treatment framework, reached 98% classification accuracy and cut unsafe antibiotic suggestions by 67% versus GPT-5.
+
+On the ML/DL prognostic and diagnostic side, a meta-analysis of 69 studies confirmed XGBoost-family gradient boosting as the most consistent performer for post-MI mortality prediction, and a similar XGBoost model reached AUC 0.954 for ICU sepsis mortality. An explainable LightGBM model for COVID-19 mortality in older adults identified SaO2 (85%) and CRP (100 mg/L) as clinically meaningful risk thresholds. In imaging, deep learning models reached AUC 0.986 for proptosis detection on orbital MRI and improved differentiation of liver cancer subtypes on contrast-enhanced ultrasound.
+
+Across both threads, today's studies point toward the same pattern: LLM performance keeps improving on diagnostic and reasoning tasks, while ML/DL prognostic models continue to deliver strong, well-validated accuracy on narrower, single-disease prediction problems.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. GPT-4 diagnostic accuracy in cardiology (Sub-Saharan Africa) — https://pubmed.ncbi.nlm.nih.gov/41773215/
+2. Successive GPT models on sleep medicine cases and board questions — https://pubmed.ncbi.nlm.nih.gov/41495183/
+3. Risk-stratified safety assessment of Claude Sonnet 4.0 in medical consultations — https://pubmed.ncbi.nlm.nih.gov/41442171/
+4. LangChain/GPT-3.5 chatbot for pediatric EHR accessibility — https://pubmed.ncbi.nlm.nih.gov/41820430/
+5. CLIN-LLM safety-constrained diagnosis and treatment framework — https://pubmed.ncbi.nlm.nih.gov/42658861/
+6. XGBoost meta-analysis for post-MI mortality prediction — https://pubmed.ncbi.nlm.nih.gov/41664678/
+7. XGBoost model for ICU sepsis mortality (AUC 0.954) — https://pubmed.ncbi.nlm.nih.gov/42605370/
+8. Explainable LightGBM model for COVID-19 mortality in older adults — https://pubmed.ncbi.nlm.nih.gov/42266687/
