@@ -1,0 +1,23 @@
+AI in Healthcare: Research Roundup — September 24, 2026
+
+On the LLM side, several new studies examined triage performance across specialties. A pilot study pitting four LLM chatbots against retina specialists on after-hours emergency calls found humans still more accurate overall (95% vs 76.7% diagnosis), though ChatGPT (90%) and Claude (83.3%) were statistically noninferior to human graders. A separate benchmarking study across five rare-disease datasets found LLM specialty-triage accuracy ranging widely from 0.44 to 0.71, while an evaluation of eight contemporary models on 48 clinical vignettes showed structured prompting lifting mean diagnostic accuracy from 89.84% to 91.67% and triage accuracy from 76.82% to 86.20%.
+
+On broader evidence quality, a meta-research analysis of 11,628 PubMed records from 2023-2026 found medical LLM publications growing 45-fold, yet only 2.5% used randomized, controlled, or prospective designs, and the gap between a study's newest cited model and its own publication date widened from 1.33 to 6.08 quarters. A national survey of nearly 36,000 adults in China found moderate public acceptance of LLM-based healthcare (64.3/100), skewing lower among older adults and those with less digital-health experience. In a real-world multimodal evaluation across 539 inpatient cases, ten frontier LLMs all outperformed routine ward diagnoses on accuracy and safety scores.
+
+On the ML/DL prognostic and diagnostic side, several nomogram studies validated risk-prediction tools: an invasive pulmonary aspergillosis model in ICU sepsis patients reached AUC 0.883/0.844 (training/validation), and a postherpetic neuralgia risk nomogram in herpes zoster patients reached AUC 0.758 with external validation. In imaging, a histology-based deep learning model for pituitary neuroendocrine tumors achieved AUC 0.912 for lineage classification across three independent cohorts, and a sequential-learning framework preserved diagnostic accuracy while adding prognostic capability for osteoarthritis, Alzheimer's disease, and breast cancer.
+
+Across both threads, today's studies reinforce a consistent theme: LLMs are being pushed hardest on triage and diagnostic-reasoning tasks with mixed but improving results, while ML/DL prognostic and diagnostic models keep delivering well-validated, disease-specific risk scores ready for clinical use.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. LLM triage of retina emergency telephone calls (pilot study) — https://pubmed.ncbi.nlm.nih.gov/41602600/
+2. Initial-visit specialty triage in rare diseases using LLMs — https://pubmed.ncbi.nlm.nih.gov/42490550/
+3. Diagnosis and triage performance of contemporary LLMs on clinical vignettes — https://pubmed.ncbi.nlm.nih.gov/41108346/
+4. The widening evaluation gap in medical LLM research, 2023-2026 — https://arxiv.org/abs/2609.11770
+5. Public acceptance of LLMs in healthcare in China (national survey) — https://pubmed.ncbi.nlm.nih.gov/42531173/
+6. Evaluating multimodal LLMs for inpatient diagnosis across ten frontier models — https://arxiv.org/abs/2604.16980
+7. Nomogram for invasive pulmonary aspergillosis risk in ICU sepsis patients — https://pubmed.ncbi.nlm.nih.gov/42222036/
+8. Nomogram for postherpetic neuralgia risk in herpes zoster patients — https://pubmed.ncbi.nlm.nih.gov/42502490/
+9. Deep learning for pituitary neuroendocrine tumor lineage and subtypes — https://pubmed.ncbi.nlm.nih.gov/42031964/
+10. Sequential learning for robust disease prognosis via diagnostic knowledge preservation — https://pubmed.ncbi.nlm.nih.gov/42090385/
