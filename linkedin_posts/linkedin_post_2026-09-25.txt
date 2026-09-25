@@ -1,0 +1,21 @@
+AI in Healthcare: Research Roundup — September 25, 2026
+
+On the LLM side, several new studies benchmarked how far chatbots can be pushed on clinical reasoning and communication tasks. A randomized trial of ChatGPT-4o as decision support for junior otolaryngology residents found it scored significantly higher than a board-certified specialist on a structured performance instrument (mean 14.20 vs 12.34, p=0.001), while a separate evaluation of ChatGPT-4o on 24 foot and ankle vignettes matched fellowship-trained surgeons' top diagnosis in 9 of 12 cases (75%). New benchmarking work is also probing the limits of longitudinal reasoning: ClinTraceBench, built from 385 verified MIMIC-IV dialogues across nine tasks, found that compressed or memory-based patient-history representations lose meaningful signal compared to full clinical context, and a separate multi-turn diagnostic dataset (MTDiag) documented clear accuracy degradation when models reason interactively rather than answer static questions.
+
+On the ML/DL prognostic and diagnostic side, imaging models continued to post strong discrimination: a deep transfer learning signature for thyroid adenomatoid nodules reached AUC 0.959 on ultrasound, and an integrated clinical-radiomics-deep learning model for pulmonary ground-glass nodules reached AUC 0.871. Tree-based models were validated across several risk-prediction tasks — XGBoost reached AUC 0.903 for diabetic peripheral neuropathy, 0.915/0.912 (train/test) for arteriovenous fistula dysfunction in dialysis patients, and 0.85 for early recurrence after hilar cholangiocarcinoma resection, outperforming logistic regression in a head-to-head comparison for post-stroke cognitive impairment (0.806 vs 0.735). Nomogram-based tools also continued to accumulate: new models for ischemic stroke risk in atrial fibrillation (AUC 0.852/0.847) and ICU delirium (AUC 0.736 development, 0.810 external validation, beating the established PRE-DELIRIC score) add to the growing library of bedside-deployable risk calculators.
+
+Taken together, today's LLM studies are testing where language models hold up under more demanding, interactive clinical conditions, while ML/DL work keeps producing narrowly validated, disease-specific models with concrete discrimination metrics ready for further external testing.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. ChatGPT-4o as clinical decision support for junior otolaryngology residents (RCT) — https://pubmed.ncbi.nlm.nih.gov/41862715/
+2. ChatGPT's triage and diagnostic capabilities for foot and ankle pain — https://pubmed.ncbi.nlm.nih.gov/41883881/
+3. ClinTraceBench: source-verifiable longitudinal clinical reasoning over EHR dialogues — https://arxiv.org/abs/2609.01111
+4. MTDiag: multi-turn diagnostic dataset for clinically meaningful LLM evaluation — https://arxiv.org/abs/2608.25085
+5. Deep learning for differentiating thyroid adenomatoid nodules on ultrasound — https://pubmed.ncbi.nlm.nih.gov/42493350/
+6. CT-based deep learning model for pulmonary ground-glass nodule subtyping — https://pubmed.ncbi.nlm.nih.gov/42272663/
+7. XGBoost model for arteriovenous fistula dysfunction in end-stage renal disease — https://pubmed.ncbi.nlm.nih.gov/42676377/
+8. Multicenter ML model for early recurrence after hilar cholangiocarcinoma resection — https://pubmed.ncbi.nlm.nih.gov/42219861/
+9. Nomogram for acute ischemic stroke risk in non-valvular atrial fibrillation — https://pubmed.ncbi.nlm.nih.gov/41938697/
+10. Nomogram for ICU delirium prediction, outperforming PRE-DELIRIC — https://pubmed.ncbi.nlm.nih.gov/41780761/
