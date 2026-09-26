@@ -1,0 +1,20 @@
+AI in Healthcare: Research Roundup — September 26, 2026
+
+On the LLM side, today's additions lean toward evaluation and benchmarking rather than new clinical deployments. A scoping review in npj Health Systems mapped the field's methodological progress across pretraining, fine-tuning, and prompt engineering, while a 36-study systematic review of LLMs in clinical neurology found strong performance on constrained tasks like binary diagnostic classification (AUC 0.75-0.94) and stroke thrombectomy decision support (AUC 0.92), but flagged that most evidence is still early-stage. A comparative study in JMIR AI showed LLMs actually outperforming conventional machine learning when training data is scarce (under 50 patients), and a new contamination-free benchmark, LiveMedBench, found even the best of 38 tested models topped out at 39.2% accuracy on real-world medical cases — with most failures traced to poor contextual application rather than missing knowledge. On the clinical-facing end, ChatGPT-4o showed mixed results: no measurable benefit for medical students during real-patient exams, and only 60% guideline concordance on knee osteoarthritis surgical recommendations.
+
+On the ML/DL side, nomogram-based diagnostic tools continued to post strong discrimination: an O-RADS-plus-serum-marker nomogram for ovarian mass malignancy reached AUC 0.950, a LASSO-based nomogram for sepsis risk in acute abdomen hit AUC 0.929/0.934 (train/validation), and a radiomics-clinical nomogram for soft tissue tumors reached AUC 0.97/0.93. Deep learning imaging models also performed well: a CNN using high-frequency ultrasound classified skin lesions with AUC 0.98, and a lightweight segmentation-classification network for hepatic echinococcosis held up on external validation (90.1%/81.0% accuracy, internal vs external). Prognostic models rounded out the batch, including a random-forest model for 12-month cognitive decline in Alzheimer's disease (AUC 0.773, beating a logistic-regression baseline at 0.755) and a LASSO-logistic nomogram for 90-day functional outcomes after stroke thrombectomy (AUC 0.889/0.878).
+
+Taken together, today's LLM research is largely about calibrating expectations — measuring where these models genuinely help versus where evaluation gaps remain — while ML/DL work keeps delivering disease-specific tools with concrete, externally validated discrimination metrics.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. Generative large language models in medicine: a scoping review — https://pubmed.ncbi.nlm.nih.gov/42686940/
+2. Large Language Models in Clinical Neurology: A Systematic Review — https://pubmed.ncbi.nlm.nih.gov/41756436/
+3. LLMs vs conventional ML for predicting clinical outcomes with limited data — https://pubmed.ncbi.nlm.nih.gov/41921208/
+4. LiveMedBench: a contamination-free medical benchmark for LLMs — https://arxiv.org/abs/2602.10367
+5. AI at the bedside: RCT of ChatGPT's impact on student performance in real-patient exams — https://pubmed.ncbi.nlm.nih.gov/42010936/
+6. Diagnostic nomogram for ovarian mass malignancy (O-RADS + serum indexes) — https://pubmed.ncbi.nlm.nih.gov/42024575/
+7. Deep learning CNN for skin lesion classification on high-frequency ultrasound — https://pubmed.ncbi.nlm.nih.gov/41267329/
+8. Machine-learning risk stratification for 12-month cognitive decline in Alzheimer's disease — https://pubmed.ncbi.nlm.nih.gov/41820490/
+9. Nomogram for 90-day functional outcomes after endovascular stroke therapy — https://pubmed.ncbi.nlm.nih.gov/41792065/
