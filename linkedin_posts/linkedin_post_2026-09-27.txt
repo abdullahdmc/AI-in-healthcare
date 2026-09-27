@@ -1,0 +1,20 @@
+AI in Healthcare: Research Roundup — September 27, 2026
+
+On the LLM side, today's additions center on diagnostic accuracy in specialized domains and on evaluation methodology. In rare disease diagnosis, the picture is mixed: a benchmark of seven LLMs against the established bioinformatics tool Exomiser on 5,213 case reports found the best model ranked the correct diagnosis first in only 23.6% of cases versus 35.5% for Exomiser, while a separate 2-stage study on orthopedic rare diseases found Claude Sonnet 4.5, ChatGPT-5.0, and Gemini 2.5 Pro each reaching 90% primary-diagnosis accuracy and improving physician accuracy from 40-58% to 68-83% when used as a decision aid. In psychiatry, GPT-4.0 reached 71.7% strict diagnostic accuracy on 9,923 real-world inpatient records (up to 79.5% in older adults), and a separate vignette study put the top model's diagnostic reasoning within the range of psychiatry residents (0.801 top-5 accuracy). DeepSeek posted 82.9% accuracy on standardized diagnostic-reasoning cases. On the methods side, a new evidence-auditing framework showed that diagnostic accuracy alone can mask whether an LLM is using case evidence appropriately, and a 134-study scoping review of "LLM-as-a-judge" approaches found moderate-to-strong alignment with human experts, though reliability varies by task and rubric.
+
+On the ML/DL side, diagnostic imaging models again posted strong discrimination: a meta-analysis comparing radiomics, deep learning, and hybrid AI for pulmonary ground-glass nodules found hybrid models topped out at AUC 0.94, and a new deep learning model for oral squamous cell carcinoma pathology (RRGNet) beat existing mainstream architectures on accuracy and AUC. Risk-prediction work concentrated on readmission and mortality: an XGBoost model for STEMI long-term mortality hit AUC 0.999, a Random Forest model for acute radiation enteritis in cervical cancer patients reached AUC 0.961, and a pooled meta-analysis of 49 stroke-readmission models found a more modest overall AUROC of 0.74. A LightGBM-based online calculator for 30-day readmission in elderly stroke patients and a random-forest model for pediatric psychiatric readmission (AUROC 0.74-0.75 across 30/90/180 days) both moved toward deployable tools, while an XGBoost gastric cancer risk model (AUROC 0.764 internal, 0.708 external) used SHAP to flag H. pylori, age, and smoking as top contributors.
+
+Taken together, today's LLM findings underscore that diagnostic accuracy varies sharply by domain and still trails specialized tools in rare disease genetics, even as physician-assistance and evaluation methodology continue to mature; ML/DL models, meanwhile, keep producing disease-specific tools with a wide range of external validation rigor.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. Systematic benchmarking of LLMs vs traditional rare-disease decision support tools — https://pubmed.ncbi.nlm.nih.gov/41735669/
+2. Diagnostic performance of LLMs for orthopedic-related rare diseases and impact on physician accuracy — https://pubmed.ncbi.nlm.nih.gov/42497411/
+3. Large language models for psychiatric diagnosis based on multicenter real-world clinical records — https://pubmed.ncbi.nlm.nih.gov/41408781/
+4. Auditing evidence use in medical LLM diagnosis — https://arxiv.org/abs/2607.20848
+5. Comparative diagnostic accuracy of radiomics, deep learning, and hybrid AI for pulmonary ground-glass nodules (meta-analysis) — https://pubmed.ncbi.nlm.nih.gov/42568352/
+6. Machine learning-based prediction of long-term mortality in STEMI patients — https://pubmed.ncbi.nlm.nih.gov/41827216/
+7. Comparative ML algorithms for acute radiation enteritis risk in cervical cancer radiotherapy — https://pubmed.ncbi.nlm.nih.gov/41658474/
+8. Machine learning models for predicting readmission after stroke (systematic review and meta-analysis) — https://pubmed.ncbi.nlm.nih.gov/42134253/
+9. SHAP-explained machine-learning model for high-risk gastric cancer identification — https://pubmed.ncbi.nlm.nih.gov/41919267/
