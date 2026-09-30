@@ -1,0 +1,20 @@
+AI in Healthcare: Research Roundup — September 30, 2026
+
+On the LLM side, today's additions cluster around clinical decision support and documentation rather than diagnosis benchmarks. In primary immune disorders, GPT-4o reached 96.2% diagnostic accuracy on real-world case vignettes across six tested LLMs, well ahead of smaller open models (as low as 42.3%). A retrieval-augmented LLM system for medication safety, tested against 91 prescribing-error scenarios across 16 specialties, worked best as a pharmacist "co-pilot" (61% accuracy), increasing detection of serious-harm errors 1.5-fold over pharmacists alone. A tailored small language model for breast cancer guidelines matched ChatGPT-4's concordance with tumor-board recommendations (86% vs. 90%), while a tool-calling chatbot backed by verified clinical calculators eliminated calculation errors entirely versus a stand-alone LLM (0% vs. 16.8%). On documentation, Note2Chat improved diagnostic accuracy from multi-turn history-taking by +21 points over GPT-4o, and separate work found GPT-4/Gemini-based discharge-summary generation judged clinically useful despite residual hallucination risk. A regional-anesthesia study was more cautionary: four chatbot platforms missed key safety issues like anticoagulation and informed-consent gaps in complex consult scenarios.
+
+On the ML/DL side, disease-specific prognostic and diagnostic models again showed strong discrimination. An SFTS mortality model using five routine lab values reached an AUC of 0.913 (test) and 0.923 (external validation). XGBoost hit 98.6% AUROC diagnosing sepsis-associated thrombocytopenia across two centers, outperforming Random Forest and ANN. A radiomics-clinical model improved survival prediction for lung adenocarcinoma brain metastasis, and a CT-radiomics random forest model differentiated malignant from benign endometrial tumors with 0.96 testing AUROC. On the deep-learning front, a time-aware attention framework (TA-RNN-Medical-Hybrid) improved ICU mortality prediction over sequential baselines, longitudinal deep-learning mammogram risk scores rose sharply (2.1 to 6.6) in the years before a breast cancer diagnosis versus flat scores in cancer-free women, and a multimodal EHR-plus-notes model improved ICU mortality, length-of-stay, and surgical-duration predictions over structured-data-only baselines.
+
+Taken together, today's LLM findings emphasize where clinical language models still need human oversight (medication safety, anesthesia consults), while ML/DL models continue to deliver consistent, disease-specific predictive accuracy validated with AUCs above 0.90.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. LLM performance on primary immune disorder diagnosis — https://pubmed.ncbi.nlm.nih.gov/39956279/
+2. LLM clinical decision support for medication safety across 16 specialties — https://pubmed.ncbi.nlm.nih.gov/40997804/
+3. Small language model chatbot for breast cancer decision support — https://pubmed.ncbi.nlm.nih.gov/39382778/
+4. LLM-powered clinical calculator chatbot — https://arxiv.org/abs/2503.17550
+5. Note2Chat: LLMs for multi-turn clinical history taking — https://arxiv.org/abs/2601.21551
+6. Machine learning approach for early SFTS prognosis — https://pubmed.ncbi.nlm.nih.gov/42382680/
+7. XGBoost for diagnosing sepsis-associated thrombocytopenia — https://pubmed.ncbi.nlm.nih.gov/41737408/
+8. Longitudinal deep learning breast cancer risk scores — https://pubmed.ncbi.nlm.nih.gov/42334348/
+9. CT radiomics ML model for endometrial tumor differentiation — https://arxiv.org/abs/2506.18106
