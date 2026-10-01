@@ -1,0 +1,21 @@
+AI in Healthcare: Research Roundup — October 1, 2026
+
+On the LLM side, today's additions center on clinical decision support and triage rather than diagnosis. ChatGPT (GPT-4) showed considerable-to-almost-perfect agreement with emergency physicians managing 792 traumatic laceration cases (82.6%-91.7% accuracy), and GPT-4o feedback on clinical note quality was found non-inferior to physician feedback in a discharge-planning documentation study. A postoperative decision-support pilot in a Gambian neurosurgery ward improved management-plan quality in 60% of 75 LLM-assisted interactions, with 14 care changes attributed to the tool. Triage work was more cautionary: a new benchmark (CARE-Bench) found prompted models preserved the correct "ask for clarification" step only 33.5% of the time, and a 15-chatbot psychiatric triage study found average accuracy of 42.0%-71.8% with a net over-triage bias. A related paper argued emergency-triage LLMs need explicit decision objectives, not just better predictions, after a consumer system under-triaged over half of gold-standard emergencies.
+
+On the ML/DL side, risk-prediction models again showed strong, disease-specific performance. LightGBM reached an AUC of 0.966 predicting multidrug-resistant infection in ICU COPD patients, and a benchmark of 10 models across eight hospital datasets found gradient-boosting methods (especially CatBoost) and the TabPFN tabular foundation model most consistently robust. A 2.5D deep learning model using multiparametric MRI predicted prostate cancer biochemical recurrence with AUCs of 0.938 (internal) and 0.935 (external validation), and a dual-task deep learning model for head-and-neck cancer radiotherapy achieved C-indices of 0.92 and 0.74 for metastasis and recurrence risk. Separately, a CNN-XGBoost hybrid improved demographic fairness in chest X-ray diagnosis without sacrificing accuracy.
+
+Together, today's findings suggest LLM decision-support tools are approaching clinician-level agreement in narrow, well-defined tasks, while triage remains an open problem; ML/DL risk models continue to post high discrimination (AUCs above 0.93) on disease-specific prediction.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. ChatGPT agreement with emergency physicians on laceration management — https://pubmed.ncbi.nlm.nih.gov/42386488/
+2. GPT-4 quality-improvement feedback for clinical notes — https://pubmed.ncbi.nlm.nih.gov/41985489/
+3. LLM postoperative decision support in a Gambian neurosurgery ward — https://pubmed.ncbi.nlm.nih.gov/41697048/
+4. CARE-Bench: benchmarking patient-facing LLM triage — https://arxiv.org/abs/2608.03731
+5. One-shot emergency psychiatric triage across 15 AI chatbots — https://arxiv.org/abs/2604.25415
+6. High-stakes decision-making with language models in emergency triage — https://arxiv.org/abs/2608.01361
+7. Machine learning risk model for multidrug resistance in ICU COPD patients — https://pubmed.ncbi.nlm.nih.gov/42180772/
+8. Benchmark of 10 ML models for clinical risk prediction — https://pubmed.ncbi.nlm.nih.gov/42063551/
+9. 2.5D deep learning model for prostate cancer recurrence — https://pubmed.ncbi.nlm.nih.gov/41417975/
+10. Dual-task deep learning model for head-and-neck cancer radiotherapy outcomes — https://pubmed.ncbi.nlm.nih.gov/42595266/
