@@ -1,0 +1,19 @@
+AI in Healthcare: Research Roundup — October 2, 2026
+
+On the LLM side, today's additions skew toward diagnostic and decision-support benchmarking rather than new clinical deployments. A conversational diagnostic AI (AMIE) completed text-chat history-taking with 100 primary-care patients and included the correct diagnosis in its differential 90% of the time (75% top-3 accuracy), with no safety-supervisor interventions needed. Comparative studies were more mixed: ChatGPT o1-preview reached 68.6% concordance with pathologist consensus on oral histopathology descriptions (versus 27.5% for Gemini), and ChatGPT-3.5/4.0 outperformed Bard and Bing on neuro-ophthalmology diagnostic questions. A few-shot triage-categorization benchmark found Claude Haiku 4.5 edging out a supervised BioBERT baseline (macro-F1 0.475 vs. 0.378) but still struggling on ambiguous urgent-review cases, and a separate benchmark found generalist models (GPT-5, Gemini 3 Pro, Claude Sonnet 4.5) outperforming two deployed clinical AI tools on combined medical-knowledge and clinician-alignment tasks. A Nature review mapped security and safety hazards across the clinical LLM development pipeline, and a JMIR perspective argued human-in-the-loop review remains an essential accountability guardrail.
+
+On the ML/DL side, today's models spanned imaging, oncology, and endocrinology. A deep learning model trained on over 62,000 UK Biobank retinal photographs predicted Alzheimer's-linked risk factors (AUROC up to 0.95), and a nationwide transformer-based model flagged young-onset type 2 diabetes with the highest-risk decile showing a 118-fold relative risk 3-15 months before diagnosis. In oncology, a weakly supervised deep learning model stratified lung adenocarcinoma recurrence risk from whole-slide pathology images with external validation, a Random Survival Forest model predicted early-stage NSCLC survival across a SEER and an independent Chinese cohort (C-index 0.74-0.78), and an XGBoost model reached over 90% accuracy on multimodal breast cancer survival prediction. Elsewhere, an XGBoost-and-SHAP nomogram detected PCOS with AUCs of 0.92 (internal) and 0.92 (external), and a GLM-based nomogram distinguished thrombocytopenia etiology with an AUC of 0.945.
+
+Together, today's findings show LLM-based diagnostic and triage tools continuing to close the gap with clinician and supervised-model baselines on narrow tasks, while ML/DL risk and diagnostic models keep posting high discrimination (AUCs above 0.90) across a wide range of disease areas.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. Conversational diagnostic AI (AMIE) feasibility study in primary care — https://arxiv.org/abs/2603.08448
+2. LLMs as decision-support tools in oral pathology — https://pubmed.ncbi.nlm.nih.gov/41760843/
+3. Few-shot LLMs for actionable triage categorization — https://arxiv.org/abs/2605.15680
+4. Generalist LLMs outperform clinical tools on medical benchmarks — https://arxiv.org/abs/2512.01191
+5. Deep learning retinal imaging model for Alzheimer's risk factors — https://pubmed.ncbi.nlm.nih.gov/42299837/
+6. Deep learning model for young-onset type 2 diabetes risk — https://pubmed.ncbi.nlm.nih.gov/42619209/
+7. Weakly supervised deep learning recurrence model for lung adenocarcinoma — https://pubmed.ncbi.nlm.nih.gov/42286527/
+8. XGBoost and SHAP nomogram for PCOS detection — https://pubmed.ncbi.nlm.nih.gov/41480359/
