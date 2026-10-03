@@ -1,0 +1,19 @@
+AI in Healthcare: Research Roundup — October 3, 2026
+
+On the LLM side, ophthalmology produced the strongest numbers: GPT-4.o, Claude 3.7, and Gemini 2.5 were tested on 40 real-world retina cases, with GPT-4.o leading full-context diagnostic accuracy (78.4%) and Claude leading on image-only cases (73.7%); separately, GPT-4V matched expert OCT readings for wet AMD and fluid detection with over 90% agreement but fell to 68.7% sensitivity on dry AMD. Several papers pushed back on how LLMs are evaluated: one argues first-contact consultation behavior should be judged directly rather than inferred from diagnostic accuracy (baseline models gave premature self-care advice in 9 of 12 test cases without explicit instruction), another proposes a new rubric for scoring clinical reasoning, and a JMIR piece and an AJR commentary both caution that strong benchmark performance (an LLM matched or beat physicians at ER triage in one study) doesn't automatically translate to safe clinical deployment. On the patient-facing side, qualitative work with 60 patients, caregivers, and nurses found cautious openness to chatbots as adjunctive information tools rather than replacements for nurse-patient trust.
+
+On the ML/DL side, nomogram-based risk and diagnostic models kept posting strong discrimination: AUCs of 0.974/0.955 for tuberculous peritoneal effusion, 0.933/0.908 for post-neurosurgical bacterial meningitis, and 0.892 for distinguishing melanoma liver metastases from other origins. Risk-prediction models also performed well in acute care — an ROC-AUC of 0.951 for in-hospital mortality in non-ST-elevation ACS, and 0.886 for one-year postoperative pneumonia risk — while a random-forest model for sepsis-associated liver injury reached 0.816/0.781 across internal and external validation.
+
+Together, today's additions show LLM research increasingly focused on where and how to evaluate clinical reasoning and consultation behavior, while ML/DL prognostic and diagnostic nomograms continue to deliver high discrimination across acute and oncologic conditions.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. Multimodal diagnostic accuracy of GPT-4.o, Claude 3.7, and Gemini 2.5 on retina cases — https://pubmed.ncbi.nlm.nih.gov/41797736/
+2. GPT-4V vs. expert assessment on OCT images of age-related macular degeneration — https://pubmed.ncbi.nlm.nih.gov/41904432/
+3. The preformulation gap in evaluating LLMs for medical consultation — https://arxiv.org/abs/2608.17330
+4. Qualitative study of AI chatbots in patient education (patients, caregivers, nurses) — https://pubmed.ncbi.nlm.nih.gov/42531560/
+5. Machine learning-based mortality risk prediction in NSTE-ACS — https://pubmed.ncbi.nlm.nih.gov/42616816/
+6. Machine learning prediction of long-term postoperative pneumonia risk — https://pubmed.ncbi.nlm.nih.gov/42218466/
+7. Diagnostic nomogram for tuberculous peritoneal effusion — https://pubmed.ncbi.nlm.nih.gov/42404577/
+8. Diagnostic nomogram for post-neurosurgical bacterial meningitis — https://pubmed.ncbi.nlm.nih.gov/42067788/
