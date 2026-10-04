@@ -1,0 +1,19 @@
+AI in Healthcare: Research Roundup — October 4, 2026
+
+Today's LLM additions center on decision-support and triage roles rather than diagnosis itself. A Stanford-deployed, EHR-integrated LLM tool for recommending surgical comanagement reached sensitivity of 0.94 and specificity of 0.74 against physicians' own decisions. A PSB benchmarking study found frontier models (o3, GPT-4o, Claude 4 Sonnet, Gemini 2.5 Pro, among others) could reach 92.2% comprehensiveness when drafting clinical consultation templates, but consistently failed to prioritize the most clinically important questions under length constraints. Equity-focused work on ChatGPT-4 found that race, housing status, and language proficiency did not shift its pain-management recommendations, but a history of opioid use disorder consistently did, toward more restrictive suggestions — a notable bias finding. In a blinded urogynecology comparison, ChatGPT-4's management recommendations scored statistically similarly to fellowship-trained specialists (6.1 vs. 5.8 on a 10-point scale), though it lagged on complex-reasoning cases.
+
+On the ML/DL side, nomogram-based models again delivered strong, well-validated discrimination across varied conditions: AUC 0.864 for thyroid nodule malignancy, 0.861 for polypoidal choroidal vasculopathy recurrence, and 0.864 for osteosarcopenia risk in type 2 diabetes. Risk and prognostic models also performed solidly in less commonly modeled areas — hypertension incidence (AUC 0.79, n=8,237), 28-day COPD mortality (AUC 0.772/0.795, n=1,817), and oral tongue squamous cell carcinoma survival (C-index up to 0.720, n=5,746 plus external validation). A smaller nomogram for severe Pneumocystis jirovecii pneumonia in kidney transplant recipients used just four biomarkers to stratify ICU/death risk with significant survival separation (p<0.0001).
+
+Today's pattern holds steady: LLMs are being tested and audited as assistive triage and consultation tools with mixed, task-dependent performance, while XGBoost- and logistic-regression-based nomograms continue to post reliable, well-calibrated discrimination for prognosis and diagnosis across oncology, cardiometabolic, and infectious disease.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. EHR-integrated LLM tool for surgical comanagement triage — https://pubmed.ncbi.nlm.nih.gov/42623072/
+2. Bias in ChatGPT-4 pain management recommendations by patient profile — https://pubmed.ncbi.nlm.nih.gov/41875512/
+3. ChatGPT-4 vs. specialists in urogynecology case management — https://pubmed.ncbi.nlm.nih.gov/41921334/
+4. Benchmarking LLMs on clinical consultation templates — https://pubmed.ncbi.nlm.nih.gov/41758156/
+5. Diagnostic nomogram for thyroid nodule malignancy — https://pubmed.ncbi.nlm.nih.gov/42299289/
+6. ML model for polypoidal choroidal vasculopathy recurrence — https://pubmed.ncbi.nlm.nih.gov/42086315/
+7. Machine learning nomogram for osteosarcopenia risk in type 2 diabetes — https://pubmed.ncbi.nlm.nih.gov/42528576/
+8. Nomogram for severe Pneumocystis jirovecii pneumonia in kidney transplant recipients — https://pubmed.ncbi.nlm.nih.gov/41840841/
