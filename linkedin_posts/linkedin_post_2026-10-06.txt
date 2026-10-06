@@ -1,0 +1,20 @@
+AI in Healthcare: Research Roundup — October 6, 2026
+
+Today's LLM-related additions center on benchmarking and evaluation rather than new clinical deployments. ClinicRealm, testing 15 GPT-style LLMs, 5 BERT-style models, and 11 traditional ML methods, found leading zero-shot LLMs like GPT-5 now outperform finetuned BERT models on clinical notes, though conventional ML still leads on structured EHR data with ample training data. A physician-benchmarked triage study across 6,232 scenarios (226,191 LLM responses vs. 7,356 physician annotations) found LLMs more likely than physicians to recommend unnecessary care, especially under gender and tone perturbation. On multi-course clinical decision-making, a top medical LLM (HuatuoGPT-o1) scored only 43-48% versus 85-88% for human physicians. In narrower patient-facing roles, ChatGPT-5.3 was rated appropriate 94-100% of the time for scoliosis patient questions, and ChatGPT-5 scored 4.74/5 for guideline concordance on vascular disease management — though a comparison of eight chatbots on public mental health information found none met basic readability standards.
+
+On the ML/DL side, diagnostic and risk models continued posting strong discrimination across cancer and acute-care conditions. An XGBoost model predicted adverse prognosis in pediatric pneumonia at AUC 0.84, while a machine learning model for NSTE-ACS in-hospital mortality reached ROC-AUC 0.951, outperforming the GRACE risk score. Imaging-based diagnostic models were especially strong: a CNN for gastric neuroendocrine carcinoma reached AUROC up to 1.000, a multimodal CT-plus-lab model for gallbladder cancer hit 93.3% accuracy, and a 3D-DenseNet ensemble for sacral bone tumors (AUC 0.91 internal/0.87 external) improved radiologist accuracy when used as a decision aid. A ten-study meta-analysis of deep learning for lumbar disc herniation diagnosis pooled sensitivity and specificity at 0.94 each, though external validation again lagged internal performance.
+
+Across both tracks, the throughline is validation discipline: LLMs are being stress-tested against physicians and shown to still lag on complex, multi-step reasoning, while imaging-based ML/DL diagnostic models keep clearing high internal benchmarks but show a recurring accuracy gap once tested externally.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. ClinicRealm benchmark of LLMs vs. conventional ML for clinical prediction — https://pubmed.ncbi.nlm.nih.gov/41951858/
+2. Sense and Sensitivity: benchmarking LLM clinical triage vs. physicians — https://arxiv.org/html/2609.38600
+3. ClinicalMC benchmark for multi-course clinical decision-making — https://arxiv.org/abs/2606.03157v1
+4. Eight-LLM comparison on public mental health information quality — https://pubmed.ncbi.nlm.nih.gov/42433429/
+5. XGBoost risk prediction model for pediatric pneumonia prognosis — https://pubmed.ncbi.nlm.nih.gov/41684921/
+6. ML model for NSTE-ACS in-hospital mortality risk — https://pubmed.ncbi.nlm.nih.gov/42616816/
+7. Multimodal deep learning model for gallbladder cancer diagnosis — https://pubmed.ncbi.nlm.nih.gov/42108444/
+8. Deep learning ensemble for sacral bone tumor differentiation — https://pubmed.ncbi.nlm.nih.gov/41774326
+9. Meta-analysis of deep learning for lumbar disc herniation diagnosis — https://pubmed.ncbi.nlm.nih.gov/42277705/
