@@ -1,0 +1,20 @@
+AI in Healthcare: Research Roundup — October 7, 2026
+
+Today's LLM additions lean toward patient-facing deployment and evaluation. A randomized controlled trial of PreA, an LLM chatbot handling history-taking and referral generation ahead of specialist visits, cut physician consultation time by 28.7% across 2,069 patients, with outcomes holding up even when the chatbot ran without staff support. In hospital documentation, a Gemini 2.5 Pro-based agentic workflow (MedAgentBrief) generated nightly discharge summaries across 384 admissions; physicians used its output in 57% of cases, rated 88% of unedited drafts as having no harm potential, and reported a significant drop in burnout scores. Elsewhere, CataractBot's expert-verified answers for cataract surgery patients were rated 84.5% accurate and complete, while scoping reviews flagged how early this space still is: only 8 studies exist on multiturn LLM chatbots for cancer patients and caregivers, and a separate review on LLM-based mental health chatbots found safety and privacy risks remain under-studied relative to the pace of deployment.
+
+On the ML/DL side, prognostic nomograms kept targeting high-stakes, lower-profile conditions. A nomogram for acute chlorfenapyr poisoning hit a C-index of 0.988 in training (0.849 on validation) using procalcitonin, ALT, and dose as key predictors, while a readmission-risk nomogram for acute pancreatitis reached AUC 0.836 internally but dropped to 0.704 on external validation — a reminder that generalization remains the harder test. Imaging-based diagnostic models also advanced: a CBAM-ResNet model for Alzheimer's diagnosis reached AUC 0.876, a CNN classifying cervical CT scans distinguished Kikuchi disease, lymphoma, lymphadenitis, and tuberculosis with PR-AUC between 0.73 and 0.92, and an international reader study pitted a market-approved CNN against 96 dermatologists on real-world skin lesion classification.
+
+Across both tracks, the same pattern holds: LLM tools are moving into live clinical workflows with measurable efficiency and burnout gains, while ML/DL diagnostic and prognostic models keep posting strong internal performance but a recurring external-validation gap.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. RCT of LLM chatbot (PreA) for primary-to-specialist care transitions — https://pmc.ncbi.nlm.nih.gov/articles/PMC13004692/
+2. Physician-reported safety outcomes of AI-generated hospital course summaries (MedAgentBrief) — https://pubmed.ncbi.nlm.nih.gov/42101844/
+3. CataractBot utility for pre/post-operative cataract care — https://pubmed.ncbi.nlm.nih.gov/41358933/
+4. Scoping review of LLM chatbots for cancer patients and caregivers — https://cancer.jmir.org/2026/1/e96241
+5. Scoping review on mental health harms of LLM-based chatbots — https://pubmed.ncbi.nlm.nih.gov/42624944/
+6. Prognostic nomogram for acute chlorfenapyr poisoning mortality — https://pubmed.ncbi.nlm.nih.gov/42170443/
+7. Nomogram for unplanned readmission in acute pancreatitis — https://pubmed.ncbi.nlm.nih.gov/41890191/
+8. CBAM-ResNet model for Alzheimer's disease diagnosis — https://pubmed.ncbi.nlm.nih.gov/42295635/
+9. CNN vs. 96 dermatologists on skin lesion diagnosis, international study — https://pubmed.ncbi.nlm.nih.gov/42252869/
