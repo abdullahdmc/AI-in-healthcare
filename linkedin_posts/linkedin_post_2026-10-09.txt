@@ -1,0 +1,20 @@
+AI in Healthcare: Research Roundup — October 9, 2026
+
+Today's LLM additions cluster around oncology decision support and specialized clinical benchmarking. A multicenter study ran 1,063 thyroid ultrasound reports (306 histopathology-confirmed) through ChatGPT-4o and DeepSeek-R1, finding DeepSeek-R1 more accurate and consistent at benign-versus-malignant classification, while the two models matched on management recommendations. A new 511-question benchmark (MSIC-Bench) tested GPT-4o, Gemini 2.5 Pro, and Claude Opus 4 on microsatellite instability cancer tasks and concluded the gap is domain knowledge, not reasoning ability. In a prospective head-and-neck tumor board study, two locally run open-weight models (gemma-3-12b, gpt-oss-20b) generated treatment recommendations for 17 real cases, scored by board members on a 6-point adequacy scale after the human decision was already made. Separately, a retrieval-augmented generation framework from Mass General Brigham targeted a quieter but high-volume problem: identifying dementia cases buried in unstructured EHR notes, where rule-based and keyword methods are known to miss clinical nuance.
+
+On the ML/DL side, several groups reported a familiar pattern — strong internal performance that erodes externally. A chronic critical illness model for ICU patients with acute pancreatitis (MIMIC-IV/eICU development, Chinese single-center external validation) dropped from AUROC 0.85 internally to 0.73 externally. A breast MRI deep learning model for BI-RADS assessment, trained on 12,241 exams, underperformed radiologists in external validation (76.7% vs 91.3% AUC), and a gastric cancer endoscopy meta-analysis saw pooled sensitivity/specificity fall from 0.91/0.93 internally to 0.82/0.83 across just four external-validation studies. Kidney-metabolic risk models fared better: a China Renal Data System-derived XGBoost model predicting 5-year heart failure in CKD patients held up across both Chinese (AUC 0.879) and UK Biobank (0.851) external cohorts, and a SHAP-interpreted ensemble reached AUC 0.979 for mortality risk in 512 maintenance hemodialysis patients.
+
+Together, today's batch underscores external validation as the recurring fault line between promising internal results and real-world reliability.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. ChatGPT-4o vs DeepSeek-R1 on thyroid nodule ultrasound reports — https://www.jmir.org/2026/1/e93890/PDF
+2. MSIC-Bench: benchmarking LLMs on microsatellite instability cancers — https://www.jmir.org/2026/1/e88614/PDF
+3. Locally run LLMs augmenting head and neck tumor board recommendations — https://ai.jmir.org/2026/1/e95081/PDF
+4. RAG LLM framework for dementia identification from EHRs — https://www.medrxiv.org/content/10.64898/2026.01.24.26344477.full.pdf
+5. Machine learning for chronic critical illness in acute pancreatitis (MIMIC-IV/eICU, external validation) — https://pubmed.ncbi.nlm.nih.gov/41947133/
+6. Deep learning BI-RADS model vs radiologists, breast MRI external validation — https://www.diagnosticimaging.com/view/study-mixed-results-deep-learning-model-breast-mri
+7. Deep learning for early gastric cancer detection, meta-analysis — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12894240/
+8. XGBoost model for heart failure risk in chronic kidney disease (China Renal Data System, UK Biobank validation) — https://www.ajmc.com/view/machine-learning-model-improves-prediction-of-heart-failure-risk-in-ckd
+9. SHAP-explained machine learning for mortality risk in maintenance hemodialysis patients — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12277357/
