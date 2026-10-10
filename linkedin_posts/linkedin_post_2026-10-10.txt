@@ -1,0 +1,19 @@
+AI in Healthcare: Research Roundup — October 10, 2026
+
+Today's LLM additions center on head-to-head comparisons against human clinicians and specialized clinical AI tools. A Polish integrated system called Doctorina reached 82.0% Top-1 diagnostic concordance on 150 primary-care cases, ahead of physicians (57.0%) and four standalone frontier LLMs (66.7%-78.7%). A separate Nature Medicine study found general-purpose models (GPT-5.2, Gemini 3.1 Pro, Claude Opus 4.6) outscoring specialized tools OpenEvidence and UpToDate Expert AI across three benchmarks, including 97.4% vs. 88-90% on a medical licensing-style test — a result OpenEvidence has since publicly disputed. On imaging, ChatGPT-5, Gemini 2.5 Flash, and Claude Sonnet 4 were tested on 772 dermoscopic images for basal cell carcinoma, topping out around 70% detection accuracy, short of what the authors consider clinically ready. A smaller but notable finding: a 60-physician RCT in Pakistan showed AI-literacy training plus LLM access lifted diagnostic scores by 27.7 percentage points over conventional resources alone (71.5% vs. 42.5%).
+
+On the ML/DL side, today's models span oncology, psychiatry, and infectious disease. An XGBoost model predicting liver metastasis in elderly small cell lung cancer patients (SEER database, Chinese external validation) reached AUC 0.820, edging out LightGBM, logistic regression, and random forest. A six-model comparison for osteoporotic vertebral compression fracture re-fracture risk found Random Forest best (AUC 0.88), flagging scoliosis and chronic kidney disease as top predictors. In psychiatry, a blood-biomarker model distinguishing first-episode schizophrenia from healthy controls hit AUC 0.877 on validation after the authors favored a simpler logistic regression over an overfit-prone Random Forest (training AUC 1.00). And a five-model diagnostic scorecard for macrophage activation syndrome in lupus patients held up well externally across four hospitals (SVM AUC 0.947, scorecard AUC 0.915).
+
+Taken together, today's studies reinforce that benchmark wins for general-purpose LLMs over specialized tools remain contested, while ML risk models continue to show the clearest gains when paired with careful external validation.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. Doctorina clinical AI system vs. physicians and frontier LLMs on primary care diagnostics — https://arxiv.org/pdf/2609.09070
+2. General-purpose LLMs vs. OpenEvidence/UpToDate on medical benchmarks (disputed) — https://www.beckershospitalreview.com/healthcare-information-technology/ai/chatgpt-gemini-claude-beat-clinical-ai-tools-study
+3. ChatGPT, Gemini, and Claude on basal cell carcinoma image analysis — https://www.sciencedirect.com/science/article/pii/S2667026726000159
+4. AI-literacy training RCT for physician-LLM diagnostic collaboration in Pakistan — https://www.medrxiv.org/content/10.1101/2025.06.06.25329104.full.pdf
+5. XGBoost model for liver metastasis risk in small cell lung cancer (SEER + Chinese validation) — https://pubmed.ncbi.nlm.nih.gov/41518822
+6. Machine learning for postoperative re-fracture risk in osteoporotic vertebral compression fracture — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12267157/
+7. Machine learning clinical prediction model for first-episode schizophrenia — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12812932/
+8. Machine learning scorecard for macrophage activation syndrome in systemic lupus erythematosus — https://pubmed.ncbi.nlm.nih.gov/38725078/
