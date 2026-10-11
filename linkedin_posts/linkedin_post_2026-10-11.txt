@@ -1,0 +1,20 @@
+AI in Healthcare: Research Roundup — October 11, 2026
+
+Today's LLM additions lean toward reasoning and documentation rather than head-to-head diagnostic contests. A new framework called MedTraj argues the reasoning trajectory, not just the final answer, is the right unit for evaluating medical agents, cutting hallucination by 87% relative to a zero-shot baseline on one dataset. A related benchmark, MedMT-Bench, tested 17 frontier models on long multi-turn diagnosis-and-treatment conversations (up to 52 rounds); none scored above 60%, underscoring how far current models are from reliably tracking an evolving clinical conversation. A broader survey proposing a five-level medical-reasoning competency scale found specialist models ahead on diagnosis, general-purpose models ahead on decision support and dialogue. On documentation, a retrieval-augmented pipeline generated thoracic oncology histories with 97.9% accuracy in about 13 seconds (versus roughly 240 seconds manually), and six open-source LLMs produced lung-cancer pathology summaries judged more complete than physicians' own.
+
+On the ML/DL side, today's models span geriatrics, cardiology, neurology, and critical care. A Random Forest model predicting delirium in 973 older inpatients reached AUC 0.908 on the test set. A LightGBM model for coronary heart disease risk, built entirely on non-invasive indicators, held up well externally (AUC 0.851) and was deployed as a public web calculator. A four-model comparison across 788 older hemorrhagic stroke patients in China tackled stroke-associated pneumonia, which affected nearly half the cohort (46.7%). A large-scale deep learning effort using 17 years of Hong Kong electronic health records (569,680 people) predicted chronic kidney disease progression in type 2 diabetes patients at AUCs of 87.1%, 85.3%, and 84.7% for 2-, 5-, and 10-year horizons, validating externally against UK Biobank and CHARLS. And a multicenter ICU model for cirrhosis-plus-sepsis mortality reached AUROC 0.81-0.82 despite in-hospital mortality as high as 38.2% in one validation cohort.
+
+Taken together, today's findings suggest LLM progress is concentrating in reasoning transparency and clinical documentation, while ML risk models keep delivering strong, externally validated discrimination for well-defined prognostic questions.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. MedTraj framework for evaluating clinical reasoning trajectories in medical agents — https://arxiv.org/abs/2609.05090
+2. MedMT-Bench: long multi-turn medical conversation benchmark for 17 frontier LLMs — https://arxiv.org/pdf/2603.23519
+3. Survey on LLMs for medical reasoning with a five-level competency scheme — https://arxiv.org/pdf/2607.07761
+4. Zero-shot retrieval-augmented LLM pipeline for thoracic oncologic history generation — https://pubs.rsna.org/doi/10.1148/radiol.251581
+5. LLM-generated summaries of lung cancer pathology reports vs. physicians — https://doi.org/10.1200/cci-25-00284
+6. Random Forest model for delirium risk in older inpatients — https://pubmed.ncbi.nlm.nih.gov/40891023/
+7. LightGBM model for coronary heart disease risk from non-invasive indicators — https://pubmed.ncbi.nlm.nih.gov/41353986/
+8. Deep learning CKD progression model in type 2 diabetes using 17-year Hong Kong EHR data — https://pubmed.ncbi.nlm.nih.gov/41699026/
+9. Multicenter ICU mortality model for cirrhosis and sepsis — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12926366/
