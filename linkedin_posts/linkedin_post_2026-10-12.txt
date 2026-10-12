@@ -1,0 +1,19 @@
+AI in Healthcare: Research Roundup — October 12, 2026
+
+Today's LLM additions are mostly benchmarking work, probing how well current models actually reason rather than just answer. DiagnosisArena tested frontier reasoning models on 1,113 real clinical case reports across 28 specialties and found accuracy as low as 18-51% depending on the model. CliniBench, presented at EACL 2026, compared 12 generative LLMs against 3 encoder-based classifiers on predicting discharge diagnoses from MIMIC-IV notes; the encoder-based classifiers still came out ahead overall. MediEval, an ACL 2026 Outstanding Paper, linked MIMIC-IV records to a clinical knowledge base to test whether LLMs can tell if a statement is both true and actually supported by the patient's chart, surfacing hallucinated support and "truth inversion" errors that a new fine-tuning method reduced substantially. A separate evaluation of GPT-5 as a multimodal clinical reasoner found it closing the gap with GPT-4o on mammography (10-40% improvement) but still only moderate in neuroradiology (44% accuracy). And a real-world test of ChatGPT, Gemini, and DeepSeek on 1,057 actual emergency department triage conversations in Korea found accuracy topping out at 73.8%, with wide swings even between versions of the same model family.
+
+On the ML/DL side, three new prognostic and risk models. An XGBoost model built on 58,839 pregnancies across three New York hospitals dynamically predicts preeclampsia 1-4 weeks before onset, peaking at AUC 0.863 in training (0.81-0.83 validated) at 34 weeks, with blood pressure the strongest signal. A SEER-based nomogram for muscle-invasive bladder cancer patients treated with trimodal therapy outperformed standard AJCC staging for predicting mortality-free survival, though its own authors note the accuracy gain is modest. And a six-algorithm comparison on 9,284 hospitalized patients in China found XGBoost best for liver cancer prediction, with validation AUC of 0.802 using only routine demographic and lab data.
+
+Together, today's LLM studies reinforce a consistent theme: benchmark performance on real clinical reasoning and triage tasks remains well below what's needed for autonomous use, while the ML risk models continue to show solid, if incremental, gains on well-defined prediction problems.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. DiagnosisArena: benchmarking diagnostic reasoning for LLMs across 28 specialties — https://arxiv.org/abs/2505.14107
+2. CliniBench: clinical outcome prediction benchmark for generative vs. encoder-based LLMs — https://arxiv.org/abs/2509.26136
+3. MediEval: unified medical benchmark for patient-contextual, knowledge-grounded reasoning (ACL 2026 Outstanding Paper) — https://arxiv.org/abs/2512.20822
+4. Evaluating GPT-5 as a multimodal clinical reasoner — https://arxiv.org/abs/2603.04763
+5. Real-world ED triage performance of ChatGPT, Gemini, and DeepSeek — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12403343/
+6. XGBoost model for dynamic, short-term preeclampsia prediction — https://doi.org/10.1001/jamanetworkopen.2026.0359
+7. Nomogram for mortality-free survival after trimodal therapy in bladder cancer — https://doi.org/10.1007/s00345-026-06217-3
+8. Machine learning models for liver cancer prediction in a real-world China cohort — https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2026.1896989/full
