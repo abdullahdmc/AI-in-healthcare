@@ -1,0 +1,21 @@
+AI in Healthcare: Research Roundup — October 13, 2026
+
+Today's LLM-related additions centered on clinical documentation and diagnosis support. A JMIR Medical Informatics study fine-tuned Mistral, Meditron, and Llama models with parameter-efficient methods on 1,700 doctor-patient conversations to generate clinical notes; physician reviewers rated Llama3-8B and Mistral-7B as the most clinically coherent and accurate. A related BioNLP 2026 paper evaluated LLM-rephrased synthetic clinical notes at million-note scale, finding they preserve core clinical information for coarse-grained tasks but lose detail needed for fine-grained work like ICD coding. On the diagnosis side, a method called MERA paired LLM knowledge with contrastive ranking over disease candidates, reporting state-of-the-art diagnosis prediction on MIMIC-III and MIMIC-IV.
+
+Separately, an npj Digital Medicine study tested several LLMs on secure patient portal messages from diabetes patients to screen for depression and anxiety symptoms. Three of five models topped 90% on F1 and accuracy, with Llama 3.1 405B reaching 93% on both using zero-shot prompting alone.
+
+The ML/DL additions were dominated by systematic reviews taking stock of existing models. A meta-analysis of prostate cancer prediction models pooled results across 85 studies, reporting AUCs of 0.79-0.85 across survival, recurrence, and treatment-response endpoints. A separate review of 13 COPD exacerbation and readmission studies (sample sizes 110 to 113,786) found most models at moderate-to-high risk of bias and rarely externally validated. A broader review of ML models for hospital readmission, length of stay, and mortality flagged limited calibration reporting as a recurring gap across the field. On individual models, a Communications Medicine study built ElasticNet models predicting 12-month cognitive and functional decline in Alzheimer's disease and MCI from routinely collected data, externally validated on 741 ADNI trajectories with a cognition mean absolute error of 2.19.
+
+Across both topics, today's crop leans toward evaluation and synthesis — benchmarking LLM note quality and pooling evidence on existing ML risk models — rather than introducing dramatically new capability.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. Clinical note generation from doctor-patient conversations using parameter-efficient fine-tuning LLMs — https://medinform.jmir.org/2026/1/e82545
+2. Systematic evaluation of synthetic clinical notes rephrased by LLMs at million-note scale — https://arxiv.org/abs/2605.17775
+3. Memorize and Rank (MERA): elevating LLMs for clinical diagnosis prediction — https://arxiv.org/abs/2501.17326
+4. Optimizing LLMs for detecting depression/anxiety symptoms in chronic disease patient communications — https://doi.org/10.1038/s41746-025-01969-5
+5. Prediction models in prostate cancer: a systematic review and meta-analysis — https://pubmed.ncbi.nlm.nih.gov/42147249/
+6. AI/ML driven prediction of COPD exacerbations and readmissions: a systematic review and meta-analysis — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12756889/
+7. Machine learning models for predicting hospital readmission, length of stay, and mortality: a systematic review — https://doi.org/10.1016/j.irbm.2026.100961
+8. Predicting rates of cognitive and functional decline in Alzheimer's disease and MCI — https://doi.org/10.1038/s43856-026-01432-w
