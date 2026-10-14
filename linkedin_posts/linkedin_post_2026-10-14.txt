@@ -1,0 +1,18 @@
+AI in Healthcare: Research Roundup — October 14, 2026
+
+Today's LLM-related additions focused on agentic systems and clinical documentation. Two arXiv papers explored agentic AI architectures for hospital workflows: one proposed an "agentic operating system" built on the OpenClaw framework, combining restricted execution environments with page-indexed memory, and tested it on a MIMIC-IV benchmark where its retrieval approach matched a RAG baseline on recall (0.877 vs. 0.876) while more than doubling precision (0.779 vs. 0.352). The other evaluated human-guided agentic AI on the AgentDS Healthcare benchmark, finding that human input at key decision points improved performance by 0.065 F1 over fully automated baselines, reaching Macro-F1 of 0.90 for 30-day readmission prediction. A Radiology: Artificial Intelligence study (MIRA) fine-tuned an LLM on 1.87 million Chinese radiology reports to draft impressions, outperforming GPT-4o in blinded comparisons and cutting drafting time, though accuracy dropped on external data. A JMIR AI feasibility study at Imperial College Healthcare used template-based GPT-4 prompting to draft discharge summary sections, rating them 78-89% complete and accurate on a small test set.
+
+On the ML/DL side, two atrial fibrillation prediction studies stood out. A Heart Rhythm paper introduced AIRE-AF, a CNN trained on over a million ECGs, which beat the standard CHARGE-AF clinical score for predicting incident AF (C-index 0.750) and performed best when combined with it externally (0.768). A separate Swedish primary care study used stochastic gradient boosting on diagnostic codes from over 42,000 new-onset AF cases and 427,000 matched controls to help flag undiagnosed patients. An arXiv study benchmarked XGBoost against the FIB-4 score for early liver cirrhosis prediction in fatty liver disease patients, outperforming FIB-4 at 1-, 2-, and 3-year horizons (AUCs of 0.81, 0.73, and 0.69).
+
+Today's work shows two parallel tracks: LLMs moving toward agentic, multi-step clinical workflows rather than single-shot tasks, and ML risk models continuing to chip away at specific clinical benchmarks like CHARGE-AF and FIB-4.
+
+#AIinHealthcare #AgenticAI #LLM #MachineLearning #ClinicalAI #DigitalHealth
+
+Sources:
+1. When OpenClaw Meets Hospital: an agentic operating system for clinical workflows — https://arxiv.org/abs/2603.11721
+2. Human-Guided Agentic AI for Multimodal Clinical Prediction (AgentDS Healthcare Benchmark) — https://arxiv.org/abs/2602.19502
+3. Fine-Tuned LLMs for Automated Radiology Impression Generation (MIRA) — https://pubs.rsna.org/doi/10.1148/ryai.250714
+4. Real-World Implementation of LLMs for Writing Clinical Discharge Summaries — https://ai.jmir.org/2026/1/e88816
+5. Prediction of incident atrial fibrillation: AIRE-AF vs. CHARGE-AF — https://pubmed.ncbi.nlm.nih.gov/40850589/
+6. Machine learning model to recognize atrial fibrillation from diagnostic codes in Swedish primary care — https://doi.org/10.1186/s12911-026-03491-4
+7. Early Prediction of Liver Cirrhosis vs. the FIB-4 Score — https://arxiv.org/abs/2601.00175
