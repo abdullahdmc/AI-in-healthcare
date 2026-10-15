@@ -1,0 +1,17 @@
+AI in Healthcare: Research Roundup — October 15, 2026
+
+Today's LLM-related additions centered on using language models as general-purpose infrastructure rather than narrow chatbots. An npj Digital Medicine study found that embeddings from general-purpose LLMs, produced by converting structured EHR codes into plain-language text, matched or exceeded a specialized EHR foundation model (CLMBR-T-Base) across 15 clinical prediction tasks, though at higher computational cost. On the patient-facing side, Verily Life Sciences published a predeployment validation of its LLM-based symptom-guidance tool, tested on 772 synthetic cases against five physicians' level-of-care judgments; the system kept overtriage within acceptable limits but missed its undertriage targets, underscoring the gap between simulation and real-world readiness. A JMIR Formative Research study tested a ChatGPT-based conversational version of the Beck Depression Inventory against the standard PHQ-9 in 115 participants, finding moderate correlation and diagnostic agreement.
+
+On the ML/DL side, three disease-specific models reached notable discrimination. A Journal of Proteome Research study combined serum metabolomics with an XGBoost classifier to diagnose hepatocellular carcinoma, achieving an AUC of 0.876 internally and 0.813 in external validation, outperforming alpha-fetoprotein for early-stage detection. A Clinics (Sao Paulo) nomogram used LASSO-selected clinical variables to predict ICU sepsis mortality, reaching AUC 0.900 in training and 0.796 in validation. A Clinical Ophthalmology study trained an EfficientNet-B2 model with a weighted loss function to detect diabetic kidney disease from retinal images, aiming at a non-invasive screening alternative.
+
+Taken together, today's additions reflect a continued split: LLMs are being validated as backbone infrastructure and triage support rather than diagnosis engines, while disease-specific ML/DL models keep pushing incremental gains in discrimination over existing clinical scores.
+
+#AIinHealthcare #MachineLearning #LLM #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Large Language Models are Powerful Electronic Health Record Encoders — https://pubmed.ncbi.nlm.nih.gov/42410244/
+2. Patient-Facing AI System for Symptom Guidance Using Simulated Encounters and Physician Review — https://formative.jmir.org/2026/1/e103419
+3. AI-Based Interactive Assessments Using LLMs for Depression Screening — https://formative.jmir.org/2026/1/e78401
+4. The Combination of Machine Learning and Metabolomics for the Clinical Diagnosis of Hepatocellular Carcinoma — https://pubmed.ncbi.nlm.nih.gov/42126022/
+5. Personalized sepsis mortality prediction: An interpretable machine learning nomogram — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12924733/
+6. Deep Learning-Based Model for Detection of Diabetic Kidney Disease from Retinal Imaging — https://www.dovepress.com/article/download/114206
