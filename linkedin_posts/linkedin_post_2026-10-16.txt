@@ -1,0 +1,18 @@
+AI in Healthcare: Research Roundup — October 16, 2026
+
+Today's LLM-related additions focused heavily on clinical decision support and workflow tasks rather than autonomous diagnosis. Google Research's SymptomAI, a Gemini Flash 2.0-based conversational agent, ran a national-scale study of 13,917 participants and produced differential diagnoses that independent clinicians judged more accurate than their own, with agents that conducted a dedicated symptom interview before diagnosing outperforming simpler user-guided chat. A JMIR study tested DeepSeek-R1, Gemini 2.5 Pro, and GPT-4o on liver, lung, and breast radiology reports, finding that adding progressively more clinical context produced only a modest numeric gain in diagnostic performance versus radiologists. Elsewhere, LLMs were put to narrower, supportive tasks: generating personalized patient question lists from EHR lab data, assisting endodontic symptom screening, and supporting oncology nursing decisions, with all three studies emphasizing the continued need for clinician oversight.
+
+On the ML/DL side, a knowledge-augmented framework (KAMELEON) combined LLM-generated clinical reasoning with classical ML classifiers on MIMIC-III data, reaching AUROC of 0.85 for 30-day readmission and 0.92 for in-hospital mortality — and removing the LLM reasoning component dropped readmission AUROC to 0.70, highlighting how much of the gain came from the language-model layer. In imaging, a multitask EfficientNet-B0 model detected dementia presence (AUC 0.95) and staged its severity from brain MRI in one pass, while a deep learning model using MRI and transfer learning predicted neoadjuvant chemotherapy response and 5-year survival in adolescent osteosarcoma patients (C-index 0.831, small test set). Two prognostic/diagnostic comparisons rounded out the day: an XGBoost model outperformed Cox regression and random survival forests for prostate cancer survival prediction using SEER data, and an Extra Trees model screened for metabolic dysfunction-associated steatotic liver disease with AUC 0.879 internally and 0.822 on external Korean validation data.
+
+Across both topics, the throughline is validation against real comparators — clinicians, radiologists, and classical statistical models — with external or held-out testing increasingly treated as a baseline expectation rather than an afterthought.
+
+#AIinHealthcare #MachineLearning #LLM #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. SymptomAI: Toward a Conversational AI Agent for Everyday Symptom Assessment — https://arxiv.org/abs/2605.04012
+2. Incremental Diagnostic Value of Clinical Information for LLMs Across Multiple Organs — https://www.jmir.org/2026/1/e94904
+3. Knowledge-Augmented Large Language Model for Multimodal EHR-Based Risk Prediction (KAMELEON) — https://ai.jmir.org/2026/1/e88356
+4. A Multi-Task Deep Learning Model for Dementia Presence and Severity Prediction from Brain MRI — https://journal.gerontechnology.org/currentIssueContent.aspx?aid=4960
+5. MRI-Based Deep Learning Model for Neoadjuvant Chemotherapy Response and Survival in Osteosarcoma — https://www.wjgnet.com/2644-3228/full/v7/i1/116460.htm
+6. Comparison and Interpretability of Machine Learning Algorithms to Predict Survival of Patients With Prostate Cancer — https://www.urotoday.com/recent-abstracts/urologic-oncology/prostate-cancer/171577-comparison-and-interpretability-of-machine-learning-algorithms-to-predict-survival-of-patients-with-prostate-cancer.html
+7. Explainable Machine Learning Model for Prediction of Metabolic Dysfunction-Associated Steatotic Liver Disease — https://scholars.hkbu.edu.hk/en/publications/development-and-validation-of-an-explainable-machine-learning-mod/
