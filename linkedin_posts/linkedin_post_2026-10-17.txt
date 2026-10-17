@@ -1,0 +1,18 @@
+AI in Healthcare: Research Roundup — October 17, 2026
+
+Today's LLM additions leaned toward evaluation and evidence-mapping rather than new deployments. A JAMA Network Open study tested six commercial LLMs (including Claude Sonnet 4/4.6, Gemini 3 Pro, and GPT-5/GPT-5 mini) on 288 emergency department encounters to screen for missed diagnostic opportunities, finding true misses in 13.5% of cases and model AUCs ranging from 0.57 to 0.82 depending on the cohort, with physicians agreeing with 81.9% of flagged cases. A separate study evaluated DeepSeek-R1 on 7,435 Chinese emergency radiology reports, reaching 84.4% error detection with few-shot prompting versus 60.9% zero-shot against 12 board-certified radiologists. Three systematic/scoping reviews — covering LLMs in cardiology (33 studies), psychiatry, and mental-health prediction (201 studies on bias and clinical-utility reporting) — converged on the same message: performance is promising but inconsistent in high-stakes, acute scenarios, and clinical validation remains thin.
+
+On the ML/DL side, an XGBoost model for chronic kidney disease progression trained on Chinese retirement-survey data held up well across two independent Western cohorts (AUC 0.867–0.892), outperforming the standard Kidney Failure Risk Equation (AUC 0.745). A cardiac surgery complication model built at a Korean academic hospital maintained its discrimination across two external hospitals, though precision metrics dropped outside the development site — a reminder that external validation often exposes calibration gaps rather than confirming them away. A deep learning model combining dual-modality ultrasound video with clinical data classified benign versus malignant superficial lymphadenopathy with AUCs of 0.91–0.95 across five centers and two external test sets. Rounding out the day, a conference-reported random forest model for sepsis prediction in aneurysmal subarachnoid hemorrhage dropped from AUC 0.915 internally to 0.833 on external eICU data, and a five-algorithm ML comparison improved prognostic prediction for NSTEMI patients across a five-hospital Chinese cohort.
+
+Taken together, today's crop reinforces a now-familiar pattern: internal performance numbers look strong across both LLM and classical ML approaches, but the external and cross-population validation step continues to be where real-world confidence is won or lost.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #HealthTech #ExternalValidation
+
+Sources:
+1. Screening for Missed Opportunities for Diagnosis in the ED Using eTriggers and Large Language Models — https://doi.org/10.1001/jamanetworkopen.2026.20939
+2. Error Detection in Emergency Radiology Reports Using a Large Language Model (DeepSeek-R1) — https://www.jmir.org/2026/1/e86841
+3. Large Language Models in Cardiology: A Systematic Review — https://cardio.jmir.org/2026/1/e76734
+4. A Cross-Ethnicity Validated Machine Learning Model for the Progression of Chronic Kidney Disease — https://doi.org/10.3390/jcm15020825
+5. Machine Learning Model for Predicting Severe Immediate Postoperative Complications After Cardiac Surgery — https://doi.org/10.1186/s12871-026-03841-9
+6. Deep Learning Analysis of Dual-Modality US Videos for Characterization of Superficial Lymphadenopathy — https://doi.org/10.1148/ryai.260131
+7. Machine Learning Models for Sepsis Prediction in Aneurysmal Subarachnoid Hemorrhage (AAN 2026) — https://index.mirasmart.com/AAN2026/PDFfiles/AAN2026-000250.html
