@@ -1,0 +1,18 @@
+AI in healthcare: today's research roundup
+
+Two new benchmarks highlight a gap between LLM agents and real clinical workflows. PhysicianBench tested 13 proprietary and open-source agents on 100 long-horizon EHR tasks across 21 specialties; the top model reached only 46% pass@1, with open-source models topping out near 19%. A second benchmark, ART, found GPT-4o-mini and Claude 3.5 Sonnet achieved near-perfect data retrieval from EHRs after prompt refinement but accuracy dropped to 28-64% on aggregation tasks and 32-38% on threshold reasoning. Elsewhere, LLMs showed more promise in narrower documentation roles: Llama 3.3 extracted radiotherapy treatment sites from physician notes with about 94% accuracy, and a GPT-based conversational interface for depression screening (BDI-FS-GPT) correlated moderately with the standard PHQ-9 in a 115-person study.
+
+On the machine learning side, a random-forest model (PRE-Screen-HCC) trained on over 900,000 UK Biobank participants outperformed existing hepatocellular carcinoma risk scores using only routine clinical data, validated externally in the All of Us cohort. An ECG-based deep learning ensemble for pre-echocardiography triage reached an AUROC of 0.87 internally and 0.84 across 20,053 external patients, though its precision-recall AUC fell from 0.66 to 0.50 outside the development site. A sepsis-prediction model told a cautionary story: an XGBoost model scored an AUROC of 0.82 in development but collapsed to 0.47 on external ICU data.
+
+Together, these findings point to a familiar pattern: strong internal performance for both LLMs and traditional ML models, but meaningfully weaker results once tested on new agentic tasks or external populations.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments — https://arxiv.org/pdf/2605.02240
+2. ART: Action-based Reasoning Task Benchmarking for Medical AI Agents — https://arxiv.org/pdf/2601.08988
+3. Automated identification of radiotherapy treatment sites from unstructured physician notes — https://pubmed.ncbi.nlm.nih.gov/41914356/
+4. Evaluating the Efficacy of AI-Based Interactive Assessments Using Large Language Models for Depression Screening — https://formative.jmir.org/2026/1/e78401
+5. Machine learning predicts hepatocellular carcinoma risk from routine clinical data — https://doi.org/10.1158/2159-8290.CD-25-1323
+6. AI-augmented ECG for pre-echocardiography triage — https://esc365.escardio.org/journal/92469
+7. Machine Learning Model for Sepsis Prediction in Prolonged and Chronic Critical Illness — https://pmc.ncbi.nlm.nih.gov/articles/PMC12841784/
