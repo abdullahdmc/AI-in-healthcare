@@ -1,0 +1,18 @@
+AI in healthcare: today's research roundup
+
+Several new studies this week compare large language models directly against each other and against clinical benchmarks. In a blinded evaluation of 39 GERD-related questions, gastroenterologists rated Gemini-2.5 and Claude-4 above ChatGPT-5 on accuracy and comprehensiveness, while ChatGPT-5 produced the most readable, high-school-level responses, underscoring a clarity-versus-clinical-richness trade-off. A separate benchmark testing compact, on-device LLMs (gpt-oss-20b/120b) against GPT-5, o4-mini, and DeepSeek-R1 on diagnosis tasks found the smaller models performed comparably to larger cloud models, and fine-tuning closed most of the remaining gap to GPT-5. In psychiatric screening, a 555-interview benchmark found LLM accuracy ranging widely from 0.49 to 0.86 across anxiety, depression, and PTSD, with false negatives often tied to protective-context language overriding explicit symptom evidence in the models' own reasoning.
+
+On the prognostic and diagnostic modeling side, a deep learning coronary-segmentation system reached Dice scores of 0.95 (heart) and 0.87 (LAD artery) across 283 externally validated patients and, in prospective use, flagged 19% of 1,386 radiotherapy patients for cardiology referral based on cardiac toxicity risk. A dermoscopic skin-lesion classifier using four architectures (ViT-B/16, Swin-S, ConvNeXt-S, EfficientNetV2-S) saw its ROC-AUC drop from 0.95-0.97 internally to 0.80-0.89 on external clinical validation, another reminder of the generalization gap that shows up repeatedly in this literature. Elsewhere, a wearable-only heart-rate model using a genetic-algorithm-tuned LSTM targeted early sepsis detection outside the hospital ward, and an XGBoost model paired with rule-based explanations predicted hospitalization need in COVID-19 outpatients from a 1,278-patient cohort.
+
+Across both LLM and traditional ML studies, the same tension keeps surfacing: models that look strong in benchmarks or internal cohorts, and a persistent drop when tested externally or against real clinical nuance.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. Do Bots Provide Correct and Adequate Guidance Regarding Acidity: A Blinded Comparison Rated by Patients and Physicians — https://www.wjgnet.com/2222-0682/full/v16/i3/116022.htm
+2. Benchmarking and Adapting On-Device Large Language Models for Clinical Decision Support — https://arxiv.org/abs/2601.03266
+3. When Symptoms Are Not Enough: Evidence-Weighting Patterns in Large Language Model Psychiatric Screening — https://arxiv.org/abs/2605.23148
+4. Clinical Validation and Prospective Deployment of an Automated Deep Learning-Based Coronary Segmentation and Cardiac Toxicity Risk Prediction System — https://arxiv.org/abs/2511.14971
+5. Cascade Classification of Dermoscopic Images of Skin Neoplasms with Controllable Sensitivity and External Clinical Validation — https://arxiv.org/abs/2606.13135
+6. Early Prediction of Sepsis using Heart Rate Signals and Genetic Optimized LSTM Algorithm — https://arxiv.org/abs/2512.24253
+7. Designing an Explainable Algorithm Based on XGBoost and Genetic Algorithm for Predicting Hospitalization Needs of COVID-19 Patients — https://pubmed.ncbi.nlm.nih.gov/41730967/
