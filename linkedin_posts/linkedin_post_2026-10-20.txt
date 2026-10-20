@@ -1,0 +1,19 @@
+AI in healthcare: today's research roundup
+
+Several studies this week focus on LLMs taking on clinical workflow tasks beyond chat-style Q&A. A paired acoustic stress test of ambient clinical scribes found background noise raised word error rate by only 0.71 points but nearly doubled unsafe transcription outputs, suggesting WER alone understates real safety risk. In prescription review, a locally deployed open-source model (Qwen3-14B) run on a hospital intranet assisted pharmacists across 213 outpatient prescriptions, cutting review time and improving error-detection sensitivity versus unaided review. A separate blinded evaluation of six LLMs on contraindication, interaction, and dosing questions, rated by 34 physicians, found accuracy held up on simpler queries but varied more on complex multi-drug scenarios. A JMIR AI meta-analysis of generative LLMs in mental health care concluded evidence remains too heterogeneous to support unsupervised use in diagnosis or crisis response.
+
+On the prognostic and diagnostic side, a Gut-published radiomics model (REDMOD) detected pancreatic cancer on routine CT scans before tumors were visually apparent, reaching an AUC of 0.82 (sensitivity 73%, specificity 81%) up to roughly three years before diagnosis in a 219-patient multi-institutional cohort, far outperforming unaided radiologists. A separate EHR-based Mayo Clinic model, built on over 39,000 patients, reached an AUROC of 0.853 for pancreatic cancer risk three years out, with 88% of high-risk-flagged patients diagnosed within a year. A Cleveland Clinic/IBM foundation model trained on over 9,600 polysomnography recordings stratified sleep patients into risk groups with significantly elevated mortality, where the standard apnea-hypopnea index showed no such association. Elsewhere, a 3.3-million-patient Kaiser Permanente cohort produced a super-learner model predicting 10-year type 2 diabetes risk (AUC 0.883 validation), and a whole-slide-image model (Chemo-prAIdict Breast) showed consistent within-patient predictions of residual disease after neoadjuvant chemotherapy.
+
+The week's clearest theme: models moving from retrospective benchmarks toward real deployment settings — hospital servers, prospective cohorts, standard-of-care comparators — where the gap between promising metrics and clinical utility gets tested directly.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. Beyond WER: A Paired Acoustic Stress Test for Ambient Clinical Scribes — https://arxiv.org/abs/2606.05909
+2. Locally Deployed Large Language Models for AI-Assisted Outpatient Prescription Review: Crossover Study — https://medinform.jmir.org/2026/1/e97520
+3. Role of Large Language Models in Patient Safety in an Expert Evaluation Study — https://jhi.sbis.org.br/index.php/jhi-sbis/1820261570
+4. Generative Large Language Models in Mental Health Care Settings: Systematic Review and Meta-Analysis — https://ai.jmir.org/2026/1/e87730
+5. Next-generation AI for visually occult pancreatic cancer detection in a low-prevalence setting with longitudinal stability and multi-institutional generalisability — https://doi.org/10.1136/gutjnl-2025-337266
+6. AI Model Predicts Pancreatic Cancer Risk Up to Three Years Before Diagnosis Using Electronic Health Records — https://www.newswise.com/articles/artificial-intelligence-model-predicts-pancreatic-cancer-risk-3-years-before-diagnosis
+7. A foundation model for sleep-based risk stratification and clinical outcomes — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12036469/
+8. Chemo-prAIdict Breast: A deep learning solution for predicting residual disease on biopsies of breast cancer patients treated with neoadjuvant chemotherapy — https://pubmed.ncbi.nlm.nih.gov/41518683/
