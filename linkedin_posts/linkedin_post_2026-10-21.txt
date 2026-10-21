@@ -1,0 +1,19 @@
+AI in healthcare: today's research roundup
+
+Several studies this week test large language models directly against clinicians rather than against benchmarks. A Kenyan cluster-randomized trial across 16 primary care facilities (9,691 patients) found an LLM-based decision support tool embedded in the EMR did not significantly reduce 14-day treatment failure (2.2% vs. 2.0%, P=0.13), though AI-assisted clinicians produced better-documented care with no safety signal. A German/Norwegian rheumatology RCT (82 physicians) found a certified LLM diagnostic copilot did not improve top-1 diagnostic accuracy over conventional resources, but cut case-processing time nearly in half (94 vs. 206 seconds). On imaging, a benchmark of five vision-language models against radiologists on 478 emergency department chest X-rays found one model (AIRead) had a lower serious-discrepancy rate than radiologists themselves (5.3% vs. 13.9%), while a separate DeepSeek-R1 error-detection system caught 84.4% of planted errors in emergency radiology reports in few-shot mode, matching senior radiologists.
+
+On the prognostic and diagnostic side, a foundation model trained on continuous glucose monitoring data (GluFormer) flagged diabetes and cardiovascular-death risk ahead of HbA1c, placing 66% of incident diabetes cases in its top risk quartile versus 7% in the bottom, validated across 19 external cohorts. An NIH-supported deep learning model analyzing single-lead ECGs recorded during sleep studies predicted 10-year risk of atrial fibrillation, stroke, heart failure, and all-cause mortality, holding up after adjusting for diabetes, hypertension, and sleep apnea severity. A MIMIC-IV cohort of over 11,000 ICU patients with encephalopathy produced mortality and readmission models reaching internal AUROCs near 0.98, though the authors caution these single-database figures need external validation given known leakage and spectrum-bias risks. A systematic review of 34 studies on symptomatic-patient cancer risk models (lung, mesothelioma, GI cancers) found wide heterogeneity in validation quality across the field.
+
+Taken together, the week's clinical trials are a useful counterweight to the field's imaging and risk-model gains: LLM assistance consistently speeds up clinical workflows, but head-to-head trials are not yet showing it moves hard patient outcomes.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. Generative AI-enabled clinical decision support system in primary care: a pragmatic, cluster-randomized trial — https://doi.org/10.1038/s41591-026-04503-6
+2. Certified large language model-based diagnostic decision support in rheumatology: the ALLIANCE multicentre randomised controlled trial — https://doi.org/10.64898/2026.08.29.26361715
+3. Comparative Evaluation of Generative AI Models for Chest Radiograph Report Generation in the Emergency Department — https://doi.org/10.1007/s00330-026-12648-8
+4. Error Detection in Emergency Radiology Reports Using a Large Language Model: Multistage Evaluation Study — https://www.jmir.org/2026/1/e86841
+5. A foundation model for continuous glucose monitoring data — https://doi.org/10.1038/s41586-025-09925-9
+6. Deep learning model using ECGs during sleep studies can predict cardiovascular outcomes — https://www.nih.gov/news-events/news-releases/deep-learning-model-using-ecgs-during-sleep-studies-can-predict-cardiovascular-outcomes
+7. Machine Learning Models for Mortality and Readmission in Encephalopathy: Performance and Pitfalls From a Large ICU Cohort — https://index.mirasmart.com/AAN2026/PDFfiles/AAN2026-004876.html
+8. Cancer Risk Prediction Using Machine Learning for Supporting Early Cancer Diagnosis in Symptomatic Patients: A Systematic Review of Model Types — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12701559/
