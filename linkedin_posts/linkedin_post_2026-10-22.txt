@@ -1,0 +1,19 @@
+AI in healthcare: today's research roundup
+
+Several studies today look at how large language models perform against expert clinicians in time-pressured decisions. A retrospective study gave GPT-4 clinical data on 100 acute stroke patients and found its treatment recommendations agreed with real-world decisions at AUC 0.80 overall, rising to 0.94 for thrombectomy specifically, and with an expert stroke specialist at AUC 0.85. In the emergency department, ChatGPT-4o's triage calls on 60 case scenarios showed moderate-to-substantial agreement with four experienced physicians (kappa 0.695), with perfect sensitivity at the most urgent triage level but a drop to 50% sensitivity at a lower-urgency level. A feasibility study applied a HIPAA-secure GPT-4o to electronic health records to identify and summarize goals-of-care conversations in advanced cancer patients at scale, a task that otherwise requires labor-intensive manual chart review. A broader scoping review of 43 studies on AI agents in healthcare (conversational, workflow, and multimodal decision-support types) found most evaluation still happens in simulated or lab settings, with few real clinical pilots and rare measurement of safety outcomes.
+
+On the prognostic and diagnostic side, a deep learning study tested whether genetic disease risk can be predicted from summary-level data (linkage disequilibrium matrices) instead of individual-level genotypes, finding most model architectures reached test error comparable to individual-level-data models. A systematic review and meta-analysis of 45 studies on machine learning for endometriosis diagnosis found clinical-feature models reached a pooled validation AUC of about 0.80, while genetic-information models scored much higher on training data (AUC ~0.98) but dropped substantially on validation. A VGG16-based convolutional neural network trained on over 6,300 ocular images plus clinical variables reached 90% accuracy for ocular disease diagnosis. And a wearable single-lead ECG study used an LSTM model to forecast 6-12 month NT-proBNP changes in persistent atrial fibrillation patients, reaching 82% directional accuracy for heart failure progression.
+
+Across both groups, the recurring theme is a gap between promising discrimination metrics and validated real-world performance, whether that's an LLM's triage judgment under pressure or a diagnostic model's drop from training to validation data.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. GPT-4 as a Clinical Decision Support Tool in Ischemic Stroke Management: Evaluation Study — https://pubmed.ncbi.nlm.nih.gov/40053715/
+2. Evaluating the Accuracy of Artificial Intelligence Chatbots in Triaging Emergency Cases: A Comparative Study with Expert Clinicians — https://pubmed.ncbi.nlm.nih.gov/40972466/
+3. Feasibility Study for Using Large Language Models to Identify Goals-of-Care Documentation at Scale in Patients With Advanced Cancer — https://pubmed.ncbi.nlm.nih.gov/40209123/
+4. Artificial intelligence agents in healthcare research: A scoping review — https://pubmed.ncbi.nlm.nih.gov/41666194/
+5. Genetic risk predictions using deep learning models with summary data — https://pubmed.ncbi.nlm.nih.gov/41584515/
+6. Diagnostic accuracy of machine learning for endometriosis: a systematic review and meta-analysis — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12886017/
+7. Application of convolutional neural networks in the diagnosis of ocular diseases: evaluation of the VGG16 model — https://doi.org/10.1007/s00521-026-11904-8
+8. AI-based prediction of heart failure progression in persistent atrial fibrillation using wearable electrocardiography — https://pubmed.ncbi.nlm.nih.gov/41727311/
