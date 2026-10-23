@@ -1,0 +1,19 @@
+AI in healthcare: today's research roundup
+
+Several new studies test large language models against human performance on diagnosis and documentation tasks. A large-scale study applied ChatGPT-4o to 1,157 colorectal surgery electronic health records to flag surgical site infections, reaching 85.7% overall accuracy with sensitivity of 86.3% and specificity of 85.7%. A separate comparison of ChatGPT, Gemini, and DeepSeek on 138 visual internal medicine cases tested how much adding a brief clinical history improved diagnostic accuracy over image alone. In dentistry, ChatGPT-5 showed strong accuracy on text-based reversible pulpitis questions but dropped to about 4.67% accuracy when working from radiographic descriptions, underscoring a persistent text-versus-image gap. On the documentation side, an LLM rewrite of surgical consent forms cut reading level from grade 14.1 to grade 8.8, but content fidelity fell (F1 0.71, recall 0.62), with larger readability gains tied to more content omitted (r=0.73). A 442-question ophthalmology exam comparison found Microsoft Copilot outperformed ChatGPT-4o mini and Gemini 1.5 Flash on both accuracy (89.4% vs. 84.2% and 76.7%) and readability.
+
+On the prognostic and diagnostic model side, a LightGBM model for early detection of monoclonal immunoglobulin-related disorders from routine labs reached an AUC of 0.945 (87.0% sensitivity, 89.6% specificity) in an independent multi-institutional validation cohort. A model combining phase-rectified signal averaging with machine learning to predict stroke-associated infections reached an AUC of 0.939. A nationwide cohort study predicting hepatocellular carcinoma risk in patients with steatotic liver disease reported an internal validation AUC of 0.923. A meta-analysis of machine learning models predicting proximal junctional pathology after adult spinal deformity surgery pooled sensitivity and specificity at 0.51 and 0.84, rising to 0.63 sensitivity for the best-performing model class, highlighting wide variability across published models.
+
+Taken together, today's studies reinforce a consistent pattern: both LLMs and traditional ML models perform well on narrow, well-defined tasks but show meaningful drops when context shifts, whether from text to image input or from single-center development to independent validation.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. Validation of ChatGPT-4o for detecting surgical site infections after colorectal surgery from electronic health records — https://pubmed.ncbi.nlm.nih.gov/41967571/
+2. Diagnostic accuracy and repeatability of ChatGPT using textual and radiographic data in reversible pulpitis — https://pubmed.ncbi.nlm.nih.gov/42602192/
+3. Speaking Patient's Language: Assessment of Readability and Fidelity of Artificial Intelligence-Optimized Consent Forms — https://pubmed.ncbi.nlm.nih.gov/41990646/
+4. Evaluating Three Large Language Models in Ophthalmology Education — https://pubmed.ncbi.nlm.nih.gov/41879107/
+5. Multi-center validation of a machine learning model for early detection of monoclonal immunoglobulin-related disorders — https://pubmed.ncbi.nlm.nih.gov/42382760/
+6. Integrating phase-rectified signal averaging with machine learning to predict stroke-associated infections — https://pubmed.ncbi.nlm.nih.gov/41607833/
+7. Machine learning-based prediction of hepatocellular carcinoma risk in steatotic liver disease — https://pubmed.ncbi.nlm.nih.gov/42207764/
+8. Machine learning-based prediction of proximal junctional pathology after adult spinal deformity surgery — https://pubmed.ncbi.nlm.nih.gov/42098465/
