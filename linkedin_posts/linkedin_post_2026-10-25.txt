@@ -1,0 +1,19 @@
+AI in healthcare: today's research roundup
+
+Several new studies look at how LLM-based diagnostic agents compare with physicians. In a multi-agent framework tested across three benchmarks and seven LLMs, editing case findings counterfactually to probe competing diagnoses consistently improved accuracy over standard prompting, with the largest gains on ambiguous cases. A related agent, PULSE, matched senior endocrinology specialists and beat residents on 82 case reports, and unlike the physicians its accuracy held steady even for rarer diseases. Deep-DxSearch, trained end-to-end with reinforcement learning on literature and case retrieval, raised physicians' average diagnostic accuracy from 45.6% to 69.1% across 150 real cases. A pooled meta-analysis of 42 studies (101 effect sizes) found LLM assistance gives physicians a small but significant accuracy boost (Hedges' g=0.22), while a four-model comparison on the Japanese National Medical Examination found GPT-5, Grok-4, Claude Opus 4.1, and Gemini 2.5 Pro all scored 95.6%-97.2%, above the threshold considered textbook-level. A separate evaluation of GPT-4o-summarized discharge letters found high layout adherence (88%) but flagged medication details as the main weak point.
+
+On the prognostic and diagnostic model side, a randomized multi-reader trial gave 12 surgical oncologists an AI prognostic tool for colorectal liver metastases and measured the change in their AUC for predicting 3-year mortality with versus without its help. A LightGBM model trained on a UAE PCI cohort and externally validated on MIMIC-IV targeted ischemic and bleeding risk after coronary intervention, while a new ensemble (LightGBM + CoxBoost) built from a Saudi diabetes registry of nearly 19,000 patients targets three-year diabetic kidney disease risk using literature-informed social and clinical variables. A sepsis cohort of over 16,000 MIMIC-IV patients produced a gradient-boosting delirium-risk model with a public online calculator. Not every model held up, though: a deep learning tool for predicting BI-RADS assessments on breast MRI underperformed radiologists in external validation (AUC 76.7% vs. 91.3%, with a notably larger specificity gap), underscoring that external validation keeps separating promising models from deployment-ready ones.
+
+Across both threads, the pattern continues: LLM-based reasoning agents are closing in on expert-level diagnostic performance under controlled conditions, while traditional ML risk models keep delivering strong internal discrimination that doesn't always survive external validation.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. Improving Clinical Diagnosis with Counterfactual Multi-Agent Reasoning — https://arxiv.org/abs/2603.27820
+2. Human-AI Co-reasoning for Clinical Diagnosis with Evidence-Integrated Language Agent (PULSE) — https://arxiv.org/abs/2603.10492
+3. End-to-End Agentic RAG System Training for Traceable Diagnostic Reasoning (Deep-DxSearch) — https://arxiv.org/abs/2508.15746
+4. The Effect of LLM Assistance on Diagnostic Accuracy: A Systematic Review and Meta-Analysis — https://www.medrxiv.org/content/10.64898/2025.12.11.25341476
+5. Textbook-Level Medical Knowledge in Large Language Models: A Comparative Evaluation Using the Japanese National Medical Examination — https://www.medrxiv.org/content/10.1101/2025.09.10.25335398
+6. Impact of an AI prognostic tool on clinician performance in colorectal liver metastases — https://doi.org/10.1038/s41746-026-02606-5
+7. Literature-informed ensemble machine learning for three-year diabetic kidney disease risk prediction (PSMMC NephraRisk) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12890761/
+8. Deep learning model for BI-RADS assessment prediction on breast MRI shows mixed results in external validation — https://www.diagnosticimaging.com/view/study-mixed-results-deep-learning-model-breast-mri
