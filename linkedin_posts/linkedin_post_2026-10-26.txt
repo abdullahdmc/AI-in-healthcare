@@ -1,0 +1,17 @@
+AI in healthcare: today's research roundup
+
+Today's additions focus on how well LLM reasoning actually holds up when it's checked carefully. A new benchmark, MedThink-Bench, pairs 500 expert-annotated medical questions with step-by-step rationales and an automated judging method that correlates strongly with expert grading (Pearson r up to 0.87) while taking a fraction of the review time; notably, smaller open models like MedGemma-27B sometimes outperformed larger proprietary ones. A related benchmark, MedR-Bench, tested reasoning LLMs including DeepSeek-R1 and OpenAI o3-mini on 1,453 real patient cases: accuracy topped 85% on straightforward diagnosis when enough exam results were available, but dropped on harder tasks like recommending further workup or planning treatment. On the exam-taking side, five LLMs (OpenAI o1, GPT-4o, DeepSeek R1, Copilot, Gemini 1.5 Flash) outscored 442 medical students on real final exams across four courses (average 8.75 vs. 5.76), though the authors still recommend faculty-supervised use rather than treating this as exam-readiness.
+
+On the prognostic and diagnostic model side, an XGBoost model built on eICU data and externally validated on MIMIC-IV and a Chinese cohort offers real-time in-hospital mortality monitoring for ICU heart failure patients. A separate XGBoost model for mortality in acute-pancreatitis-associated kidney injury performed best in training but lost its edge over simpler methods in external validation (AUC 0.724), once again showing how results trained on MIMIC-IV/eICU-CRD don't always generalize. A large multinational cirrhosis cohort (8,263 patients, 127 centers, 37 countries) tested random forest, XGBoost, and neural networks for predicting nosocomial infection and found admission-day characteristics alone were not sufficient to optimally predict which patients would develop one, even though infections were tied to far higher mortality (31.9% vs. 8.1%).
+
+Taken together, today's studies reinforce a recurring theme: benchmarks and external validation are where both LLM reasoning and traditional ML risk models most often reveal their real limits.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. Automating Expert-Level Medical Reasoning Evaluation of Large Language Models (MedThink-Bench) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12796170/
+2. Quantifying the Reasoning Abilities of LLMs on Real-world Clinical Cases (MedR-Bench) — https://arxiv.org/abs/2503.04691
+3. When AI models take the exam: large language models vs medical students on multiple-choice course exams — https://pubmed.ncbi.nlm.nih.gov/41316903/
+4. Real-Time Monitoring of In-Hospital Mortality Risk in ICU Heart Failure Patients Using an Extreme Gradient Boosting Model — https://pubmed.ncbi.nlm.nih.gov/42109760/
+5. Machine learning models for mortality prediction in critically ill patients with acute pancreatitis-associated acute kidney injury — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11462445/
+6. Machine Learning Models Using Hospital Admission Characteristics Do Not Optimally Predict Nosocomial Infection Development in a Global Cirrhosis Cohort — https://doi.org/10.14309/ajg.0000000000004031
