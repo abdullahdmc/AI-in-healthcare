@@ -1,0 +1,21 @@
+AI in healthcare: today's research roundup
+
+On the ML/DL prediction side, a JMIR systematic review and meta-analysis pooled AUCs across machine learning models for predicting acute kidney injury and post-AKI mortality, while a separate review of 35 AKI-prediction models in stroke patients found AUCs ranging from 0.428 to 1.000 with only seven externally validated — a reminder that strong internal numbers don't always travel. A multicenter study of 508 hepatocellular carcinoma patients built TTP-Net, combining radiomics and deep learning features from pretreatment CT to predict time to progression after chemoembolization, with performance holding up across internal and external validation. Smaller studies added a diabetic kidney disease model (AUC 0.70-0.73) and a nine-study review of CNNs for brain tumor detection on CT, most exceeding 95% accuracy and specificity.
+
+In LLMs for healthcare, a Cancer Cell paper described a retrieval-augmented LLM grounded in the Molecular Oncology Almanac for biomarker-driven treatment recommendations, reaching up to 95% accuracy on synthetic queries and 93% on real-world oncologist queries. A comparative evaluation benchmarked DeepSeek-R1, ChatGPT (o3-mini), and Gemini 2.0 Flash on German medical licensing questions, while two systematic reviews took stock of the field more broadly: one found LLMs routinely beat humans on licensing exams but trail badly on practice-based clinical tasks across 39 benchmarks, and another mapped use cases and evidence gaps in psychiatry.
+
+In agentic AI, several multi-agent frameworks reported concrete gains: ClinicalAgents uses Monte Carlo Tree Search to orchestrate diagnostic hypothesis testing, MIRA improved a vision-language backbone by 7.44 points across nine medical imaging benchmarks through reflective tool use, and a Mass General Brigham team's fully autonomous five-agent workflow for detecting cognitive concerns reached 98% specificity in real-world deployment. For research automation, TrialMind's multi-agent pipeline cut systematic-review screening time by 44% and data-extraction time by 63% in human-AI collaboration.
+
+Across all three areas, the pattern holds: narrow, well-validated gains are real, but external validation and clinical-practice translation remain the limiting step.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. Deep learning radiomics model (TTP-Net) for time-to-progression prediction in hepatocellular carcinoma — https://www.hmpgloballearningnetwork.com/site/vdm/news/deep-learning-model-predicts-hepatocellular-carcinoma-progression-following
+2. AI Models for Predicting Acute Kidney Injury (AKI) and Post-AKI Mortality: Systematic Review and Meta-Analysis — https://doi.org/10.2196/104269
+3. A context-augmented large language model for accurate precision oncology medicine recommendations — https://doi.org/10.1016/j.ccell.2025.12.017
+4. Performance of DeepSeek-R1, ChatGPT (GPT-o3-mini), and Gemini 2.0 Flash on German Medical Multiple-Choice Questions — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12757712/
+5. ClinicalAgents: Multi-Agent Orchestration for Clinical Decision Making with Dual-Memory — https://arxiv.org/abs/2603.26182
+6. MIRA: Medical Image Reflection for Agentic Diagnosis — https://arxiv.org/abs/2608.10827
+7. An autonomous agentic workflow for clinical detection of cognitive concerns using large language models — https://doi.org/10.1038/s41746-025-02324-4
+8. Accelerating Clinical Evidence Synthesis with Large Language Models (TrialMind) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12331930/
