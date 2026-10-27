@@ -1,0 +1,17 @@
+AI in healthcare: today's research roundup
+
+Today's LLM additions cluster around clinical documentation and safety-net reasoning rather than headline diagnostic accuracy. A Baidu team introduced Dr. Assistant, trained with structured reasoning data and reinforcement learning to improve how LLMs conduct diagnostic inquiry, reporting it beats open-source baselines and competes with closed-source models. On the information-extraction side, a Scientific Reports study found a small, fine-tuned Llama-3.1 8B model trained on fewer than 100 reports each reached 90% exact-match accuracy pulling structured data from prostate, breast, kidney, and bone marrow pathology reports, matching a human annotator on all four. A related study built a 171-patient gold-standard corpus for extracting social determinants of health and found GPT-5 and GPT-5-mini led at the domain level, with a rule-based-plus-LLM ensemble performing best overall. Less reassuring: a 750-scenario drug-drug interaction benchmark found no LLM was uniformly reliable, with accuracy for six tested models dropping sharply (to 58-87%) on less severe interactions.
+
+On the prognostic and diagnostic model side, the AQUILA study group applied explainable machine learning to 1,961 German patients starting secukinumab for psoriatic arthritis or axial spondyloarthritis, identifying which baseline factors (prior biologic use, tender joint count, CRP, and others) predicted reaching low disease activity at week 16 — a step toward AI-supported treatment selection rather than diagnosis. Separately, a nationwide multicenter study of nearly 4,000 gastric and colorectal cancer surgery patients across 20 centers compared six ML algorithms for predicting postoperative complications; random forest came out on top for both cancer types and held up in external validation.
+
+Across both topics, the common denominator today is models aimed at supporting decisions already made by clinicians — treatment selection, complication risk, documentation — rather than replacing diagnostic judgment.
+
+#AIinHealthcare #MachineLearning #LLM #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. Dr. Assistant: Enhancing Clinical Diagnostic Inquiry via Structured Diagnostic Reasoning Data and Reinforcement Learning — https://arxiv.org/abs/2601.13690
+2. Human level information extraction from clinical reports with finetuned language models — https://pubmed.ncbi.nlm.nih.gov/41286063/
+3. Extracting Social Determinants of Health From Clinical Notes: Comparison of a Rule-Based System and Large Language Models — https://medinform.jmir.org/2026/1/e89534
+4. Drug-drug interaction identification using large language models — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12772686/
+5. Predicting Treatment Outcomes in Patients With Psoriatic Arthritis or Axial Spondyloarthritis: An Artificial Intelligence-Driven Approach — https://pubmed.ncbi.nlm.nih.gov/41093647/
+6. Machine learning-based prediction model for postoperative complications in gastric and colorectal cancer — https://pubmed.ncbi.nlm.nih.gov/40979661/
