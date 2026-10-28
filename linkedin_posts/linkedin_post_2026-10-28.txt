@@ -1,0 +1,22 @@
+AI in healthcare: today's research roundup
+
+Today's prognostic and diagnostic additions skew toward tighter validation. A Frontiers in Immunology study built a two-variable gradient boosting model on peripheral blood lymphocyte subsets for osteosarcoma prognosis, reaching an AUC of 0.959. In prostate cancer, a model combining the preoperative HALP score with lactate dehydrogenase predicted biochemical recurrence after surgery with an internal AUC of 0.891, clearly ahead of the UCSF-CAPRA score (0.703) and D'Amico classification (0.610), and held up across 144 externally validated patients. A Karolinska study used multimodal EHR fusion across four cancer cohorts to predict metastasis one month before diagnosis, with F1 scores of 0.845 (breast), 0.845 (prostate), 0.819 (lung), and 0.786 (colon). Elsewhere, an Extra Trees model hit an AUROC of 0.99 for 90-day cardiovascular readmission, and an XGBoost model for sepsis-associated AKI mortality (AUC 0.821) outperformed the SOFA and SAPS II severity scores.
+
+On the LLM side, evaluation rigor was the theme: a Mount Sinai study found six LLMs hallucinated fabricated clinical details 50-82% of the time, a rate a mitigating prompt only brought down to 44% on average. A five-chatbot comparison against medical information scientists' evidence summaries, a Claude-based triage/referral workflow tested on 2,000 MIMIC-IV cases, and a new rare-disease knowledge-layer framework (GEN-KnowRD) rounded out today's LLM evidence base.
+
+Agentic systems moved from narrow tool use toward full clinical and research workflows. Nature published MIRA, an autonomous agent that worked a sandboxed EHR end-to-end and scored 87.8% versus 78.1% for specialist physicians on 311 real emergency-department cases. A self-evolving multi-agent framework (BioMedAgent) hit 77% success chaining bioinformatics tools on a 327-task benchmark, Stanford's "Virtual Biotech" coordinated roughly 37,000 agents to mine 55,984 clinical trials for drug-target insights, and a JAMIA system paired LLM screening with human oversight for systematic reviews (90% sensitivity, Cohen's kappa 0.71).
+
+Across all three areas, the pattern is the same: bigger external validation sets, harder adversarial tests, and agents taking on more of the workflow — with human oversight still the load-bearing wall.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #ClinicalAI #DigitalHealth #HealthTech
+
+Sources:
+1. A machine learning-driven prognostic model based on peripheral blood lymphocyte subsets in osteosarcoma — https://pmc.ncbi.nlm.nih.gov/articles/PMC12891181/
+2. Machine learning-based prognostic model integrating preoperative HALP score and lactate dehydrogenase for predicting biochemical recurrence after radical prostatectomy — https://paperity.org/p/372527956/machine-learning-based-prognostic-model-integrating-preoperative-halp-score-and-lactate
+3. Multimodal Machine Learning for Early Prediction of Metastasis in a Swedish Multi-Cancer Cohort — https://arxiv.org/abs/2603.29793
+4. Multi-model assurance analysis showing large language models are highly vulnerable to adversarial hallucination attacks during clinical decision support — https://pubmed.ncbi.nlm.nih.gov/40753316/
+5. GEN-KnowRD: Reframing AI for Rare Disease Recognition — https://pubmed.ncbi.nlm.nih.gov/41960327/
+6. Towards autonomous medical artificial intelligence agents (MIRA) — https://doi.org/10.1038/s41586-026-10675-5
+7. Empowering AI data scientists using a multi-agent LLM framework with self-evolving capabilities (BioMedAgent) — https://doi.org/10.1038/s41551-026-01634-6
+8. The Virtual Biotech: A Multi-Agent AI Framework for Therapeutic Discovery and Development — https://biorxiv.org/content/10.64898/2026.02.23.707551v1
+9. Enhancing systematic literature reviews with generative artificial intelligence — https://doi.org/10.1093/jamia/ocaf030
