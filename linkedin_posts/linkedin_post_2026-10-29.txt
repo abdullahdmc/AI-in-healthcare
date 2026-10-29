@@ -1,0 +1,21 @@
+Daily AI-in-healthcare research roundup — October 29, 2026
+
+In machine-learning and diagnostic/prognostic models, several new studies focused on mortality and risk prediction. An XGBoost model trained on 874 ICU sepsis patients reached 0.879 accuracy and an F1 of 0.821 for predicting in-hospital mortality, while a separate six-predictor model for acute kidney injury in 157 fulminant myocarditis patients reported an optimism-corrected AUC of 0.931 after bootstrap validation, though both remain only internally validated. A deep learning framework (CLM-Net) built on VGG16/DeepLab-v3/U-Net reported an AUC of 0.96 for recognizing colorectal liver metastases in pathology images and 0.864 for survival prediction from a 197-case dataset. Two meta-analyses added caution to the picture: a systematic review of ML models for preeclampsia found they perform well but are highly heterogeneous and rarely externally validated, and a pooled analysis of 21 externally tested deep learning models for lung nodule malignancy (7,454 nodules) assessed how well such models generalize beyond their training data.
+
+In large language models applied to healthcare, new work tested LLMs against clinical tasks with mixed results. CPGPrompt, which converts clinical guidelines into decision trees for an LLM to navigate, reached F1 scores of 0.85–1.00 for referral decisions but only 0.47–0.77 for finer-grained care-pathway classification. Three multimodal LLMs showed low sensitivity (10–38%) for detecting acute knee fractures on radiographs versus a radiologist's 92.1% accuracy. Other studies introduced new evaluation benchmarks: QuarkMedBench (20,821 real-world medical queries) and MedEvalArena, where LLMs wrote and judged their own board-exam questions and showed no significant performance differences between frontier models.
+
+In agentic AI for medicine and health research, a scoping review of 43 studies found most agentic healthcare systems are still evaluated in simulation rather than real clinical settings. AgentSLR, an agentic literature-review pipeline, cut epidemiological systematic review time from roughly 7 weeks to 20 hours, and a separate two-agent consensus-screening system correctly excluded 81% of irrelevant records across 2,107 articles.
+
+Across all three areas, the throughline is the same: impressive benchmark numbers paired with a persistent gap in external validation and real-world deployment evidence.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #ClinicalAI #HealthTech #DigitalHealth
+
+Sources:
+1. Machine-learning mortality model for ICU sepsis patients — https://www.dovepress.com/development-of-machine-learningbased-models-to-predict-mortality-in-in-peer-reviewed-fulltext-article-JIR
+2. CLM-Net deep learning framework for colorectal liver metastases — https://medinform.jmir.org/2026/1/e73311
+3. Systematic review/meta-analysis of ML models for preeclampsia — https://www.jmir.org/2026/1/e78714
+4. CPGPrompt: guideline-to-decision-tree LLM framework — https://doi.org/10.1093/jamia/ocag026
+5. LLM reliability for detecting acute knee fractures on radiographs — https://jcpres.com/article/2830
+6. MedEvalArena self-generated board exam benchmark — https://www.medrxiv.org/content/10.1101/2026.01.27.26344905
+7. Scoping review of AI agents in healthcare research — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12890167/
+8. AgentSLR: agentic systematic review automation in epidemiology — https://arxiv.org/abs/2603.22327
