@@ -1,0 +1,22 @@
+Daily AI-in-healthcare research roundup — October 30, 2026
+
+In machine-learning and diagnostic/prognostic models, several new studies targeted risk stratification for chronic conditions. A random survival forest trained on 850 patients with transthyretin amyloid cardiomyopathy reached concordance indices of 0.72–0.77, outperforming the long-standing Mayo and National Amyloidosis Centre staging systems by 2–10% in concordance and identifying a low-risk group with 85–91% three-year event-free survival. In chronic kidney disease, an ensemble of Random Forest, XGBoost, and LightGBM predicted renal function decline with an externally validated AUC of 0.89 against a Cox model's 0.82, while a separate transcriptomics-based model used gene co-expression analysis and LASSO regression to flag CKD progression genes, with validation in a mouse kidney-injury model. A random forest classifier built on 1,836 STEMI patients identified smoking, length of stay, hypertension, and ejection fraction as the top predictors of one-year unplanned readmission after PCI, and a new statistical-ML ensemble method extended the Super Learner approach to dynamic time-to-event prediction in primary biliary cholangitis.
+
+In large language models applied to healthcare, new evidence continued to narrow the gap between LLMs and physicians on specific tasks. A medRxiv study comparing four LLMs (including GPT-4o and DeepSeek-R1) against seven physicians on 1,100 cases found no statistically significant difference in predicting 6-month mortality for post-ICU survivors, though physicians were more likely to flag their own uncertainty. A GPT-4-based pipeline for drafting hospital discharge letters within a secure EHR environment scored 89% complete and 78% accurate on clinical summaries in expert evaluation, and a separate synthetic-data pipeline (SynthMedic) generated discharge summaries rated 94.35% usable by human reviewers. A Mayo Clinic conference study tracked diagnostic accuracy across six successive GPT models on sleep-medicine vignettes, rising from 74.4% (GPT-3.5) to a plateau near 91–94% for GPT-5 and GPT-o3.
+
+In agentic AI for medicine and health research, several new systems and surveys focused on drug discovery and autonomy limits. A review of 49 papers proposed a seven-dimensional taxonomy for evaluating healthcare AI agents and found roughly 59% of evaluation dimensions went unimplemented across the literature. A separate evaluation of six agentic drug-discovery frameworks across 15 task classes found they handle computational workflows like molecule representation well but show a substantial "reality gap" on messy, real-world pharmacology data. Two new multi-agent systems, Mozi (governed skill-graph orchestration) and AgentD (GPT-4o-based modular task execution via UniProt/ChEMBL/Semantic Scholar tools), targeted different stages of the drug-discovery pipeline, while a 300-reference survey proposed a three-level autonomy taxonomy for clinical agents and framed full self-evolving autonomy as still aspirational.
+
+Across all three areas, today's studies point the same direction: AI systems are closing in on expert-level performance on narrowly defined tasks, but every one of them is paired with an explicit caveat about external validation, generalization, or real-world deployment still being unresolved.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #ClinicalAI #HealthTech #DigitalHealth
+
+Sources:
+1. Machine learning-driven risk prediction for transthyretin amyloid cardiomyopathy — https://jamanetwork.com/journals/jamacardiology/fullarticle/2853448
+2. Ensemble ML for renal function decline in chronic kidney disease — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12598044/
+3. Random forest model for one-year readmission after PCI in STEMI — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12479441/
+4. Comparing prognostic performance between LLMs and physicians — https://www.medrxiv.org/content/10.64898/2026.04.17.26350898
+5. Real-world LLM pipeline for clinical discharge summaries — https://ai.jmir.org/2026/1/e88816
+6. SynthMedic: synthetic discharge summary generation and validation — https://pubmed.ncbi.nlm.nih.gov/40962129/
+7. Seven-dimensional taxonomy for agentic AI in healthcare — https://arxiv.org/abs/2602.04813
+8. Beyond SMILES: evaluating agentic systems for drug discovery — https://arxiv.org/abs/2602.10163
+9. Mozi: governed autonomy for drug discovery LLM agents — https://arxiv.org/abs/2603.03655
