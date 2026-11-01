@@ -1,0 +1,22 @@
+AI in healthcare: today's research roundup
+
+On the prediction-model side, several external validation studies landed this week. A deep learning sepsis model (BOBM) reported internal AUCs of 0.86-0.95 and external AUCs of 0.978-0.982 for predicting sepsis onset 7-28 days ahead, while a re-validation of hip fracture mortality models on an independent Swedish cohort of 5,055 patients found XGBoost still performed best after recalibration (AUC 0.72-0.77). A multicenter head-and-neck cancer survival model built on 40,164 SEER patients held up less well outside its home data, dropping from an AUC of 0.76 in development to 0.68-0.76 on German and Swedish validation cohorts. Two meta-analyses added broader context: pooled AUCs of 0.83 for acute kidney injury/mortality prediction across 188+ estimates, and 0.87 for machine learning models in acute ischemic stroke outcome prediction, both with persistent heterogeneity and limited external validation.
+
+On the LLM side, a structured prompting approach for stroke thrombolysis decisions ("CARDS") raised guideline adherence from 83.3% to 100% and cut unsafe recommendations from 16.7% to 0% across GPT-4o and o3. A clinical-trial-recruitment system combining MedGemma with retrieval-augmented generation reached 89.05% micro-F1 for eligibility screening, and a CONSORT-focused evaluation framework hit 85% accuracy judging RCT abstract reporting quality. A separate framework, CPGPrompt, converted narrative clinical guidelines into LLM-executable decision trees, reaching F1 0.85-1.00 on binary specialty-referral decisions but only 0.47-0.77 on more complex multiclass pathway assignment.
+
+On the agentic side, a Mount Sinai study found that a lightweight multi-agent orchestrator held accuracy at 90.6% down to 65.3% as simulated clinical workloads scaled from 5 to 80 tasks, while a single agent handling everything collapsed from 73.1% to 16.6% accuracy, with the multi-agent design using up to 65x fewer tokens. A new benchmark, MedAgentBoard, found multi-agent collaboration helps with clinical workflow automation but doesn't reliably beat specialized conventional methods on medical imaging QA or EHR-based prediction. In biomedical research automation, BioResearcher reported a 63% execution success rate automating the dry-lab research pipeline end to end, and Biomni, a general-purpose biomedical agent built on 150+ tools and 59 databases, showed strong results across gene prioritization, drug repurposing, and rare disease diagnosis tasks without task-specific tuning.
+
+Across all three areas, the throughline is the same: capability keeps advancing, but external validation and real-world deployment evidence remain the bottleneck, not raw model performance.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. BOBM adaptive deep learning sepsis prediction — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12852446/
+2. External validation of ML mortality models after hip fracture — https://actaorthop.org/actao/article/view/45871
+3. ML for survival outcome in head and neck squamous cell carcinoma — https://pmc.ncbi.nlm.nih.gov/articles/PMC12770577
+4. AI models for AKI and post-AKI mortality: systematic review and meta-analysis — https://www.jmir.org/2026/1/e104269
+5. Prompting is All You Need: structured prompting for stroke thrombolysis decisions — https://www.medrxiv.org/content/10.64898/2026.02.12.26346005
+6. Improving clinical trial recruitment with MedGemma and RAG — https://arxiv.org/abs/2604.05190
+7. Orchestrated multi-agents sustain accuracy under clinical-scale workloads — https://www.medrxiv.org/content/10.1101/2025.08.22.25334049.full.pdf
+8. MedAgentBoard: benchmarking multi-agent collaboration in medicine — https://arxiv.org/pdf/2505.12371
+9. Biomni: a general-purpose biomedical AI agent — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12157518/
