@@ -1,0 +1,22 @@
+Daily AI in Healthcare Research Digest - November 2, 2026
+
+In prognostic and diagnostic modeling, several new ECG-based deep learning tools stood out. A convolutional network trained on over 100,000 patients' 12-lead ECGs (ECG2HF) predicted incident heart failure with AUROC of 0.84-0.86, outperforming standard clinical risk equations. A related model detecting left ventricular hypertrophy from ECG reached an internal AUROC of 0.97 on UK Biobank data, though this fell to 0.78 on external validation in a German cohort, a reminder that strong internal performance doesn't always travel. A deep learning model using overnight sleep-study ECGs in nearly 16,000 participants also found associations with atrial fibrillation, heart failure, and all-cause mortality, though predictive value for stroke and heart attack was less consistent. Elsewhere, a machine learning model for oral cancer patients predicted osteoradionecrosis after reconstructive surgery with AUROC 0.83, clearly ahead of a traditional nomogram's 0.73.
+
+On the LLM side, a large randomized study from Oxford (Nature Medicine) offered a sobering finding: GPT-4o, Llama 3, and Command R+ correctly identified medical conditions in 94.9% of cases when tested alone, but the 1,298 members of the public who used these same models to work through medical scenarios identified the right condition in fewer than 34.5% of cases, no better than using a search engine. A separate evaluation framework (AIPatient Arena) scoring LLMs across eight dimensions of simulated clinical consultations found models strong on interview questioning and ethics, but notably weaker on diagnostic reasoning and information coverage. Both point to the same gap: benchmark accuracy doesn't guarantee real-world reliability.
+
+In agentic AI, a University of Edinburgh team showed that adding process-level rewards to a multi-agent reinforcement learning system for gene-disease curation improved both outcome accuracy (0.750) and process fidelity (F1 0.520) over outcome-only training. A systematic review of 20 studies on AI agents in clinical medicine found agent-based systems consistently outperformed baseline LLMs, with the biggest gains when agent complexity matched task complexity and multi-agent setups of up to five agents performed best on harder tasks. A new open-source agentic co-scientist, OpenScientist, reportedly completed biomedical analyses in minutes that would otherwise take weeks to months. At the same time, two new papers (one a 20-stakeholder interview study, one an ethics analysis) argue that "agentic AI" in healthcare still runs under near-total human oversight and raises real questions about accountability and the patient-physician relationship that current evaluation frameworks don't address.
+
+Across all three areas, the throughline is the same: technical performance gains are real and measurable, but the gap between benchmark results and reliable real-world deployment, whether for patients self-triaging with a chatbot or clinicians relying on an ECG model outside its training population, remains the open problem.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #ClinicalAI #HealthTech #DigitalHealth
+
+Sources:
+1. Artificial Intelligence-Enabled ECG Analysis to Predict Incident Heart Failure (ECG2HF) — https://pubmed.ncbi.nlm.nih.gov/41730522/
+2. Deep Learning to Predict Left Ventricular Hypertrophy From the Electrocardiogram — https://pubmed.ncbi.nlm.nih.gov/41589068/
+3. Artificial Intelligence Outperforms a Nomogram for Osteoradionecrosis Prognostication Following Fibula Free Flap Reconstruction in Oral Cancer Patients — https://doi.org/10.1016/j.jormas.2025.102584
+4. Reliability of LLMs as Medical Assistants for the General Public: A Randomized Preregistered Study — https://doi.org/10.1038/s41591-025-04074-y
+5. AIPatient Arena: EHR-Grounded Evaluation of Large Language Models in End-to-End Clinical Consultation Workflows — https://arxiv.org/pdf/2606.17474
+6. Process-Supervised Multi-Agent Reinforcement Learning for Reliable Clinical Reasoning — https://arxiv.org/pdf/2602.14160
+7. AI Agents in Clinical Medicine: A Systematic Review — https://www.medrxiv.org/content/10.1101/2025.08.22.25334232.full.pdf
+8. OpenScientist: Evaluating an Open Agentic AI Co-Scientist to Accelerate Biomedical Discovery — https://www.medrxiv.org/content/10.64898/2026.03.15.26348338
+9. The Doctor Will (Still) See You Now: On the Structural Limits of Agentic AI in Healthcare — https://arxiv.org/abs/2602.18460
