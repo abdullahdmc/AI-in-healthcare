@@ -1,0 +1,22 @@
+Daily AI in Healthcare Research Digest - November 3, 2026
+
+In prognostic and diagnostic modeling, several new studies focused on dynamic risk prediction and external validation. A dual-timepoint LightGBM model for sepsis-associated acute kidney injury, trained on MIMIC-IV and validated across eICU-CRD and a separate ICU cohort, reached AUC 0.839 internally versus 0.770 externally at 48 hours, and 0.922 versus 0.720 at 7 days, illustrating the familiar internal-to-external performance gap. A related systematic review of machine learning mortality models in the same condition found Extreme Gradient Boosting the most consistently robust performer on external validation, though overall model quality and reporting varied widely across the literature. A MultiStep Transformer model for dynamic prognosis after minimally invasive surgery for intracerebral hemorrhage outperformed established clinical scores (GCS, NIHSS, ICH score, FUNC) using data collected at multiple postoperative timepoints. A Vision-Mamba radiomics model pretrained on a non-immunotherapy lung cancer trial and fine-tuned on an immunotherapy cohort showed good calibration for predicting overall survival across datasets.
+
+On the LLM side, two independent reviews mapped large language model use across the stroke care pathway, citing up to 94% accuracy extracting variables from thrombectomy reports and F1 scores of 0.74-0.85 for localizing lesions from case-report text, while both cautioned that most evidence remains retrospective or simulated. A benchmark of GPT-5 on the radiation oncology in-training exam reported 92.8% accuracy, ahead of GPT-4 (78.8%) and GPT-3.5 (62.1%), though gaps persisted in brachytherapy and dosimetry and the authors still called for expert oversight before clinical use. A separate study testing five LLM judges on French medical question answering found wide variation in precision and recall between models, underscoring ongoing uncertainty in how to evaluate LLM outputs in medicine.
+
+In agentic AI, several frameworks targeted research and hospital-operations tasks. AUTOCT pairs an LLM agent with Monte Carlo Tree Search for automated feature engineering, matching state-of-the-art performance on clinical trial outcome prediction. Two hospital-infrastructure papers, H-AdminSim and "When OpenClaw Meets Hospital," proposed FHIR-grounded and operating-system-style multi-agent architectures for administrative and clinical workflows. A benchmark called AgentRx found that naive multi-agent LLM setups underperformed both single-agent frameworks and a supervised baseline on multimodal ICU mortality prediction. And three literature-automation agents reported compressing systematic review and meta-analysis work from weeks to hours, with one reaching 79.7% of human-written review quality in about 1.5 hours.
+
+Across all three areas, the same pattern holds: architectures and benchmarks are maturing quickly, but external validation gaps and thin real-world deployment evidence remain the open problem for prognostic models, LLM tools, and agentic systems alike.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #ClinicalAI #HealthTech #DigitalHealth
+
+Sources:
+1. Prediction of Moderate-to-Severe Sepsis-Associated Acute Kidney Injury Using a Dual-Timepoint Machine Learning Model — https://doi.org/10.2196/73840
+2. Deep Learning for Dynamic Prognostic Prediction in Minimally Invasive Surgery for Intracerebral Hemorrhage — https://doi.org/10.2196/86327
+3. Cross-Dataset Adaptation of Voxel-Level Deep Radiomics for Predicting Survival in Inoperable Locally Advanced NSCLC — https://doi.org/10.3389/fimmu.2026.1787518
+4. Large Language Models in Stroke Management: A Review of the Literature — https://www.medrxiv.org/content/10.1101/2025.06.28.25330477
+5. Benchmarking GPT-5 in Radiation Oncology: Measurable Gains, but Persistent Need for Expert Oversight — https://arxiv.org/abs/2508.21777
+6. Who Judges the Judge? Evaluating LLM-as-a-Judge for French Medical Open-Ended QA — https://arxiv.org/abs/2603.04033
+7. AUTOCT: Automating Interpretable Clinical Trial Prediction With LLM Agents — https://arxiv.org/abs/2506.04293
+8. AgentRx: A Benchmark Study of LLM Agents for Multimodal Clinical Prediction Tasks — https://proceedings.mlr.press/v333/al-jorf26a.html
+9. Completing A Systematic Review in Hours Instead of Months With Interactive AI Agents — https://arxiv.org/abs/2504.14822
