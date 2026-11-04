@@ -1,0 +1,22 @@
+AI in Healthcare Research Roundup — November 4, 2026
+
+Several new machine learning and deep learning models for diagnosis and prognosis surfaced this week. A hybrid CNN-LSTM-KNN-XGBoost framework (HyCARD-Net) targets cardiovascular disease diagnosis, while a Swin Transformer model reached 87.71% accuracy classifying eight skin lesion classes on ISIC-2019 under limited, imbalanced image data. A retrospective study of 55,253 patients at a Mexican tertiary care hospital found XGBoost best able to flag high in-hospital mortality risk from admission-time data, and a 452-patient study at Ankara Bilkent City Hospital showed machine learning can complement traditional statistics in identifying prognostic factors for stage III colon cancer. A review of heart failure predictive analytics, drawing on 3,270 screened publications, found random forest, SVM, and neural network models consistently useful for readmission and mortality risk stratification.
+
+On LLMs in healthcare, new benchmarking work continues to separate technical capability from real-world readiness. MedHELM, a clinician-validated taxonomy spanning 121 tasks, found reasoning models like DeepSeek R1 (66% win-rate) leading, while LLMEval-Med built a 2,996-question benchmark from real EHR data with physician validation. A separate 36-case study found LLM clinical decision-making highly task-dependent, with near-perfect final-diagnosis accuracy but poor performance selecting diagnostic tests. On the applied side, NeuroBot, a retrieval-augmented chatbot for neurosurgery patient education, scored 5.70/6 on external expert review, and Mayo Clinic's MedEduChat raised prostate cancer patients' health confidence scores from 9.9 to 13.9 on a 16-point scale.
+
+Agentic AI activity concentrated around clinical trials and drug discovery. An AI-assisted prescreening workflow for breast cancer trial eligibility reported 98.6% accuracy, cutting screening time from 20 minutes to 43 seconds per case, and a related system was evaluated in real-world multicenter deployment across 339 patient-trial pairs. A self-evolving agent system for redesigning failed trial protocols improved 83.3% of cases with a 5.7% average success-probability gain. In drug discovery, multi-agent systems (OrchestRA, DiscoVerse, CoDHy) coordinated target identification, molecule design, and hypothesis generation, while a new benchmark (AgentRx) found single-agent LLM systems outperform naive multi-agent ones, though a supervised baseline (AUROC 0.877) still beat all LLM agents on mortality prediction.
+
+Across all three areas, today's studies pair strong reported performance with explicit caveats about generalization, calibration, or independent validation before clinical deployment.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #ClinicalAI #HealthTech #DigitalHealth
+
+Sources:
+1. HyCARD-Net cardiovascular diagnosis framework — https://arxiv.org/abs/2601.17767
+2. Skin disease differential diagnosis (Swin Transformer) — https://arxiv.org/abs/2601.00286
+3. In-hospital mortality prediction, Mexican tertiary hospital — https://doi.org/10.3389/fpubh.2025.1635708
+4. MedHELM holistic LLM evaluation for medical tasks — https://arxiv.org/abs/2505.23802
+5. LLMEval-Med real-world clinical benchmark — https://arxiv.org/abs/2506.04078
+6. NeuroBot LLM chatbot for neurosurgery patient education — https://doi.org/10.2196/74299
+7. MSK-MATCH breast cancer trial eligibility prescreening — https://arxiv.org/abs/2511.05696
+8. ClinicalReTrial self-evolving clinical trial redesign agents — https://arxiv.org/abs/2601.00290
+9. AgentRx benchmark of LLM agents for clinical prediction — https://arxiv.org/abs/2605.10286
