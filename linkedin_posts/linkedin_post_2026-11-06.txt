@@ -1,0 +1,21 @@
+New research roundup: AI in healthcare
+
+Three new prognostic and diagnostic modeling studies stood out this week. A Frontiers in Immunology paper built a gradient boosting model from pretreatment blood lymphocyte subsets in 65 osteosarcoma patients, predicting 3-year overall survival with an AUC of 0.959, outperforming standard inflammatory markers, though the small cohort needs external validation. In bladder cancer, a SEER-based nomogram for survival after trimodal therapy, validated on 1,801 patients, reached accuracy of 0.70 at two years versus 0.57 for AJCC staging alone. And in lung cancer, a multimodal model combining clinical data, deep learning, and CT radiomics across 228 NSCLC patients outperformed single-modality approaches in predicting immune checkpoint inhibitor response.
+
+On the LLM side, a JAMA Internal Medicine study comparing GPT-4-generated hospital discharge summaries to physician-written ones in 100 UCSF encounters found the AI versions more concise and coherent but less comprehensive, with more errors per summary (2.91 vs 1.82) — though harm potential didn't differ significantly. Separately, NIH's National Library of Medicine built a benchmark from medical textbook passages to quantify hallucination rates across LLaMA-70B-Instruct and seven other models, concluding current LLMs remain unfit for unsupervised clinical use. A third study introduced ClinicBot, a guideline-grounded diabetes chatbot that ranks retrieved evidence by clinical significance rather than text similarity for verifiable citations.
+
+Agentic systems continued expanding into research infrastructure rather than patient-facing tasks. CARIS, a privacy-preserving agentic framework on the Model Context Protocol, automated the full clinical research pipeline — literature search, cohort construction, IRB documentation, report generation — reaching 96% completeness under LLM evaluation and 82% under human evaluation, without direct access to raw data. A six-agent "Bio AI Agent" system targeted CAR-T cell therapy development, flagging specific hepatotoxicity and off-tumor toxicity risks and patent conflicts in retrospective testing. And meta-pipe, a 10-stage open-source pipeline for systematic review and meta-analysis, added automated manuscript generation and overclaim detection at an estimated $15-30 per review, with no formal accuracy validation reported yet.
+
+The throughline: predictive models keep posting strong internal AUCs that shrink under external validation, LLM tools show real utility alongside real error rates, and agentic systems are increasingly aimed at automating research and documentation scaffolding rather than replacing clinical judgment.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #ClinicalAI #HealthTech #DigitalHealth
+
+Sources:
+1. ML prognostic model for osteosarcoma survival — https://www.frontiersin.org/articles/10.3389/fimmu.2026.1733518/full
+2. Bladder cancer nomogram after trimodal therapy — https://pubmed.ncbi.nlm.nih.gov/41553578/
+3. Multimodal model for NSCLC immunotherapy response — https://pubmed.ncbi.nlm.nih.gov/41087235/
+4. Physician vs. LLM hospital discharge summaries — https://pubmed.ncbi.nlm.nih.gov/40323616/
+5. Quantifying hallucinations in LLMs on medical textbooks — https://arxiv.org/abs/2603.09986
+6. ClinicBot guideline-grounded diabetes chatbot — https://arxiv.org/abs/2605.00846
+7. CARIS privacy-preserving clinical research agent — https://arxiv.org/abs/2604.12258
+8. Bio AI Agent for CAR-T cell therapy development — https://arxiv.org/abs/2511.08649
