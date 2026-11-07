@@ -1,0 +1,21 @@
+AI in healthcare: daily research notes
+
+On the prognostic and diagnostic modeling side, a new arXiv paper proposes bootstrapping-based regularization to reduce how much individual risk predictions shift between model refits, cutting instability by roughly two-thirds on the GUSTO-I and Framingham datasets while preserving discrimination. In applied work, a logistic regression model for acute kidney injury after cardiac arrest reached an AUC of 0.825 on external validation using MIMIC-IV data, and a meta-analysis pooling 68 studies on machine learning for poststroke mortality reported a pooled C-index of 0.727, alongside notable variability across individual models.
+
+On the LLM side, a review in APL Bioengineering surveys ChatGPT's potential roles in precision medicine, from genetic sequence analysis to clinical trial recruitment support. A hybrid Bayesian-neural-LLM framework, DiagnoLLM, reached 88.0% accuracy on Alzheimer's disease detection while generating interpretable diagnostic reports. A randomized trial of 180 hospitalized patients found AI voice-cloned health education outperformed standard education on compliance and satisfaction, with content retention of 92.5% using patients' own cloned voice versus 86.7% for a physician's. A feasibility study of an LLM chatbot answering parental questions in the pediatric ICU found 99.3% of 1,225 generated sentences were accurate. Two new benchmarks target radiology documentation: one for longitudinal lung-finding timelines, another (PET-F2I) showing a fine-tuned 7B model outperforming 27 larger LLMs on PET/CT impression generation.
+
+On agentic AI, a Johns Hopkins team's EligMeta framework narrowed 4,044 candidate gastric cancer trials to 39 relevant studies, recovering all 13 guideline-cited trials. DeepEvidence applies orchestrated agents to biomedical knowledge graphs across the discovery-to-evidence pipeline, while a separate paper proposes a governance framework for managing growing fleets of clinical AI agents. A CUHK/Stanford/Microsoft team's "Medical AI Scientist" reported higher first-run success rates than GPT-5 and Gemini-2.5-Pro on 57 self-reported research tasks.
+
+Across all three areas, the throughline is the same: quantitative validation and governance tooling are maturing in parallel with capability claims, even as most agentic results remain self-reported and awaiting independent verification.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Bootstrapping-based Regularisation for Reducing Individual Prediction Instability in Clinical Risk Prediction Models — https://arxiv.org/abs/2602.11360
+2. A machine learning model for prediction of cardiac arrest-associated acute kidney injury in the ICU — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12864462/
+3. Predictive Value of Machine Learning for Poststroke Mortality Risk: Systematic Review and Meta-Analysis — https://pubmed.ncbi.nlm.nih.gov/41926763/
+4. DiagnoLLM: A Hybrid Bayesian Neural Language Framework for Interpretable Disease Diagnosis — https://arxiv.org/abs/2511.05810
+5. Effectiveness of AI-Assisted Patient Health Education Using Voice Cloning and ChatGPT — https://pubmed.ncbi.nlm.nih.gov/41855493/
+6. PET-F2I: A Comprehensive Benchmark and Parameter-Efficient Fine-Tuning of LLMs for PET/CT Report Impression Generation — https://arxiv.org/abs/2603.10560
+7. Eligibility-Aware Evidence Synthesis: An Agentic Framework for Clinical Trial Meta-Analysis (EligMeta) — https://arxiv.org/abs/2604.02678
+8. Towards a Medical AI Scientist — https://arxiv.org/abs/2603.28589
