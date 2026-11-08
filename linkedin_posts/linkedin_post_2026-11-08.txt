@@ -1,0 +1,21 @@
+AI in healthcare: daily research notes
+
+On the prognostic and diagnostic modeling side, a new framework unifies survival analysis and classification into one early-risk model for five chronic conditions (diabetes, hypertension, CKD, COPD, ischemic heart disease) from EMR data. A breast cancer model combining clinical, transcriptomic, and copy-number features showed consistent discrimination across age, receptor status, and menopausal subgroups. A temporal point process model, PatientTPP, trained on 500,000+ clinical trajectories outperformed BMI at flagging future high-cardiovascular-cost patients, with its top risk quartile capturing 39.3% of costs versus 22.7% for BMI. A study of over 605,000 patients found SMOTE and other resampling methods gave no meaningful discrimination gains and worsened calibration. In Alzheimer's research, a routine-data model externally validated on 741 ADNI trajectories predicted 12-month cognitive and functional decline from baseline assessments alone, with no imaging needed.
+
+On the LLM side, ChatGPT 5 reached 82.1% accuracy automating TNM cancer staging from 552 PET-CT reports, edging out junior radiologists (77.0%) and outpacing ChatGPT 4o (74.3%) and 3.5 (59.6%). A JMIR evaluation found Qwen 3 detected radiology report errors more accurately than radiologists (0.96 vs. 0.45-0.66) and about ten times faster. A blinded hypertension-vignette comparison found Claude Sonnet 4.6 ranked first in nine of ten cases against ChatGPT-5.2 and Gemini 3.0 Pro, with the widest gaps in complex clinical reasoning. A review of 20 studies comparing LLM answers to patient questions against healthcare professionals found LLMs favored in 12, mixed results in 6, professionals favored in only 2.
+
+On agentic AI, Latent Labs' Latent-Y agent ran autonomous antibody design campaigns end-to-end from a text prompt, producing lab-confirmed nanobody binders against six of nine targets (67% success) at single-digit nanomolar affinity, with experts reporting campaigns roughly 56 times faster than manual estimates. A new ACL 2026 survey frames "AI hospitals" as multi-agent clinical systems with defined roles and safety gates, proposing Integration Readiness Levels for future evaluation. A related architecture paper catalogues agentic roles for hospital information systems, piloted so far only on synthetic data.
+
+Today's throughline: the strongest results come from narrowly scoped, well-validated systems (staging, report QA, antibody design), while broader claims about resampling, governance, and hospital-wide agent orchestration still rest on thinner or synthetic evidence.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Survival Meets Classification: A Novel Framework for Early Risk Prediction Models of Chronic Diseases — https://arxiv.org/abs/2603.11598
+2. Patient foundation model for risk stratification in low-risk overweight patients (PatientTPP) — https://arxiv.org/abs/2602.09079
+3. Tipping the Balance: Impact of Class Imbalance Correction on the Performance of Clinical Risk Prediction Models — https://arxiv.org/abs/2603.00208
+4. Evaluating large language models for automated TNM staging from PET-CT reports: a multi-cancer comparative study — https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1741973/full
+5. Large Language Model-Assisted Radiology Report Quality Assurance: Real-World Multicenter Evaluation — https://www.jmir.org/2026/1/e106250
+6. Large language models versus healthcare professionals in providing medical information to patient questions — https://doi.org/10.1016/j.ijmedinf.2025.106250
+7. Latent-Y: A Lab-Validated Autonomous Agent for De Novo Drug Design — https://arxiv.org/abs/2603.29727
+8. LLM-Based Multi-Agent Systems for Clinical Workflows: A Survey of AI Hospitals — https://aclanthology.org/2026.acl-long.2123/
