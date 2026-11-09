@@ -1,0 +1,20 @@
+AI in healthcare: daily research notes
+
+On the prognostic and diagnostic modeling side, a biomarker-aware transformer (BAT-AKI) pretrained on structured multicenter EHR data handled both early prediction and post-onset prognosis for acute kidney injury, improving 16.8-25.3% over transformer baselines while remaining interpretable across institutions. An ECG foundation model, AnyECG, trained on roughly 13.3 million ECGs from about 2.98 million patients, reached AUROC above 0.7 for 306 of 1,172 ICD-coded conditions it was tested against, including COPD (0.773). A BMC Cancer study paired XGBoost with a Cox proportional hazards objective to generate an interpretable risk score for ovarian cancer survival, using SHAP to explain which features drove the model's predictions.
+
+On the LLM side, a Nature Medicine study from Mount Sinai ran 960 structured interactions testing ChatGPT Health's triage advice against physician consensus across 60 scenarios and 21 specialties. Accuracy peaked for intermediate-urgency cases (93.0% semi-urgent, 76.9% urgent), but the tool under-triaged a majority of true emergencies and showed inconsistent suicide-crisis alerting, with recommendations shifting toward less-urgent care when family or friends minimized symptoms. Separately, an EACL 2026 paper introduced MEDASSESS-X, an inference-time activation-steering method that lifted accuracy by up to 6% and cut safety errors by as much as 50% across several LLM families without any fine-tuning, raising the question of whether specialized medical fine-tuning is needed at all.
+
+On agentic AI, a new trust study built an agentic system on GPT-o3 and found physicians rated it significantly higher on both cognitive and behavioral trust than non-agentic baselines (P<0.001), preferring its treatment-planning output in 89.57% of cases. ClinAgent, a ReAct-based conversational agent, was built to let clinicians query clinical trial information in plain language. And CausalAgent, a retrieval-augmented screening agent pairing causal graphs with knowledge graphs, reached 95% accuracy and zero hallucinations on a 234-abstract systematic-review test, against 34% accuracy and 10% hallucinations for a baseline AI screener, though on a small proof-of-concept sample.
+
+Today's throughline: the pattern holds from recent days — tightly scoped, well-validated systems (AKI transformers, ECG foundation models, literature-screening agents) keep posting strong numbers, while general-purpose, patient-facing deployments like ChatGPT Health still show real gaps in safety-critical judgment.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Early Prediction and Prognosis in Acute Kidney Injury Using a Biomarker-Aware Transformer (BAT-AKI) — https://doi.org/10.2196/90687
+2. AnyECG: Evolved ECG Foundation Model for Holistic Health Profiling — https://arxiv.org/abs/2601.10748
+3. XGBoost-Cox modeling with SHAP analysis for survival prediction in ovarian cancer patients — https://pubmed.ncbi.nlm.nih.gov/41896826/
+4. ChatGPT Health performance in a structured test of triage recommendations — https://doi.org/10.1038/s41591-026-04297-7
+5. Do Clinical Question Answering Systems Really Need Specialised Medical Fine Tuning? (MEDASSESS-X) — https://arxiv.org/abs/2601.12812
+6. Agentic AI Enhances Physician Trust in Clinical Decision Making — https://arxiv.org/abs/2606.30658
+7. Causal-Enhanced AI Agents for Medical Research Screening — https://arxiv.org/abs/2601.02814
