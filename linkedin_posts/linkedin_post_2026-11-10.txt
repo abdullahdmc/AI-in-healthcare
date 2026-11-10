@@ -1,0 +1,20 @@
+AI in Healthcare: Daily Research Roundup — November 10, 2026
+
+Today's new risk-prediction literature spans drug safety and dementia. A machine learning model combining structured trial data with a clinical language model (XGBoost plus ClinicalModernBERT) stratified dosing-error risk across more than 42,000 ClinicalTrials.gov entries, reaching an AUC-ROC of 0.862. In type 2 diabetes, a dynamic model (ML-CVD Primary) that updates cardiovascular risk using one-year changes in risk factors was published to support ongoing surveillance rather than a single static estimate. And in Alzheimer's disease, a deep-learning approach using a Bayesian variational autoencoder reported improved polygenic risk prediction when analyses were stratified by age and APOE genotype.
+
+On the LLM side, three new evaluations compared model performance against clinicians. ChatGPT-4o and ChatGPT-3.5-mini reached 99% diagnostic accuracy on standardized emergency case presentations, versus 92% for a human emergency physician (p=0.039), though the comparison involved a single specialist and simulated cases. GPT-4o was also tested on predicting emergency department disposition (discharge, ward, or ICU) in complex respiratory cases, reaching 76.5% overall accuracy with high sensitivity (91.9%) but low specificity (20.8%). Separately, ChatGPT-5 outscored Gemini 2.5 on the official Polish diabetology specialty exam, 78.6% versus 68.4% (p=0.0455), with both models clearing the passing threshold.
+
+Four new studies looked at agentic and multi-agent systems in medicine and research. A proof-of-concept multi-agent pipeline (Prompt-to-Pill) was proposed spanning drug discovery through clinical trial simulation, including virtual patient recruitment. A self-evolving multi-agent clinical decision support framework (VIBEMed) added a dedicated longitudinal-feedback agent and a safety sandbox constraining model updates. A notable cautionary finding came from a 2,400-case MIMIC-CDM study of abdominal pain: assembling the best-performing individual components into a "Best of Breed" system reached only 67.7% diagnostic accuracy, below the 77.4% of a top multi-agent system, despite scoring highest (85.5%) on the lab-interpretation sub-task alone. Finally, a conversational multi-agent tool (ChatDRex) was released to let non-programmers run disease-module and drug-repurposing analyses over a biomedical knowledge graph in plain language.
+
+Taken together, today's studies point to a shared caution: strong performance on a narrow task or a single component rarely translates automatically into reliable performance across a full clinical or research workflow.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Early Risk Stratification of Dosing Errors in Clinical Trials Using Machine Learning — https://arxiv.org/abs/2602.22285
+2. Improved polygenic risk prediction for Alzheimer's disease and related dementias using deep learning — https://doi.org/10.1186/s13195-026-02011-w
+3. Artificial intelligence vs. emergency physicians: who diagnoses better? — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12680421/
+4. Comparative Performance of ChatGPT-5 and Gemini 2.5 on the Official Clinical Diabetology Specialty Examination — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12909287/
+5. Prompt-to-Pill: Multi-Agent Drug Discovery and Clinical Simulation Pipeline — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12800774/
+6. The Optimization Paradox in Clinical AI Multi-Agent Systems — https://arxiv.org/abs/2506.06574
+7. Conversational No-code, Multi-agentic Disease Module Identification and Drug Repurposing Prediction with ChatDRex — https://arxiv.org/abs/2511.21438
