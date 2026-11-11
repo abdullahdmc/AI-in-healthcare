@@ -1,0 +1,22 @@
+Daily AI in healthcare research roundup
+
+On the prediction-model side, several new studies tested whether machine learning adds real value over simpler scoring tools. Delphi-2M, a transformer trained on health timelines from roughly 400,000 UK Biobank participants and externally validated on 1.9 million people in Denmark's national patient registry, estimated risk across more than 1,000 diseases up to 20 years ahead, performing on par with single-disease tools (AUC 0.70 for cardiovascular disease). A multimodal model combining echocardiography, ECG, and biomarker data across five cohorts reached external AUCs of 0.89-0.92 for 3-year cardiovascular events, outperforming the Framingham Risk Score and ASCVD Risk Estimator. In advanced cancer, a simpler logistic-regression model outperformed the Glasgow Prognostic Score for 14- and 30-day mortality (AUC 0.65-0.66 vs. 0.52-0.55), and a radiomics-plus-clinical model reached an AUC of 0.91 for detecting infected vascular grafts.
+
+On the large language model side, a fact-checking study found GPT-4o matched expert reviewers on 100% of 20 clinical drug claims, though models still missed some pregnancy-related safety flags. A pediatric triage comparison showed ChatGPT-4o reaching 76.1% accuracy against physician judgment, while Grok 3 traded accuracy for higher sensitivity to critical cases (97.7%) at the cost of frequent over-triage. A randomized trial of the Therabot chatbot reported meaningful symptom reductions (about 51% for depression, 31% for anxiety) over four weeks. Separately, radiologists rated a domain-specific fine-tuned model's report impressions as comparable to their own, while a general-purpose LLM scored 28-50% lower on usability and conciseness.
+
+In agentic AI, CellVoyager, an autonomous analysis agent for single-cell RNA-seq data, outperformed GPT-4o and o3-mini by up to 23% at predicting which analyses researchers actually ran. TrialAtlas, a multi-agent system for clinical trial design, reached 85.3% balanced accuracy predicting regulatory and technical trial outcomes. And a reinforcement-learning-trained tool-calling agent raised answer correctness on a FHIR question-answering benchmark from about 50% to 77%, though still below the bar the authors set for autonomous clinical use.
+
+Across all three areas, the consistent thread is that specialization and calibration, not raw model size, are what separate tools that are genuinely useful from ones that are merely plausible.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Delphi-2M: a deep learning model for predicting many diseases across the full life course — https://doi.org/10.1038/s41586-025-09529-3
+2. Multimodal AI for cross-population prediction of major adverse cardiovascular events — https://doi.org/10.1016/j.ijci.2026.100003
+3. Simplified prognostic models for 14- and 30-day mortality in advanced cancer — https://www.frontiersin.org/articles/10.3389/fonc.2026.1729131/full
+4. Fact-checking LLM responses to health care prompts — https://pubmed.ncbi.nlm.nih.gov/41985066/
+5. Paediatric emergency triage: ChatGPT-4o vs. Grok 3 — https://www.frontiersin.org/journals/pediatrics/articles/10.3389/fped.2026.1739217/full
+6. Randomized controlled trial of the Therabot generative AI chatbot for mental health — https://doi.org/10.1056/AIoa2400802
+7. CellVoyager: autonomous AI agent for single-cell RNA-seq analysis — https://doi.org/10.1038/s41592-026-03029-6
+8. TrialAtlas: multi-agent system for clinical trial design and optimization — https://arxiv.org/abs/2609.21859
+9. Reinforcement learning for tool-calling agents on FHIR data — https://arxiv.org/abs/2605.14126
