@@ -1,0 +1,22 @@
+Daily AI-in-healthcare research roundup — November 12, 2026
+
+In prognostic, diagnostic, and risk-prediction models, a new UK Biobank-adjacent effort called SurvivEHR trained a GPT-style transformer on 7.6 billion primary-care records from 23 million patients, using a competing-risks, time-to-event objective to forecast diagnoses, tests, and death with calibrated risk estimates across multiple conditions at once. A separate study combined clinical variables with an ensemble of three CNNs (VGG19, ResNet50, InceptionV3) to flag early colorectal cancer from endoscopy images, reaching an AUC of 0.95 in validation. Two systematic reviews added context on where these models stand today: a meta-analysis of 30 studies (25,301 patients) on cervical degenerative disease found satisfactory pooled diagnostic performance but limited external validation, and a review of point-of-care imaging AI across 20 studies (about 78,296 patients) reported median sensitivity near 92% and specificity near 90.6%, with very low certainty of evidence and little attention paid to explainability.
+
+On large language models in healthcare, a randomized trial in Nature Medicine tested whether giving 1,298 UK adults access to GPT-4o, Llama 3, or Command R+ improved real-world medical decision-making across ten scenarios. The models alone identified the correct condition 94.9% of the time, but handing them to human participants did not improve outcomes versus a search-engine control group, and standard benchmarks failed to predict this gap. Separately, a comparison of five AI models (Grok, ChatGPT-4, Copilot, Gemini, DeepSeek) on USMLE Step 1 questions found competitive but uneven performance across models.
+
+In agentic AI for health research, new benchmarks are exposing how far autonomous agents still have to go: PhysicianBench found the best LLM agent completed only 46.3% of long-horizon physician EHR tasks, while a training-free framework called SELSM reached 100% task completion on the narrower MedAgentBench by adding memory-augmented skills for FHIR tool use. A 3D CT benchmark (DeepTumorVQA, 476K questions) showed tool augmentation meaningfully helps agents with measurement tasks, and a deterministic-orchestration framework that gates premature diagnosis and flags uncertain outputs lifted diagnostic accuracy by 11.3 percentage points on simulated cases.
+
+Across all three areas, the same pattern holds: benchmark and in-silico performance keeps improving, but real-world and human-in-the-loop evaluations continue to reveal gaps that lab results alone don't predict.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. SurvivEHR competing-risks time-to-event foundation model — https://doi.org/10.1038/s41746-026-02709-z
+2. Deep learning multimodal model for early colorectal cancer recognition — https://www.wjgnet.com/1948-5204/abstract/v18/i11/123187.htm
+3. AI in point-of-care imaging systematic review — https://ai.jmir.org/2026/1/e80928
+4. Reliability of LLMs as medical assistants for the general public (randomized trial) — https://pubmed.ncbi.nlm.nih.gov/41663592/
+5. Performance of 5 AI models on USMLE Step 1 questions — https://ai.jmir.org/2026/1/e76928
+6. PhysicianBench: evaluating LLM agents in real-world EHR environments — https://arxiv.org/abs/2605.02240
+7. SELSM: locally deployable medical agent for FHIR-based clinical tasks — https://arxiv.org/abs/2603.06902
+8. DeepTumorVQA: hierarchical 3D CT benchmark for VLMs and tool-augmented agents — https://arxiv.org/abs/2605.09679
+9. Agentic AI framework mitigating premature diagnostic handoff and silent hallucination — https://arxiv.org/abs/2606.18068
