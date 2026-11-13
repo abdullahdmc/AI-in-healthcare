@@ -1,0 +1,22 @@
+Daily AI-in-healthcare research roundup — November 13, 2026
+
+In prognostic, diagnostic, and risk-prediction models, several new studies focused on how well models hold up outside their original training data. A deep learning framework called TrajSurv-mPC used full pre-metastasis PSA and treatment trajectories, rather than summary features, to predict survival in metastatic prostate cancer, reaching C-indices of 0.69-0.71 in cross-cohort external validation versus 0.65-0.68 for conventional summary-feature models (cohorts of 403 and 9,984 patients). A separately validated nomogram for adjuvant radiation therapy after prostatectomy matched outcomes with 79% accuracy in a 404-patient external cohort, and a TabNet-based survival model for immunotherapy-treated liver cancer patients reported a C-index of 0.79 with stable external calibration. On the EHR side, a new multimodal model (TRACE) combining records, imaging, and notes into day-level trajectories posted the top AUROC across all nine mortality, length-of-stay, and readmission prediction tasks it was tested on, drawing on nearly 180,000 hospital stays.
+
+On large language models in healthcare, a Mass General Brigham study testing 21 general-purpose LLMs on 29 clinical cases found models reached the correct final diagnosis over 90% of the time but failed to generate an appropriate differential diagnosis in more than 80% of cases, underscoring a gap between final-answer accuracy and earlier diagnostic reasoning. A separate Nature Medicine comparison found general-purpose frontier models (GPT-5.2, Gemini 3.1 Pro, Claude Opus 4.6) outscored two specialized clinical AI tools on medical knowledge and clinician-alignment benchmarks. On the documentation side, a randomized crossover trial of ambient AI scribes across 160 clinicians found both tools reduced burnout with no meaningful difference between them, while a retrospective study of a hybrid AI-plus-human-scribe workflow across 181 Massachusetts primary care clinicians linked adoption to reduced after-hours work and faster note completion.
+
+In agentic AI for health research, a Mount Sinai study simulating heavy clinical workloads found that orchestrating specialized worker agents sustained far higher accuracy under load than a single agent (90.6% vs. 73.1% at light load, widening to 65.3% vs. 16.6% under heavy load), while using up to 65-fold fewer tokens. On the diagnostic side, a self-evolving agent (DxEvolve) that learns reusable reasoning heuristics from past diagnostic failures gained 11.2% average accuracy over backbone models on a clinical benchmark, and a question-selection agent (MedClarify) that targets the most informative follow-up question cut diagnostic errors by roughly 48% on incomplete patient cases.
+
+Across all three areas, the throughline is the same: architectures that explicitly model trajectories over time, or coordinate specialized components instead of relying on one model or one pass, are consistently outperforming single-shot approaches as these systems move toward more realistic, external, and higher-load conditions.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. TrajSurv-mPC: PSA-trajectory survival prediction in metastatic prostate cancer — https://www.urotoday.com/recent-abstracts/urologic-oncology/prostate-cancer/172257-trajsurv-mpc-learning-from-prostate-specific-antigen-trajectories-for-interpretable-and-generalizable-survival-prediction-in-metastatic-prostate-cancer.html
+2. TRACE: multimodal clinical trajectories for inpatient risk prediction — https://arxiv.org/abs/2610.25765
+3. External validation of the Martini-Klinik adjuvant radiation therapy nomogram — https://pubmed.ncbi.nlm.nih.gov/41609399/
+4. Large Language Model Performance and Clinical Reasoning Tasks — https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2847679
+5. General-purpose LLMs outperform specialized clinical AI tools on medical benchmarks — https://doi.org/10.1038/s41591-026-04431-5
+6. Randomized crossover trial of ambient AI scribes and physician burnout — https://pubmed.ncbi.nlm.nih.gov/41729180/
+7. Orchestrated multi-agent AI systems sustain accuracy under clinical-scale workloads — https://www.nature.com/articles/s44401-026-00077-0
+8. DxEvolve: self-evolving diagnostic agent — https://arxiv.org/abs/2603.10677
+9. MedClarify: information-seeking diagnostic agent with follow-up questions — https://arxiv.org/abs/2602.17308
