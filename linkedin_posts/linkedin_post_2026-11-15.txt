@@ -1,0 +1,23 @@
+Daily AI-in-healthcare research roundup — November 15, 2026
+
+In prognostic, diagnostic, and risk-prediction models, new studies tested how machine learning risk scores hold up against standard tools and external cohorts. A JMIR Cancer study built an XGBoost-Cox model on 27 metastatic cancer types, reaching a concordance index of 0.70 versus 0.66 for a traditional Cox model. In JAMA Oncology, a 19-variable EHR-based pancreatic cancer risk model (PRIME) reached a 36-month AUC of 0.75 in development and 0.71 on UK Biobank external validation. By contrast, external validation of three guideline cardiovascular risk models (PREVENT, SCORE2, QRISK3) in 502,000 UK Biobank participants found only modest discrimination (AUCs 0.68-0.75) and rated all three at high risk of bias. A pediatric sepsis model reached an AUROC of 0.94, while a traditional Cox nomogram still outperformed a gradient boosting machine for laryngeal cancer prognosis.
+
+In large language models in healthcare, evaluation work focused on where LLMs still trail specialized tools and clinicians. A blinded study of 149 physicians found a specialized clinical LLM tool beat frontier models (GPT-5.5, Claude Opus 4.8, Gemini 3.1 Pro) by 25-39 percentage points on accuracy across 620 real point-of-care queries. ChatGPT-5 reached 77-79% accuracy detecting pediatric pneumothorax on chest radiographs, while a GPT-5 abdominal radiology study found accuracy of just 12% from a case description alone, rising to 58% once imaging findings were supplied. GPT-5 managed only 68% staging accuracy and low inter-rater agreement grading periodontitis.
+
+In agentic AI for health research, multi-agent systems reported strong task automation. BioMedAgent, a self-evolving multi-agent framework for biomedical data analysis, reached a 77% success rate on a new 327-task benchmark. LUMEN, an 11-agent systematic-review pipeline, matched published meta-analysis directions across all 13 comparable outcomes at an estimated $19-29 per review. RadAgents, a seven-agent chest X-ray system modeled on radiologist workflow, beat the strongest baselines by 10-30% across benchmarks, while a separate orchestrator built only from FDA-cleared radiology AI tools recovered under a third of clinically actionable findings.
+
+Across today's studies, external validation and head-to-head comparison against existing clinical tools, rather than headline benchmark scores, are what separate genuinely promising systems from ones still far from clinical readiness.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Explainable AI for predicting mortality risk in metastatic cancer (XGBoost-Cox) — https://cancer.jmir.org/2026/1/e74196
+2. PRIME: parsimonious risk stratification model for pancreatic cancer — https://jamanetwork.com/journals/jamaoncology/article-abstract/2847149
+3. External validation of guideline-recommended cardiovascular risk models in UK Biobank — https://doi.org/10.1016/j.ajpc.2026.101625
+4. Expert evaluation of clinical AI tools on real point-of-care clinical queries — https://arxiv.org/abs/2606.28960
+5. Diagnostic performance of ChatGPT-5 for detecting pediatric pneumothorax — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12839758/
+6. Evaluation of GPT-5 in periodontitis staging and grading — https://formative.jmir.org/2026/1/e88407
+7. BioMedAgent: self-evolving multi-agent LLM framework for biomedical data analysis — https://www.nature.com/articles/s41551-026-01634-6
+8. LUMEN: cost-transparent multi-agent pipeline for automated systematic review and meta-analysis — https://arxiv.org/abs/2606.28362
+9. RadAgents: multimodal agentic reasoning for chest X-ray interpretation — https://arxiv.org/abs/2509.20490
+10. Can agentic systems close the gap in radiology with production AI tools? — https://arxiv.org/abs/2611.09836
