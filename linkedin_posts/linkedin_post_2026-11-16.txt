@@ -1,0 +1,22 @@
+Daily AI-in-healthcare research roundup — November 16, 2026
+
+In prognostic, diagnostic, and risk-prediction models, a meta-analysis of 40 studies (17,246 patients) found deep learning and radiomics detect extracranial carotid plaques with pooled sensitivity 0.88 and specificity 0.89, while a separate meta-analysis of axillary lymph node metastasis detection in breast cancer reported sensitivity/specificity of 0.79/0.86 for ultrasound-based models and 0.78/0.82 for MRI-based models. In a cohort of 11,361 tuberculosis patients, random forest and XGBoost reached validation AUCs of 0.960 and 0.954 for predicting antituberculosis drug-induced liver injury, with population-stratified models outperforming a single universal one. Elsewhere, a CT-CLIP foundation model improved lung cancer prognosis prediction over a clinical-variable-only baseline, and a GRU-based model generated time-updated risk scores for metastatic prostate cancer from routine visit data alone.
+
+In large language models in healthcare, PrIME-LLM, tested across 21 LLMs including GPT-5 and Grok 4 on 29 standardized clinical vignettes, found models reached correct final diagnoses over 90% of the time with full case information but performed far worse at the earlier, open-ended stages of a case. GPT-5 reached 82.1% accuracy on TNM cancer staging from 552 PET-CT reports, edging out junior radiologists (77.0%). A randomized controlled trial found AI-generated previsit document summaries shortened neurosurgical consultations from a median of 33 to 25 minutes and left patients feeling more informed, though physicians rated their own autonomy somewhat lower.
+
+In agentic AI for health research, a hierarchical multi-agent system trained with process-level rewards raised gene-disease validity curation accuracy to 0.750 and process-fidelity F1 to 0.520, both above outcome-only reward training. EmulatRx, a five-agent LLM framework for clinical trial design using real-world data, reproduced many previously reported treatment effects across historical trials spanning heart failure, septic shock, and other conditions. A separate study found an orchestrated multi-agent architecture held accuracy far better than a single agent as clinical workload scaled up (90.6% to 65.3% versus 73.1% to 16.6% accuracy), while cutting token usage up to 65-fold.
+
+Across today's studies, stratifying by subgroup, supervising intermediate reasoning steps, and testing under realistic workload or case-complexity conditions prove more informative than single aggregate accuracy figures.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Diagnostic performance of deep learning and radiomics in extracranial carotid plaque detection — https://doi.org/10.2196/77092
+2. Accuracy of deep learning for detecting axillary lymph node metastasis in breast cancer — https://doi.org/10.2196/77593
+3. Stratified machine learning models for predicting antituberculosis drug-induced liver injury — https://doi.org/10.1186/s12911-026-03373-9
+4. Large Language Model Performance and Clinical Reasoning Tasks (PrIME-LLM) — https://doi.org/10.1001/jamanetworkopen.2026.4003
+5. Evaluating LLMs for automated TNM staging from PET-CT reports — https://doi.org/10.3389/fdgth.2026.1741973
+6. Effect of previsit AI-generated document summaries on consultation time and communication (AI-INFOCARE RCT) — https://doi.org/10.1056/aioa2600136
+7. Process-supervised multi-agent reinforcement learning for reliable clinical reasoning — https://arxiv.org/abs/2602.14160
+8. Empowering clinical trial design with agentic intelligence and real-world data (EmulatRx) — https://doi.org/10.1038/s41467-026-74501-2
+9. Orchestrated multi-agents sustain accuracy under clinical-scale workloads — https://doi.org/10.1038/s44401-026-00077-0
