@@ -1,0 +1,21 @@
+Daily AI-in-healthcare research roundup
+
+Several new prediction models this week moved toward broader transferability rather than single-cohort accuracy. TRisk, a transformer survival model for heart failure, reached a concordance index of 0.845 for 36-month mortality versus 0.728 for the existing MAGGIC-EHR score, and carried over to a US cohort via transfer learning. GRASP used LLM-generated code embeddings to port UK Biobank-trained risk models across FinnGen and Mount Sinai despite different coding systems, and PRIME, a 19-predictor pancreatic cancer risk model trained on nearly 4.9 million patients across 23 health systems, reached a 36-month AUC of 0.75. A multimodal deep learning model combining ultrasound and digital breast tomosynthesis reached an AUC of 0.944 for breast-level risk classification, while a drift-aware transfer framework (ADAPT) targeted the more practical problem of keeping suicide-risk models accurate as coding systems and care patterns shift over time.
+
+On the LLM side, evaluation results stayed mixed. DeepSeek R1 reached 87% accuracy on mechanical thrombectomy eligibility and 78% on thrombolysis decisions in acute ischemic stroke, outperforming other models and clinicians, but a new off-guideline benchmark found leading models correctly answering only 56% of rare-case questions unaided, rising to 82% with retrieval augmentation. A blinded radiology report comparison still favored radiologist-written lumbar spine MRI reports over ChatGPT-4o on structure and relevance, even though no clinically false statements were found in the AI reports.
+
+Agentic systems continued to cluster around literature and workflow automation. A five-agent clinical-note screening workflow (released as the open-source Pythia framework) reached F1 0.93 for flagging cognitive concerns, and a structured multiagent framework improved stroke treatment recommendations by 18.9% over single-LLM baselines. Review-level evidence (a Methods and Protocols survey citing 87.3% accuracy in clinical trial matching) and literature-automation tools like InsightAgent, which reached 79.7% of human-written review quality in about 1.5 hours, point toward multi-agent orchestration being evaluated as much on auditability as on raw accuracy.
+
+Across all three areas, the throughline is portability and validation: models and agents are increasingly being tested for whether they hold up outside their original setting, not just how well they perform on it.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #ClinicalAI #HealthTech #DigitalHealth
+
+Sources:
+1. TRisk heart failure mortality transformer model — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12868603/
+2. PRIME pancreatic cancer risk stratification model — https://jamanetwork.com/journals/jamaoncology/article-abstract/2847149
+3. Multimodal ultrasound + tomosynthesis breast risk classification — https://doi.org/10.1093/pcmedi/pbag023
+4. DeepSeek R1 and LLMs for acute ischemic stroke treatment decisions — https://doi.org/10.1136/jnis-2026-025429
+5. OGCaReBench off-guideline clinical question-answering benchmark — https://arxiv.org/abs/2605.21807
+6. Autonomous agentic workflow for cognitive-concern detection (Pythia) — https://doi.org/10.1038/s41746-025-02324-4
+7. Multiagent LLM framework for acute stroke treatment recommendation — https://doi.org/10.2196/96304
+8. InsightAgent interactive multi-agent systematic review system — https://arxiv.org/abs/2504.14822
