@@ -1,0 +1,21 @@
+AI in Healthcare: Research Update — November 18, 2026
+
+In prognostic and diagnostic modeling, a new framework called Prior-Informed Machine Learning (PIML) combines clinically grounded Bayesian generative reasoning with standard discriminative machine learning to produce interpretable, patient-specific diagnoses. Tested on cervical neoplasia, high-risk oral lesions, and preterm birth detection using electrical impedance spectroscopy data, the hybrid approach generally outperformed standard ML baselines, suggesting value in pairing clinical priors with data-driven models rather than relying on either alone.
+
+On the large language model side, four new studies this week focus on evaluation rather than deployment. A survey proposes assessing medical LLMs by "levels of autonomy" rather than static exam-style benchmarks. A Mannheim-led study had ten LLMs rate simulated psychiatric interview transcripts for depression, mania, and schizophrenia against 108 practicing clinicians; the top two models fell within the clinician performance range, though models more often flagged ambiguous symptoms as unassessable rather than inferring from incomplete information. A King's College London/Oxford study evaluated 11 open-weight LLMs on 678 psychosis-risk interview transcripts from 373 participants, finding agreement with researcher ratings around 0.74–0.75 (intraclass correlation) and a low 3% rate of clinically relevant confabulation. Separately, a Taiwan hospital study paired fine-tuned Whisper speech recognition with an LLM for nursing documentation, cutting transcription error from 31.65% to 6.6%, reaching an F1 of 0.82 on structured notes, and nearly doubling monthly documentation volume with 76% of 120 nurses reporting reduced workload.
+
+In agentic AI, new work spans simulation and deployment. MedAgentSim introduces self-evolving doctor, patient, and measurement agents for simulated diagnostic reasoning. DrugCoding, a multi-agent programming agent for drug discovery, reports a 97.35% Pass@1 on benchmark tasks, 9.24 points above the strongest baseline. A prospective study of a neuro-symbolic, multi-agent oncology trial-matching platform across 3,804 cancer patients reported an F1 of 0.82 and roughly fourfold faster matching. BioAgent-RAG, a knowledge-graph-augmented multi-agent framework, reports high factuality scores for explainable drug-repurposing predictions.
+
+Across all three areas, the common thread is measurement: today's additions lean toward rigorous benchmarking against clinicians or baselines rather than headline performance claims alone.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Prior-Informed Machine Learning diagnostic framework — https://eprints.whiterose.ac.uk/id/eprint/247470
+2. LLMs benchmarked against clinicians on psychopathological assessment — https://doi.org/10.1038/s41746-026-02852-7
+3. LLMs evaluated for psychosis risk assessment — https://doi.org/10.1038/s41746-026-02928-4
+4. Voice-based structured nursing documentation with ASR + LLM — https://nursing.jmir.org/2026/1/e88567
+5. MedAgentSim self-evolving multi-agent clinical simulation — https://arxiv.org/abs/2503.22678
+6. DrugCoding scientific programming agent for drug discovery — https://arxiv.org/abs/2611.13651
+7. Prospective multi-agent oncology trial-matching study (3,804 patients) — https://massivebio.com/massive-bio-publishes-landmark-prospective-study-demonstrating-ai-driven-clinical-trial-matching-at-scale-in-3804-cancer-patients/
+8. BioAgent-RAG explainable drug-repurposing framework — https://www.preprints.org/manuscript/202610.1131
