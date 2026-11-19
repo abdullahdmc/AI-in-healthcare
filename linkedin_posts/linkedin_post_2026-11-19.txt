@@ -1,0 +1,22 @@
+AI in healthcare: today's research roundup
+
+Several new studies this week add to the evidence base for machine learning risk and prognostic models. The PERISCOPE project trained mortality-prediction models on a US registry of 38,489 patients, tested them on a separate 119,035-patient dataset, and externally validated them on 6,776 patients in Amsterdam, finding the models outperformed the established GRACE 2.0 score for predicting death after a heart attack across all three cohorts. In Alzheimer's disease, a dual ANN-CNN framework combined clinical data (87.08% accuracy for early risk prediction) with imaging data (97% accuracy for staging), while a Kaiser Permanente model built on EHR data from more than 3 million adults estimated 1-, 3-, and 10-year type 2 diabetes risk with near-ideal calibration, though a full peer-reviewed paper is still pending.
+
+On the LLM side, a cross-sectional benchmark found Gemini 3 Pro reached 89.9% accuracy on bilingual radiology questions, outperforming four other multimodal models, though all models did worse on image-based than text-based items. A safety evaluation of six public chatbots answering COPD questions found every model produced some potentially unsafe advice, with several safety classifications shifting when the test was repeated months later. A randomized trial in rheumatology found an LLM-based diagnostic tool cut diagnosis time by more than half without improving diagnostic accuracy, and noted a tendency toward physician over-reliance.
+
+In agentic AI, El Agente Fármaco, an autonomous drug-discovery agent, proposed chemically distinct, competitively scored candidate molecules when benchmarked against an expert-led medicinal chemistry campaign. Separately, Nature published Robin, a multi-agent system that closed a full discovery loop and identified an approved glaucoma drug as a repurposing candidate for dry age-related macular degeneration. A clinical-workload study also found that orchestrator-based multi-agent systems held accuracy near 90% at scale where single-agent approaches collapsed, while using far fewer tokens.
+
+Across these studies, a consistent theme is that newer architectures show real gains on narrow, well-defined tasks, but safety, reproducibility, and external validation remain the open questions before broader clinical use.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. PERISCOPE project: ML models outperform GRACE 2.0 for post-heart-attack mortality — https://www.escardio.org/news/press/press-releases/machine-learning-models-accurately-predict-mortality-after-a-heart-attack/
+2. Dual ANN-CNN framework for Alzheimer's risk prediction and staging — https://www.frontiersin.org/articles/10.3389/fmed.2025.1713062/full
+3. Kaiser Permanente EHR-based type 2 diabetes risk model (>3 million adults) — https://medicalresearch.com/?p=74110
+4. Bilingual radiology LLM benchmark (Gemini 3 Pro, GPT-5.2, and others) — https://www.jmir.org/2026/1/e98849
+5. Safety evaluation of six LLMs answering COPD questions — https://medinform.jmir.org/2026/1/e104836
+6. RCT of an LLM diagnostic tool in rheumatology — https://www.healio.com/news/rheumatology/20261111/large-language-model-improves-speed-but-not-accuracy-of-rheumatology-diagnoses
+7. El Agente Fármaco, an autonomous drug-discovery agent — https://arxiv.org/abs/2611.03832
+8. Robin: a multi-agent system for automating scientific discovery (Nature) — https://www.futurehouse.org/research/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system
+9. Orchestrated multi-agent system sustains accuracy under clinical-scale workloads — https://research.bidmc.org/radiology-research/publications/orchestrated-multi-agents-sustain-accuracy-under-clinical-scale-workloads-compared
