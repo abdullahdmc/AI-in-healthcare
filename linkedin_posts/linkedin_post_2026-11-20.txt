@@ -1,0 +1,21 @@
+AI in Healthcare: Daily Research Roundup — November 20, 2026
+
+Several new studies this week add to the evidence base on machine-learning prognostic and diagnostic models. A deep learning ensemble combining ConvNeXt, ResNet-50, and Swin Transformer architectures reached an AUC of 0.92 for melanoma detection from 3D total body photography, outperforming individual networks (0.86-0.88) and traditional ML baselines. A JMIR meta-analysis pooling 56 studies and roughly 887,000 participants found deep learning models reach a pooled AUC of 0.93 for COPD detection, though accuracy for grading disease severity was notably weaker and inconsistent. Not every model clears the bar: in a study of 4,135 Australian hospital admissions, plain logistic regression (ROC-AUC 0.64) matched or beat ensemble and deep learning approaches for predicting 30-day readmission, while a separate framework validated on roughly 415,000 MIMIC-IV admissions paired gradient-boosted trees with SHAP explainability and audited fairness across 16 demographic subgroups.
+
+On large language models in healthcare, a randomized trial of a GPT-4o mini-based chatbot (PreA) across 2,069 patients cut specialist consultation time by 28.7% when used independently before visits. A separate preregistered RCT found a sharper gap between promise and practice: LLMs scored 94.9% and 56.3% on standalone medical benchmarks, but when 1,298 participants used them as real patients, accuracy fell below 34.5% and 44.2%. A comparison of AI-generated and physician-written discharge summaries found clinicians trusted 85.3% of LLM summaries versus 95.5% of physician-written ones, and a 157-study scoping review of RAG-based clinical LLMs noted that 89.2% of evaluations remain offline-only.
+
+In agentic AI research, a systematic review of 52 studies found 96% documented system architecture but only 28% addressed accountability, underscoring a governance gap as these systems scale. On the technical side, a process-supervised multi-agent reinforcement learning approach raised agent-call accuracy from 0.105 to 0.455, and Stanford's Biomni, an autonomous biomedical research agent, matched human-expert performance on several of over 400 research tasks.
+
+Together, these studies point to a field maturing from raw predictive capability toward harder questions of real-world generalization, trust, and accountability.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Deep learning ensemble for melanoma detection via 3D total body photography — https://www.eurekalert.org/news-releases/1113521
+2. Deep learning diagnostic accuracy for COPD: systematic review and meta-analysis — https://www.jmir.org/2026/1/e83459
+3. ML models for 30-day general medicine readmission vs traditional approaches — https://www.mdpi.com/2073-431x/15/3/138
+4. PreA LLM chatbot RCT for primary-to-specialist care transitions — https://jmai.amegroups.org/article/view/11525/html
+5. Preregistered RCT on LLM reliability as medical assistants for the public — https://pubmed.ncbi.nlm.nih.gov/41663592/
+6. Scoping review of RAG and GraphRAG LLM evaluation in healthcare — https://www.jmir.org/2026/1/e90046
+7. Governing Agentic AI in Healthcare: systematic review — https://f1000research.com/articles/15-1653/v1
+8. Biomni: autonomous biomedical research agent — https://news.stanford.edu/stories/2026/07/biomni-ai-powered-biomedical-co-scientist
