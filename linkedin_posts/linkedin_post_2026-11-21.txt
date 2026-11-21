@@ -1,0 +1,22 @@
+Daily research screening: AI in healthcare, November 21, 2026
+
+Four new studies on machine learning prediction models looked at distinct clinical problems. A knowledge-augmented framework combining random forest, SVM, and multilayer perceptron models with an LLM interpreter predicted lymph node metastasis in 767 lung cancer patients. A separate machine learning survival analysis stratified diffuse large B-cell lymphoma risk using clinical and transcriptomic data, with FastSurvivalSVM reaching an AUC of 0.791 for 1-year overall survival. In hepatocellular carcinoma, a delta-radiomics model on contrast-enhanced MRI predicted pathological complete response after immune-based conversion therapy, reaching a validation AUC of 0.781. And a deep learning model pairing ECG-based scoring with an XGBoost classifier reached an AUROC of 0.84 for identifying patients unlikely to have structural heart disease, potentially deferring about 28% of outpatient echocardiograms while missing roughly 1% of significant cases.
+
+On the LLM side, a retrieval-augmented triage system grounded in Hong Kong's emergency triage guidelines outperformed a prompt-only baseline (accuracy 0.802 vs 0.542) while cutting overtriage from 28.8% to 12.7%. A quasi-experimental study found that a single conversation with a role-prompted GPT-4o chatbot raised 162 medical students' self-rated empathetic communication competence from 5.89 to 6.83 on a 10-point scale. Separately, two evaluation papers pushed back on accuracy-only benchmarking: one found that LLM diagnostic reasoning traces showed no more internal consistency for similar cases than for dissimilar ones, and another proposed scoring hallucinated medical advice by risk severity rather than factual correctness alone.
+
+In agentic AI, five new systems target rare and genetic disease diagnosis and research workflows. RareCollab, Hygieia, DeepBD, and a Nature-published system called DeepRare each use multi-agent or specialist-module architectures to combine phenotypic, genetic, and literature evidence for rare disease diagnosis, with DeepRare reaching 69.1% accuracy on multi-modal cases versus 55.9% for the existing tool Exomiser. A fifth system, ReviewPilot, automated systematic review screening and extraction, narrowing 3,000 candidate records to 1,341 included studies.
+
+Across all three areas, today's studies share a common thread: external validation, calibration against existing clinical tools, and process-level scrutiny are becoming as central to the evaluation story as headline accuracy numbers.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #ClinicalAI #HealthTech #DigitalHealth
+
+Sources:
+1. Lymph node metastasis prediction in lung cancer (LLM + ML ensemble) — https://medinform.jmir.org/2026/1/e86700
+2. Diffuse large B-cell lymphoma risk stratification (ML survival analysis) — https://medinform.jmir.org/2026/1/e84636
+3. HCC radiomic dynamics predicting pathological complete response — https://pubmed.ncbi.nlm.nih.gov/41746634/
+4. Deep learning ECG screening to defer unnecessary echocardiograms — https://pmc.ncbi.nlm.nih.gov/articles/PMC12794899
+5. Retrieval-augmented emergency triage system (MECR-RAG) — https://medinform.jmir.org/2026/1/e82026
+6. GPT-4o chatbot training empathetic communication in medical students — https://mededu.jmir.org/2026/1/e88092
+7. Clinical Reasoning Graphs: LLM diagnostic reasoning consistency — https://arxiv.org/abs/2606.29876
+8. DeepRare: agentic rare disease diagnosis with traceable reasoning — https://arxiv.org/abs/2506.20430
+9. ReviewPilot: multi-agent systematic review screening and extraction — https://arxiv.org/abs/2610.21042
