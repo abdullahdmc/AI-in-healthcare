@@ -1,0 +1,21 @@
+AI in healthcare research roundup — November 23, 2026
+
+On the machine-learning model side, several new disease-specific prediction tools stood out. A context-aware deep learning framework for prostate cancer risk, trained on data from roughly 28,000 patients, used each patient's prior visit history to cut the 5-year false-positive rate from 64% to 9% without sacrificing sensitivity. DeepFAN, a transformer-based model trained on over 10,000 pathology-confirmed nodules, reached diagnostic AUCs of 0.939-0.954 for classifying incidental pulmonary nodules on CT and improved junior radiologists' accuracy in a 400-case multi-reader trial. A systematic review and meta-analysis of deep learning for detecting axillary lymph node metastasis in breast cancer pooled an AUC up to 0.91 across CT-based models. Separately, an age-stratified LightGBM/TabNet/isolation-forest comparison for 3-year diabetes prediction (nearly 521,000 participants) and a lightweight 19-feature LightGBM model for Alzheimer's disease (ROC-AUC 0.90) both pointed toward simpler, more deployable risk tools.
+
+On LLMs in healthcare, new work probed where today's models still fall short. A study testing four frontier LLM families across 13 patient-preference scenarios found they acknowledged stated values nearly 100% of the time but only modestly shifted their actual recommendations. A qualitative study of 12 clinicians found no single interaction modality — chat, UI, or voice — fit all clinical decision-support needs, while a reproducibility study of small open-weight medical QA models found low self-agreement across repeated runs even at low temperature.
+
+In agentic AI for medicine and research, the throughline was governance and evaluation rather than raw capability. Two JMIR viewpoints argued agentic systems should be treated as supervised workflow support, not autonomous decision-makers, and a new "Function, Evidence, Validation" framework aims to standardize how agentic bioinformatics systems get assessed. On the applied side, a multi-agent pharmaceutical co-scientist reached near-perfect recall (>0.99) with 0.71-0.91 precision across 180 molecules in a drug-discovery archive, and a "virtual biotech" framework used specialist agents to retrospectively re-analyze a failed ulcerative colitis trial and propose biomarker-guided enrollment strategies.
+
+Across all three areas, the common thread is a shift from "can AI do this task" toward "can we trust, validate, and deploy it responsibly" — smaller, better-validated models and more rigorous evaluation frameworks are doing more of the work than flashier capability claims.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. DeepFAN transformer model for pulmonary nodule assessment — https://arxiv.org/abs/2603.25607
+2. Context-aware deep learning for prostate cancer risk prediction — https://arxiv.org/abs/2510.15591
+3. Age-specific diabetes prediction algorithms (LightGBM/TabNet/isolation forest) — https://pubmed.ncbi.nlm.nih.gov/40986258/
+4. The Value Sensitivity Gap: clinical LLMs and patient preference statements — https://arxiv.org/abs/2603.00076
+5. Evaluating small open LLMs for medical question answering — https://arxiv.org/abs/2604.10535
+6. Medical AI Agents for Clinical Decision Support (PARM viewpoint) — https://medinform.jmir.org/2026/1/e92584
+7. DiscoVerse: multi-agent pharmaceutical co-scientist for drug discovery — https://arxiv.org/abs/2511.18259
+8. The Virtual Biotech: multi-agent AI framework for therapeutic discovery — https://eurekalert.org/news-releases/1143742
