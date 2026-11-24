@@ -1,0 +1,22 @@
+AI in healthcare research roundup — November 24, 2026
+
+On the machine-learning model side, new work combined previously separate data streams to sharpen risk prediction. A foundation model treating EHR and wearable data as one continuous-time process beat EHR-only and wearable-only baselines, especially at long horizons, while a self-supervised wrist-accelerometer model (Sensori) improved incident risk prediction for 26 of 87 conditions tested, notably neurological and psychiatric ones. Ensembling a ConvNeXt deep learning model with radiomics features reached AUC 0.87 on mammography, ahead of either approach alone (0.80-0.83). Separately, a 9,434-patient MIMIC-IV study used random forest for early risk stratification of sepsis-related liver injury, and an EHR-based cancer model flagged 3-6 times more true cases than traditional screening criteria across eight cancer types.
+
+On LLMs in healthcare, several studies focused on catching and reducing hallucinations rather than adding capability. Med-HEAL, built from MIMIC-IV discharge summaries, showed hallucination-aware in-context learning improved accuracy for most open-source medical LLMs tested, while a separate detector audited vision-language model outputs against medical images without needing internal model access. In radiology, one method fused pathology-classification signals into a vision-language model's decoding process to cut hallucinated findings, and a new benchmark standardized evaluation of how well generated reports track disease progression over time. A JMIR scoping review of 41 studies called LLM use in mental health still nascent, and a small study found LLMs detecting adolescent depression symptoms in clinical notes (precision 0.78) beat simple word-matching.
+
+In agentic AI for medicine and health research, new systems targeted narrower, higher-stakes clinical tasks. TheraAgent, with specialist "biochemist" and "oncologist" agents, predicted response to prostate cancer radioligand therapy at 75.7% accuracy on real patients and 87.0% on synthetic cases, beating comparable multi-agent baselines by over 20%. SURGENT, a perioperative multi-agent assistant tested on 530 records, led on most metrics across planning and complication-risk tasks, while CARE introduced a privacy-compliant two-tier design for ICU deterioration prediction when clinical signs conflict. In research automation, scPilot's iterative LLM reasoning improved single-cell cell-type annotation accuracy by 11% over one-shot prompting.
+
+Across all three areas, today's work leans toward tighter validation and narrower, better-instrumented tasks rather than broader claims of autonomy or capability.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Learning Longitudinal Health Representations from EHR and Wearable Data — https://arxiv.org/abs/2601.12227
+2. Learning Human Health and Diseases from 24-hour Wrist Movement (Sensori) — https://arxiv.org/abs/2608.29494
+3. Ensemble of Radiomics and ConvNeXt for Breast Cancer Diagnosis — https://arxiv.org/abs/2601.05373
+4. Early Risk Stratification of Sepsis-Related Liver Injury via Machine Learning — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12886363/
+5. Med-HEAL: Analyzing and Mitigating Hallucinations in Medical LLMs — https://arxiv.org/abs/2606.01301
+6. Assisting Screening of Adolescent Depression With Large Language Models — https://formative.jmir.org/2026/1/e71614
+7. TheraAgent: Multi-Agent Framework for PET Theranostics — https://arxiv.org/abs/2603.13676
+8. SURGENT: A Surgical Multi-Agent Assistance System Across the Perioperative Workflow — https://arxiv.org/abs/2605.29368
+9. scPilot: LLM Reasoning Toward Automated Single-Cell Analysis and Discovery — https://arxiv.org/abs/2602.11609
