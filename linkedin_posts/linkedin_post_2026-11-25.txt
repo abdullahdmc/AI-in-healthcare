@@ -1,0 +1,22 @@
+AI in healthcare research roundup — November 25, 2026
+
+On the machine-learning model side, several new risk and diagnostic models drew on underused data sources. A UK Biobank study of about 233,589 participants found that adding biochemical and metabolomic biomarkers to conventional risk factors improved prediction of incident chronic kidney disease and CKD-related mortality. A multicenter causal machine-learning tool trained on 789 patients predicted postcranioplasty complications with SHAP-based decision support for modifiable surgical variables. A meta-analysis of 13 studies (38,565 patients) found standalone deep learning reached AUC 0.89 for breast cancer detection on digital breast tomosynthesis, statistically indistinguishable from radiologists (AUC 0.88-0.90). Two EHR models also stood out: KAT-GNN reached AUROC 0.93 for coronary artery disease onset and 0.88-0.92 for in-hospital mortality, while BiPETE improved alcohol/substance-use-disorder risk prediction (AUPRC) by 34-50% over baselines in depression and PTSD cohorts.
+
+On LLMs in healthcare, the focus was documentation quality and conversational reliability rather than raw capability. One study found LLM-generated clinical notes can introduce "note bloat" and "diagnostic overcall" that propagate into downstream LLM outputs, with rewritten edits often repeating diagnosis titles verbatim in ways real clinicians rarely do. A GPT-4o-based diagnostic chatbot with retrieval-augmented generation reported around 90% accuracy on its test setup.
+
+In agentic AI for medicine and health research, systems pushed further into end-to-end, multi-step workflows. An agentic clinical-history-taking system (GPT-4o, Gemini-2.5-Flash-Lite, Grok-3) captured relevant history elements with over 85% accuracy and F1 against physician benchmarks, though diagnostic performance derived from those histories remained moderate. MedCaseAgent, a planner-writer-editor pipeline, retrieved the exact source article for 84.6% of rare-disease cases (versus 46.9% for the strongest baseline) when generating case reports, and clinicians in blinded review often preferred its reports to the originals. Vibe Medicine proposed a three-layer, skill-augmented agent framework for human-directed biomedical workflows spanning rare-disease diagnosis, drug repurposing, and clinical trial design.
+
+Across all three areas, today's additions share a theme: narrower validation against human benchmarks (radiologists, physicians, expert reviewers) rather than standalone capability claims.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Explainable ML Integrating Biochemical and Metabolomic Biomarkers for CKD Prediction — https://pubmed.ncbi.nlm.nih.gov/41612264/
+2. A Causal and Interpretable ML Framework for Postcranioplasty Risk Prediction — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12923646/
+3. Deep Learning Algorithms Versus Radiologists in Digital Breast Tomosynthesis — https://www.jmir.org/2026/1/e91659
+4. KAT-GNN: Knowledge-Augmented Temporal Graph Neural Network for Risk Prediction — https://arxiv.org/abs/2511.01249
+5. BiPETE: Bi-Positional Embedding Transformer Encoder for Alcohol/Substance Use Disorder Risk — https://arxiv.org/abs/2511.04998
+6. AI in the Clinical Documentation Loop: Note Bloat and Diagnostic Overcall — https://arxiv.org/abs/2611.10601
+7. Towards Explainable Conversational AI for Early Diagnosis — https://arxiv.org/abs/2512.17559
+8. Comparative Performance of Agentic AI and Physicians in Taking Clinical History — https://www.medrxiv.org/content/10.64898/2026.01.23.26344723.full.pdf
+9. MedCaseAgent: From Multimodal Clinical Evidence to Rare Disease Case Reports — https://arxiv.org/abs/2610.32258
