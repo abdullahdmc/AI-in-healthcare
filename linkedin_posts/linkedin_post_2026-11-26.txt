@@ -1,0 +1,23 @@
+AI in healthcare research roundup — November 26, 2026
+
+On the machine-learning model side, several new models targeted detection and risk stratification from routine data. A graph-based model (CLDD) trained on MIMIC-IV data from 61,191 patients and 2,000 diseases flagged multiple potential diagnoses per patient from EHR demographics and interaction history, without relying on medical tests. A separate AI system for low-dose CT lung cancer screening moved beyond size- and growth-based metrics like volume-doubling time, reportedly outperforming radiologists on nodule malignancy diagnosis across sizes and stages. Among risk-prediction work, a stroke cohort model reached an AUROC of 0.839-0.841 for 10-year cardiovascular mortality, a 480-patient heart-failure study built a nomogram for hospitalization-associated disability (41.88% incidence), and a COPD comorbidity nomogram reached an external validation AUC of about 0.90.
+
+On LLMs in healthcare, the emphasis was on prompting discipline and evaluation rigor rather than new capability claims. A stroke-vignette study found a structured five-step prompt raised thrombolysis guideline adherence from 83.3% to 100% and eliminated unsafe recommendations (16.7% to 0%) for leading closed-source models, with smaller gains for open-source ones. Separately, researchers tested whether LLMs and reasoning models could draft clinical triage rule sets against a real COVID-19 decision-support ruleset, finding reasoning models performed better but still fell short of reliable reproduction. Two reviews added caution: one on human-evaluation reliability for healthcare LLMs, and one finding sparse, inconsistent safety and workflow-burden data for LLM-based medical report generation.
+
+In agentic AI for medicine and health research, new work focused on safety layers and system architecture. CareGuardAI added a multi-agent controller that scores clinical-safety and hallucination risk before releasing patient-facing answers, beating baselines including GPT-4o-mini. Prompt-to-Pill extended multi-agent drug-discovery pipelines into clinical trial simulation and EHR use. A proposed seven-layer "compliance-first" architecture aimed to make hospital-wide agentic deployment auditable, while a simulated queue-triage system in high-volume outpatient clinics shifted critical-case counts from 13 to roughly 25 without hurting throughput. A new benchmark found autonomous "AI scientist" agents still trail human experts on biological discovery tasks (0.37 vs. 0.42).
+
+Across all three areas, today's additions lean toward guardrails, benchmarking, and architecture over raw performance gains — a sign the field is maturing from proof-of-concept toward deployment-readiness questions.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Medical Test-free Disease Detection Based on Big Data (CLDD) — https://arxiv.org/abs/2512.07856
+2. Beyond Size and Growth: Rethinking Lung Cancer Screening with AI-Based Nodule Detection and Diagnosis — https://arxiv.org/abs/2512.00281
+3. Development and evaluation of the model for predicting 10-year cardiovascular mortality in patients with ischemic stroke — https://pubmed.ncbi.nlm.nih.gov/41785193/
+4. Nomogram for hospitalization-associated disability in older patients with acute heart failure — https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2026.1770434/full
+5. Prompting is All You Need: How to Make LLMs More Helpful for Clinical Decision Support — https://pmc.ncbi.nlm.nih.gov/articles/PMC12934876/
+6. Effectiveness, Safety, and Workflow Burden of LLM-Based Medical Report Generation: Systematic Review — https://www.jmir.org/2026/1/e97007
+7. CareGuardAI: Context-Aware Multi-Agent Guardrails for Clinical Safety & Hallucination Mitigation in Patient-Facing LLMs — https://arxiv.org/abs/2604.26959
+8. Prompt-to-Pill: Multi-Agent Drug Discovery and Clinical Simulation Pipeline — https://pmc.ncbi.nlm.nih.gov/articles/PMC12800774/
+9. Agentic AI for Clinical Urgency Mapping and Queue Optimization in High-Volume Outpatient Departments — https://arxiv.org/abs/2604.00215
+10. Benchmarking AI scientists for omics data driven biological discovery (BAISBench) — https://arxiv.org/abs/2505.08341
