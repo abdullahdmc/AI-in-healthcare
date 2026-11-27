@@ -1,0 +1,21 @@
+AI in Healthcare: Today's Research Roundup
+
+Several new prognostic and diagnostic model studies landed this week. An ensemble CNN (VGG19, ResNet50, InceptionV3) for early colorectal cancer detection reached an AUC of 0.89 alone, rising to 0.95 once lesion location and length were added. A multicentre MRI-based fusion deep learning model for bladder cancer outperformed pathological T stage for predicting overall survival (C-index 0.841 vs. 0.760) across 1,131 patients at eight institutions. In Parkinson's disease, a study of 1,602 patients found that baseline clinical features and first-year symptom trajectories predicted rapid cognitive and motor decline better than structural MRI, preserving negative predictive values above 0.86 on external validation. A separate systematic review of 66 multimodal AI studies in Alzheimer's disease reported average diagnostic accuracy of 92.5% and AUCs around 0.92 for predicting progression from mild cognitive impairment.
+
+On the LLM side, a comparative pilot found GPT-5 led five other models on esophageal cancer staging but still reached only 63% accuracy on lymph node detection, short of physician-level performance. For stroke thrombolysis decision support, structured prompting raised guideline adherence from 83.3% to 100% and eliminated unsafe recommendations for GPT-4o and o3. GPT-4o and OpenAI o1 scored 89.8% and 92.6% on Spanish medical specialty exams, trailing a specialist consensus of 94.3%. A separate chatbot-dosing study found current models inadequate for high-risk renal drug-dosing advice in older patients.
+
+In agentic AI research, SatIR, a constraint-satisfaction retrieval system for clinical trial matching, outperformed TrialGPT on recall (93.66% vs. 62.44%) while running in under three seconds per patient. Another framework, EC2Seq2Sql, pairs a parsing model with an LLM agent to convert eligibility criteria into database queries for automated trial matching. A multi-agent causality-assessment system (MARCA) was also introduced for pharmacovigilance case review.
+
+Across all three areas, the pattern is consistent: models are improving on narrow, well-defined tasks, but validation against expert or guideline benchmarks keeps surfacing meaningful gaps that argue for continued human oversight.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Ensemble deep learning for early colorectal cancer recognition — https://www.wjgnet.com/1948-5204/abstract/v18/i11/123187.htm
+2. MRI-based multimodal fusion model for bladder cancer survival — https://pubmed.ncbi.nlm.nih.gov/41324013/
+3. Baseline clinical features vs. MRI for Parkinson's decline prediction — https://www.nature.com/articles/s41531-026-01530-5
+4. GPT-5 esophageal cancer staging comparative pilot — https://cancer.jmir.org/2026/1/e86630
+5. Structured prompting for stroke thrombolysis decision support — https://doi.org/10.64898/2026.02.12.26346005
+6. GPT-4o and OpenAI o1 on the Spanish medical specialty exam — https://mededu.jmir.org/2026/1/e75452
+7. SatIR constraint-satisfaction retrieval for clinical trial matching — https://arxiv.org/abs/2604.08849
+8. MARCA multi-agent causality assessment for pharmacovigilance — https://arxiv.org/abs/2610.33279
