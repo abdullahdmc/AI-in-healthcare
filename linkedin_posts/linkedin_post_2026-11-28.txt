@@ -1,0 +1,22 @@
+AI in Healthcare: Daily Research Update — November 28, 2026
+
+In machine learning and diagnostic/prognostic models, several new studies this cycle focused on how well performance holds up outside the original training data. A type 2 diabetes risk model (XGBoost) saw its AUC fall from 0.794 internally to 0.717 on external validation against 1.28 million BRFSS respondents, a 9.7% relative drop, with the weakest performance in the subgroups at highest actual risk. A random forest model for predicting 1-year unplanned readmission in ulcerative colitis held up better, with AUCs of 0.936, 0.815, and 0.813 across training, internal, and external validation, and was turned into a public web calculator. In imaging, a deep learning tool (DeepPNP) for pulmonary nodule malignancy risk reached an AUC of 0.96, outperforming the established Lung-RADS and PanCan scoring systems, while a meta-analysis of 52 studies on AI-based early sepsis detection reported AUCs ranging from 0.79 to 0.96 against conventional scoring tools. A separate meta-analysis of radiomics-based AI for predicting pathological response to neoadjuvant therapy in NSCLC found PET/CT-based models reached higher specificity than CT-based models (0.95 vs 0.80).
+
+On large language models in healthcare, a new evaluation framework (VB-Score) scored medical question-answering systems on entity recognition, factual consistency, and completeness rather than semantic similarity alone, finding Gemini 2.5 Flash ahead of GPT-4 and Claude Sonnet 4.5, with retrieval-augmented generation lifting scores by about 27%. A second benchmark, PatientSafetyBench, tested 466 physician-validated patient-facing safety scenarios and found even GPT-4.1-family models refused unsafe queries only up to 58.2% of the time. A related red-teaming framework stress-tested 15 LLMs across robustness, privacy, bias, and hallucination, confirming a persistent gap between strong static-benchmark scores and weaker reliability under adaptive adversarial testing.
+
+In agentic AI for medicine and health research, a three-agent triage system reached 89.2% accuracy classifying patients into hospital departments from unstructured symptom descriptions. AutoScientists, a decentralized multi-agent research system, achieved a 74.4% mean leaderboard percentile on the 24-task BioML-Bench. AgentSLR automated systematic literature reviews in epidemiology, cutting review time from about 7 weeks to 20 hours, though structured data extraction remained a bottleneck (F1 below 0.67). A related benchmark, SciConBench, found the best research agents reached only a 0.337 factual F1 score when asked to synthesize Cochrane-style health conclusions. And ClinicalReTrial, a self-evolving agent for clinical trial protocol redesign, improved 83.3% of the protocols it revised, with a mean predicted success-probability gain of 5.7%.
+
+Across all three areas, a common pattern stands out: headline performance is often strong, but it consistently narrows under external validation, adversarial stress-testing, or open-ended real-world tasks.
+
+#AIinHealthcare #MachineLearning #LLM #AgenticAI #DigitalHealth #ClinicalAI #HealthTech
+
+Sources:
+1. Type 2 diabetes ML risk prediction, external validation and fairness — https://arxiv.org/abs/2607.16253
+2. Ulcerative colitis readmission risk model and online calculator — https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1712846/full
+3. DeepPNP pulmonary nodule malignancy risk model — https://pmc.ncbi.nlm.nih.gov/articles/PMC12944827/
+4. Meta-analysis of AI models for early sepsis detection — https://pmc.ncbi.nlm.nih.gov/articles/PMC12685403/
+5. VB-Score medical question-answering evaluation framework — https://arxiv.org/abs/2604.19281
+6. MedRiskEval / PatientSafetyBench patient safety benchmark — https://arxiv.org/abs/2507.07248
+7. Collaborative multi-agent medical triage system — https://arxiv.org/abs/2507.22504
+8. AgentSLR automated systematic literature reviews — https://arxiv.org/abs/2603.22327
+9. ClinicalReTrial self-evolving clinical trial redesign agent — https://arxiv.org/abs/2601.00290
